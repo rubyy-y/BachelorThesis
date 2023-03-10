@@ -3,7 +3,7 @@
 
 Implementation: Web Application using **JSON**, **JavaScript, Python, HTML** and **CSS**.
 
-# Current Plan
+### Current Plan
 
 Web Application shows two divisions: 
 <ol> 
@@ -11,10 +11,21 @@ Web Application shows two divisions:
     <li> randomized version of the same dataset. </li>
 </ol> 
 
-**(Idea)** Let user decide on amount of randomization of dataset.
+The (Altair) Visualization offers an option called "View Compiled Vega". This source code will later serve to compare two visualizations! <br>
+**TODO:** Make file where you document differences in JSON files, or special characteristics to later include in Report.
 
-The (Altair) Visualization offers an option called "View Compiled Vega". This source code will later serve to compare two visualizations!
 
-> **TODO**: Look at how to compare the two JSON files
+## Project Must-Haves
+<ul>
+    <li> Usable Web Application </li>
+    <li> Showing Dataset (not necessarily from JSON)</li>
+    <li> Showing randomized Version of Dataset </li>
+    <li> Third Visualization of clear differences </li>
+</ul>
 
-**(Idea)** Let user decide whether color of datapoint should result in highlighted difference, too.
+## Project Nice-To-Haves
+<ul>
+    <li> User decides what Dataset </li>
+    <li> User decides Ranomization </li>
+    <li> User decides what counts as "difference" (color, position) </li>
+</ul>
