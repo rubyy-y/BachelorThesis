@@ -1,2 +1,2 @@
 # BachelorThesis
-The topic of the Thsisi is "Highlighting Differences in Data Visualizations
+The topic of the Thesis is "Highlighting Differences in Data Visualizations
