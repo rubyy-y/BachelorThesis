@@ -1,9 +1,11 @@
 # Highlighting Differences in Data Visualizations
 > "This project aims to **identify and annotate differences** between two **data visualizations** created using the **Vega-Lite grammar**. Vega-Lite uses a **JSON syntax** to define mappings from data to **properties of graphical marks**. Given two Vega-Lite specifications, the project will **compare the JSON** and resulting visualizations and **highlight any differences** by annotating them within the visualization itself, making it easy to spot and understand the changes. [...]"
 
-Implementation: Web Application using **React?, JSON, JavaScript, Python, HTML** and **CSS**.
+**Research Question: How can updates to data or specifications of visualizations be explained?**
 
-The (Altair) Visualization offers an option called "View Compiled Vega". This source code will later serve to compare two visualizations! <br>
+Implementation: Web Application using **React, JavaScript, Python, HTML** and **CSS**.
+
+The (Altair) Visualization offers an option called "View Source". This source code will later serve to compare two visualizations! <br>
 **note to self:** Make file where you document exploration of JSON files, or special characteristics to later include in thesis.
 
 
@@ -37,7 +39,7 @@ The (Altair) Visualization offers an option called "View Compiled Vega". This so
             <li> general statistics: how many datapoints in each dataset, amount of difference (in %) </li>
             <li> datapoints missing </li>
             <li> datapoints added </li>
-            <li> datapoints differently colored </li>
+            <li> datapoints differently colored (= Label changed) </li>
         </ul>
     </ul>
     <li> Usable Web Application </li>
@@ -51,7 +53,7 @@ The (Altair) Visualization offers an option called "View Compiled Vega". This so
 ## Project Nice-To-Haves
 <ul>
     <li> User decides what Dataset </li>
-    <li> User decides Ranomization </li>
+    <li> User decides Randomization </li>
     <li> User decides if color counts as difference -> Boolean Value in input </li>
     <li> In comparison function: 
     <ul> 

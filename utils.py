@@ -3,17 +3,21 @@ import json
 import glob
 import os
 import random
-from os import path
 
 # absolute path to where json files are
 abs_path = fr"C:\Users\rubin\OneDrive\Desktop\University\BachelorThesis\datasets_test"
 json_files = abs_path + "\*.json"
 
 # scan for all .json files in this folder
-# !!!! ERROR - ALSO LISTS ALREADY MODIFIED FILES !!!!
 files = glob.glob(json_files)
+
 for i, file in enumerate(files):
     files[i] = os.path.split(file)[-1]
+
+# only accept non-altered files
+for file in files:
+    if file.endswith('percent.json'):
+        files.remove(file)
 
 # change current working directory to this directory
 os.chdir(abs_path)
@@ -35,6 +39,16 @@ def modify(point):
     else:
         pass
 
+# _____J__S__O__N_______S__T__R_____
+def json_str(string: str):
+    """
+    This method transforms a string into JSON syntax;
+    ' becomes "
+    None becomes null
+    """
+    string = string.replace("'", "\"")
+    string = string.replace("None", "null")
+    return string
 
 # __________R_____A_____N_____D_____O_____M_____I_____Z_____E__________
 
@@ -47,70 +61,53 @@ def randomize(json_file: str, p: float):
     if p < 0.01 or p > 1:
         raise ValueError("Please choose p in range [0.01; 1]")
 
-    ### ONLY WORKS FOR IRIS DATASET BECAUSE OF JSON STRUCTURE ###
-    #### also, in the copied version, the trailing comma in ####
-    ##### the last datapoint needs fo be removed manually #####
 
-    # open original file in read mode and create [json_file][p].json in write
-    modified = json_file[:-len('.json')] + str(int(p*100)) + '.json'
+    #### PROBLEM: the trailing comma in the last datapoint needs fo be removed #####
+
+    # open original file in read mode and create [json_file][p]percent.json in write
+    modified = json_file[:-len('.json')] + str(int(p*100)) + 'percent.json'
 
     with open(modified, 'w') as f:
         with open(json_file, 'r') as original:
             data = json.load(original)
             f.write("[\n")
-            for point in data:
-                if random.random() < 1-p:
-                    # replace ' with " for json file
-                    string = str(point).replace("'", "\"")
-                    f.write(f"  {string},\n")
+            for i, point in enumerate(data):
 
+                # while it is not the last datapoint in the set
+                if i != len(data)-1:
+
+                    if random.random() < 1-p:
+                        string = json_str(str(point))
+                        f.write(f"\t{string},\n")
+
+                    else:
+                        for key in point.keys():
+                            if type(point[key]) == int or type(point[key]) == float:
+                                point[key] = modify(point[key])
+                        
+                        string = json_str(str(point))
+                        f.write(f"\t{string},\n")
+                
+                # last datapoint is never altered to ensure JSON syntax is not disrupted by leading comma
                 else:
-                    for key in point.keys():
-                        if type(point[key]) == int or type(point[key]) == float:
-                            point[key] = modify(point[key])
-                            # replace ' with " for json file
-                    string = str(point).replace("'", "\"")
-                    f.write(f"  {string},\n")
+                    string = json_str(str(point))
+                    f.write(f"\t{string}\n")
             f.write("]")
-        
 
-    """ ### THIS DID NOT WORK YET BECAUSE OF WRITING TO FILE PROBLEMS; BETTER OPTION HOWEVER!!
-    # make copy of file and save as [json_file][p].json
-    copy = json_file[:-len('.json')] + str(int(p*100)) + '.json'
-    
-    # this might only work on windows, easily extendable for other machines
-    # if not path.isfile(copy):
-    if save:
-        os.system(f'copy {json_file} {copy}')
-
-    # wrong mode
-    with open(copy, 'r+') as f:
-        data = json.load(f)
-        print(type(data))
-
-        for i, point in enumerate(data):
-            if random.random() < p:
-                keys = list(point.keys())
-
-                # check datatype of key, if int or float: change
-                for key in keys:
-                    # print(key)
-                    if type(point[key]) == int or type(point[key]) == float:
-                        # print("Before:", point[key])
-                        
-                        # point[key] = modify(point[key])
-                        
-                        print("Before:", data[i][key])
-                        data[i][key] = modify(point[key])
-                        print("After:", data[i][key])
-
-                        # print("After:", point[key])
-    """
+    print(f"'{json_file}' has been altered and saved as '{modified}'")
 
 
-randomize(files[0], 0.6)
+# randomize all test files from 5% to 20% (in steps of 5)
+for file in files:
+    for i in range(5, 21, 5):
+        print(file)
+        randomize(file, i/100)
+
+
 
 # __________I_____G_____N_____O_____R_____E__________
+# randomize('cars_test.json', 0.6)
+
 # # probability check
 # tries = 100000
 # count = 0
