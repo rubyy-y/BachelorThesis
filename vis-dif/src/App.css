@@ -1,0 +1,120 @@
+.App-header {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: light;
+  padding: 0.5em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+p {
+  clear: both;
+  margin-left: 5%;
+  margin-bottom: 0;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+input[type="file"]::file-selector-button {
+  border: 0;
+  background: #61626a;
+  border-radius: 5px;
+  color: white;
+  padding: 1em;
+}
+
+input::file-selector-button:hover {
+  background: #9a9dad;
+  transition: .5s;
+  cursor: pointer;
+}
+
+select {
+  border: 0;
+  background: #61626a;
+  border-radius: 5px;
+  width: 30%;
+  padding: 0.5em;
+  color: white;
+  font-size: medium;
+}
+
+select:hover {
+  background: #9a9dad;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+
+  background-color: #ff9dea21;
+  border-radius: 5px;
+} 
+
+.vis1 {
+  float: left;
+  width: 43.5%;
+  margin: auto;
+  margin-left: 5%;
+  margin-bottom: 1em;
+
+  background-color: #9da2ff3b;
+  color: #797c87;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.vis2 {
+  float: right;
+  width: 43.5%;
+  margin: auto;
+  margin-right: 5%;
+  margin-bottom: 1em;
+
+  background-color: #9da2ff3b;
+  color: #797c87;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.file1 {
+  width: 43.5%;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 1em;
+
+  background-color: #9dcbff1f;
+  border-radius: 5px;
+}
+
+.file2 {
+  width: 43.5%;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 1em;
+
+  background-color: #9dcbff1f;
+  border-radius: 5px;
+}
+
+.dif {
+  clear: both;
+  width: 50%;
+  margin: auto;
+
+  background-color: #d59dff26;
+  color: #797c87;
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 15em;
+}

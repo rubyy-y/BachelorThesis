@@ -23,6 +23,7 @@ def modify(point: dict):
     action = random.random()
     for key in point.keys():
         if type(point[key]) == int or type(point[key]) == float:
+
             # 1. Skew
             if action < 1/2:
                 # multiply value with random number between 0.5 and 1.5
@@ -87,8 +88,10 @@ def randomize(json_file: str, p: float):
     print(f"'{json_file}' has been altered and saved as '{modified}' in folder 'datasets_altered'.")
 
 
-# randomize all test files from 1% to 20% (in steps of 1)
-if __name__ == "__main__":
-    for file in files:
-        for i in range(1, 21):
-            randomize(file, i/100)
+# randomize("iris.json", 0.6)
+
+# # randomize all files from 1% to 20% (in steps of 1)
+# if __name__ == "__main__":
+#     for file in files:
+#         for i in range(1, 21):
+#             randomize(file, i/100)
