@@ -69,6 +69,7 @@ def randomize(json_file: str, p: float):
                 else:
                     # modify(point)
                     if random.random() < 1/3:
+                        # because nodified is the only one opened in write-mode
                         del point
                     else:
                         string = modify(point)

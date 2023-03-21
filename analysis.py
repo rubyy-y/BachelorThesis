@@ -83,8 +83,11 @@ def point_compare(a, b):
     """
     This function takes two DATAPOINTS as input
     and compares them
+    output: 
     """
-    pass
+    
+
+    
 
 
 def compare(a, b):
@@ -93,11 +96,33 @@ def compare(a, b):
     and outputs general statistics and distinct datapoints that differ
     output should also be in JSON format to be able to plot
     """
+    
+    # dict to save values and information
+    encodings = dict()
+    summary = dict({"identical": 0})
+
     with open(a, 'r') as a:
         with open(b, 'r') as b:
             a_data = json.load(a)
             b_data = json.load(b)
 
+            # check if encoding labels are the same
+            a_encoding = a_data["encoding"]
+            b_encoding = b_data["encoding"]
+
+            a_x_val = a_encoding["x"]["field"]
+            a_y_val = a_encoding["y"]["field"]
+            a_color_val = a_encoding["color"]["field"]
+
+            b_x_val = b_encoding["x"]["field"]
+            b_y_val = b_encoding["y"]["field"]
+            b_color_val = b_encoding["color"]["field"]
+
+            encodings["same_x"] = a_x_val == b_x_val
+            encodings["same_y"] = a_y_val == b_y_val
+            encodings["same_color"] = a_color_val == b_color_val
+
+            # comparing single datapoints
             a_datasets = a_data["datasets"]
             b_datasets = b_data["datasets"]
 
@@ -111,8 +136,20 @@ def compare(a, b):
             
             for a in range(len(dataset_a)):
                 for b in range(len(dataset_b)):
-                    point_compare(a, b)
+                    if a == b:
+                        summary["identical"] += 1
+                        # delete datapoint in copy
 
 
-# statistics("itis_source.json")
-# compare("iris_source.json", "iris20_source.json")
+                    else:
+                        pass
+
+    
+    print(summary)
+    return encodings
+
+
+# statistics("iris_source.json")
+compare("iris_source.json", "iris20_source.json")
+
+# point_compare(2,2)
