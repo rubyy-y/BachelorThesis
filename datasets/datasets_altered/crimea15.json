@@ -1,5 +1,5 @@
 [
-	{"date": "1854-04-01", "wounds": 0.0, "other": 110.0, "disease": 132.0},
+	{"date": "1854-04-01", "wounds": 0, "other": 110, "disease": 110},
 	{"date": "1854-05-01", "wounds": 0, "other": 95, "disease": 105},
 	{"date": "1854-06-01", "wounds": 0, "other": 40, "disease": 95},
 	{"date": "1854-07-01", "wounds": 0, "other": 140, "disease": 520},

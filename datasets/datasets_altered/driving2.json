@@ -37,7 +37,6 @@
 	{"side": "right", "year": 1991, "miles": 8535, "gas": 1.78},
 	{"side": "right", "year": 1992, "miles": 8662, "gas": 1.69},
 	{"side": "left", "year": 1993, "miles": 8855, "gas": 1.6},
-	{"side": "bottom", "year": 1994, "miles": 8909, "gas": 1.59},
 	{"side": "bottom", "year": 1995, "miles": 9150, "gas": 1.6},
 	{"side": "top", "year": 1996, "miles": 9192, "gas": 1.67},
 	{"side": "right", "year": 1997, "miles": 9416, "gas": 1.65},

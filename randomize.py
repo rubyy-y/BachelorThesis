@@ -30,7 +30,6 @@ def modify(point: dict):
                 point[key] = point[key]*random.randint(5,15)/10
 
             # 2. Remove already done in Randomization
-            
             # 3. Add
             else:
                 pass
@@ -54,42 +53,35 @@ def randomize(json_file: str, p: float):
     # open original file in read mode and create [json_file][p].json in write mode
     modified = json_file[:-len('.json')] + str(int(p*100)) + '.json'
 
-    with open(f"datasets_altered\{modified}", 'w') as f:
+    with open(f"datasets_altered\{modified}", 'wb') as f:
         with open(json_file, 'r') as original:
             data = json.load(original)
-            f.write("[\n")
+            f.write(bytes("[\n", 'utf-8'))
             
-            for point in data[:-1]:
-                # string = ""
+            for point in data:
                 if random.random() < 1-p:
                     # just copy
                     string = str(point)
                     string = string.replace("'", "\"").replace("None", "null")
-                    f.write(f"\t{string},\n")
+                    f.write(bytes(f"\t{string},\n", 'utf-8'))
                 else:
-                    # modify(point)
+                    # modify point
                     if random.random() < 1/3:
                         # because nodified is the only one opened in write-mode
                         del point
                     else:
                         string = modify(point)
                         string = string.replace("'", "\"").replace("None", "null")
-                        f.write(f"\t{string},\n")
+                        f.write(bytes(f"\t{string},\n", 'utf-8'))
+            
+            # delete last comma
+            f.seek(-2, 2)
+            f.truncate()
 
-            # last item handled seperately because of trailing comma
-            if random.random() < 1-p:
-                # just copy
-                string = str(data[-1])
-            else:
-                # modify(point)
-                string = modify(data[-1])
-            string = string.replace("'", "\"").replace("None", "null")
-            f.write(f"\t{string}\n")
-            f.write("]")
+            f.write(bytes("\n]", 'utf-8'))
+
     print(f"'{json_file}' has been altered and saved as '{modified}' in folder 'datasets_altered'.")
 
-
-# randomize("iris.json", 0.6)
 
 # # randomize all files from 1% to 20% (in steps of 1)
 # if __name__ == "__main__":

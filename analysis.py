@@ -79,30 +79,19 @@ def statistics(a):
         return stats
 
 
-def point_compare(a, b):
-    """
-    This function takes two DATAPOINTS as input
-    and compares them
-    output: 
-    """
-    
-
-    
-
-
-def compare(a, b):
+def compare(a_json, b_json):
     """
     This function takes two JSON files as input
     and outputs general statistics and distinct datapoints that differ
     output should also be in JSON format to be able to plot
+    ... This only returns the datapoints which are in a but not in b
     """
-    
+        
     # dict to save values and information
-    encodings = dict()
     summary = dict({"identical": 0})
 
-    with open(a, 'r') as a:
-        with open(b, 'r') as b:
+    with open(a_json, 'r') as a:
+        with open(b_json, 'r') as b:
             a_data = json.load(a)
             b_data = json.load(b)
 
@@ -118,9 +107,9 @@ def compare(a, b):
             b_y_val = b_encoding["y"]["field"]
             b_color_val = b_encoding["color"]["field"]
 
-            encodings["same_x"] = a_x_val == b_x_val
-            encodings["same_y"] = a_y_val == b_y_val
-            encodings["same_color"] = a_color_val == b_color_val
+            summary["same_x"] = a_x_val == b_x_val
+            summary["same_y"] = a_y_val == b_y_val
+            summary["same_color"] = a_color_val == b_color_val
 
             # comparing single datapoints
             a_datasets = a_data["datasets"]
@@ -133,23 +122,50 @@ def compare(a, b):
             
             dataset_a = a_datasets[name_a[0]]
             dataset_b = b_datasets[name_b[0]]
-            
-            for a in range(len(dataset_a)):
-                for b in range(len(dataset_b)):
-                    if a == b:
-                        summary["identical"] += 1
-                        # delete datapoint in copy
 
+            # make new directory for comparing files
+            os.makedirs("comparisons", exist_ok=True)
 
-                    else:
-                        pass
+            # create file to add non identical datapoints
+            comp = f"{a_json[:-(len('_source.json'))]}_COMP_{b_json[:-(len('_source.json'))]}.json"
 
-    
-    print(summary)
-    return encodings
+            # opening file in byte mode
+            # else seek operation not available
+            with open(f"comparisons\{comp}", 'wb') as comp:
+                comp.write(bytes("[\n", 'utf-8'))
+                for a_point in dataset_a:
+                    for b_point in dataset_b:
+                        if a_point == b_point:
+                            summary["identical"] += 1
 
+                    if not a_point in dataset_b:
+                        string = str(a_point)
+                        string = string.replace("'", "\"").replace("None", "null")
+                        comp.write(bytes(f"\t{string},\n", 'utf-8'))
+                
+                # delete last comma
+                comp.seek(-2, 2)
+                comp.truncate()
 
-# statistics("iris_source.json")
-compare("iris_source.json", "iris20_source.json")
+                comp.write(bytes("\n]", 'utf-8'))
 
-# point_compare(2,2)
+                # # check vice versa
+                # for b_point in dataset_b:
+                #     if not b_point in dataset_a:
+                #         string = str(b_point)
+                #         string = string.replace("'", "\"").replace("None", "null")
+                #         comp.write(f"\t{string},\n")
+
+                # idea: seperate differences in two files, such that we know which changes were made where
+                # -> just remove vice versa check and fun function with switched parameters
+
+    return summary
+
+# compare("iris_source.json", "iris20_source.json")
+# compare("iris20_source.json", "iris_source.json")
+
+if __name__ == "__name__":
+    pass
+    # for i in ...:
+    #     compare("iris_source.json", "iris20_source.json")
+

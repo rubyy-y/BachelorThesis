@@ -4,8 +4,8 @@
 	{"date": "1854-06-01", "wounds": 0, "other": 40, "disease": 95},
 	{"date": "1854-07-01", "wounds": 0, "other": 140, "disease": 520},
 	{"date": "1854-08-01", "wounds": 20, "other": 150, "disease": 800},
-	{"date": "1854-09-01", "wounds": 176.0, "other": 230.0, "disease": 444.0},
-	{"date": "1854-10-01", "wounds": 183.0, "other": 465.0, "disease": 360.0},
+	{"date": "1854-09-01", "wounds": 220, "other": 230, "disease": 740},
+	{"date": "1854-10-01", "wounds": 305, "other": 310, "disease": 600},
 	{"date": "1854-11-01", "wounds": 480, "other": 290, "disease": 820},
 	{"date": "1854-12-01", "wounds": 295, "other": 310, "disease": 1100},
 	{"date": "1855-01-01", "wounds": 230, "other": 460, "disease": 1440},
@@ -18,9 +18,9 @@
 	{"date": "1855-08-01", "wounds": 290, "other": 110, "disease": 490},
 	{"date": "1855-09-01", "wounds": 355, "other": 100, "disease": 290},
 	{"date": "1855-10-01", "wounds": 135, "other": 95, "disease": 245},
-	{"date": "1855-11-01", "wounds": 60.0, "other": 84.0, "disease": 357.5},
+	{"date": "1855-11-01", "wounds": 100, "other": 140, "disease": 325},
 	{"date": "1855-12-01", "wounds": 40, "other": 120, "disease": 215},
 	{"date": "1856-01-01", "wounds": 0, "other": 160, "disease": 160},
 	{"date": "1856-02-01", "wounds": 0, "other": 100, "disease": 100},
-	{"date": "1856-03-01", "wounds": 0, "other": 125, "disease": 90}
+	{"date": "1856-03-01", "wounds": 0.0, "other": 137.5, "disease": 63.0}
 ]

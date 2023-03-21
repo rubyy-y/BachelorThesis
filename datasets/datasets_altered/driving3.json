@@ -1,7 +1,6 @@
 [
 	{"side": "left", "year": 1956, "miles": 3675, "gas": 2.38},
 	{"side": "right", "year": 1957, "miles": 3706, "gas": 2.4},
-	{"side": "bottom", "year": 1958, "miles": 3766, "gas": 2.26},
 	{"side": "top", "year": 1959, "miles": 3905, "gas": 2.31},
 	{"side": "right", "year": 1960, "miles": 3935, "gas": 2.27},
 	{"side": "bottom", "year": 1961, "miles": 3977, "gas": 2.25},
@@ -40,6 +39,7 @@
 	{"side": "bottom", "year": 1994, "miles": 8909, "gas": 1.59},
 	{"side": "bottom", "year": 1995, "miles": 9150, "gas": 1.6},
 	{"side": "top", "year": 1996, "miles": 9192, "gas": 1.67},
+	{"side": "right", "year": 1997, "miles": 9416, "gas": 1.65},
 	{"side": "bottom", "year": 1998, "miles": 9590, "gas": 1.39},
 	{"side": "right", "year": 1999, "miles": 9687, "gas": 1.5},
 	{"side": "top", "year": 2000, "miles": 9717, "gas": 1.89},
