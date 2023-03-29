@@ -20,11 +20,6 @@ def statistics(a):
     with open(a, "r") as f:
         source = json.load(f)
 
-        # config = source['config']
-        # data = source['data']
-        # mark = source['mark']
-        # schema = source['$schema']
-
         # encoding values
         encoding = source["encoding"]
         x_val = encoding["x"]["field"]
@@ -164,8 +159,10 @@ def compare(a_json, b_json):
 # compare("iris_source.json", "iris20_source.json")
 # compare("iris20_source.json", "iris_source.json")
 
-if __name__ == "__name__":
-    pass
+
+# main call not needed because this is a utility function, used in backend
+# if __name__ == "__name__":
+#     pass
     # for i in ...:
     #     compare("iris_source.json", "iris20_source.json")
 

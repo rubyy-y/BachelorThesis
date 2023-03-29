@@ -28,9 +28,6 @@ function App() {
 
         <div id="vis1" className="vis1">
           This is where the first Visualization will go.
-          <script>
-            vegaEmbed(vegaEmbed('#vis1', 'https://vega.github.io/vega/examples/bar-chart.vg.json');)
-          </script>
           <img src="vis1.png" alt="vis1"></img>
         </div>
         
@@ -42,11 +39,11 @@ function App() {
         <p>or choose you own JSON files:</p>
 
         <div className="file2">
-          <input type="file" id="fileUpload"></input>
+          <input type="file" id="fileUpload" accept=".JSON"></input>
         </div>
 
         <div className="file1">
-          <input type="file" id="fileUpload"></input>
+          <input type="file" id="fileUpload" accept=".JSON"></input>
         </div>
         
         <div id="dif" className="dif">
