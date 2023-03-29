@@ -26,12 +26,12 @@
     -->
     
     <!-- Importing Vega, Vega-Lite & vega-embed -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.1"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.2"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.2"></script>
 
     <!-- Importing API -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vega@5/build-es5/vega.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5/build-es5/vega.min.js"></script>
 
     <title>Highlighting Differences in Data Visualizations</title>
   </head>
@@ -39,21 +39,48 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-    <!-- <script>
-      vegaEmbed('#vis1', 'https://vega.github.io/vega/examples/bar-chart.vg.json');
-      vegaEmbed('#vis2', 'https://vega.github.io/vega/examples/bar-chart.vg.json');
-      vegaEmbed('#dif', 'https://vega.github.io/vega/examples/bar-chart.vg.json');
-    </script> -->
+    <script>
+      vegaEmbed('#vis1', 'data/iris_source.json');
+      vegaEmbed('#vis2', 'data/iris20_source.json');
+
+      vegaEmbed('#dif', 'data/iris_COMP_iris20.json');
+
+      // var myData = [
+      //       {"a": "C", "b": 2}, {"a": "C", "b": 7}, {"a": "C", "b": 4},
+      //       {"a": "D", "b": 1}, {"a": "D", "b": 2}, {"a": "D", "b": 6},
+      //       {"a": "E", "b": 8}, {"a": "E", "b": 4}, {"a": "E", "b": 7}
+      //     ];
+        
+      // var vlSpec = {
+      //       "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+      //       "data": {
+      //           "values": [],
+      //           "name": "myData",
+      //       },
+      //       "mark": "bar",
+      //       "encoding": {
+      //           "y": {"field": "a", "type": "nominal"},
+      //           "x": {
+      //       "aggregate": "average", "field": "b", "type": "quantitative",
+      //       "axis": {
+      //         "title": "Average of b"
+      //       }
+      //     }
+      //   }
+      // };
+
+      // vegaEmbed("#dif", vlSpec)
+      // .then((res) => res.view
+      // .renderer('svg')
+      // .insert("myData", myData)
+      // .run()
+      // );
+
+    </script>
 
   </body>
 </html>

@@ -28,12 +28,10 @@ function App() {
 
         <div id="vis1" className="vis1">
           This is where the first Visualization will go.
-          <img src="vis1.png" alt="vis1"></img>
         </div>
         
         <div id="vis2" className="vis2">
           This is where the second Visualization will go.
-          <img src="vis2.png" alt="vis2"/>
         </div>
 
         <p>or choose you own JSON files:</p>

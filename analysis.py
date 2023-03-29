@@ -143,21 +143,10 @@ def compare(a_json, b_json):
                 comp.truncate()
 
                 comp.write(bytes("\n]", 'utf-8'))
-
-                # # check vice versa
-                # for b_point in dataset_b:
-                #     if not b_point in dataset_a:
-                #         string = str(b_point)
-                #         string = string.replace("'", "\"").replace("None", "null")
-                #         comp.write(f"\t{string},\n")
-
-                # idea: seperate differences in two files, such that we know which changes were made where
-                # -> just remove vice versa check and fun function with switched parameters
-
     return summary
 
 # compare("iris_source.json", "iris20_source.json")
-# compare("iris20_source.json", "iris_source.json")
+compare("iris20_source.json", "iris_source.json")
 
 
 # main call not needed because this is a utility function, used in backend
