@@ -146,7 +146,7 @@ def compare(a_json, b_json):
     return summary
 
 # compare("iris_source.json", "iris20_source.json")
-compare("iris20_source.json", "iris_source.json")
+# compare("iris20_source.json", "iris_source.json")
 
 
 # main call not needed because this is a utility function, used in backend
