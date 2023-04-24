@@ -1,5 +1,7 @@
 {
-  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "width": "container",
+  "height": "container",
+  "background": null,
   "data": {"name": "data-239658cc0ccda74c392edcb77672888b"},
   "mark": "point",
   "encoding": {

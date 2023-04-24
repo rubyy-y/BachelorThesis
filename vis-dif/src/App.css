@@ -64,11 +64,12 @@ select:hover {
 .vis1 {
   float: left;
   width: 43.5%;
+  height: 20em;
   margin: auto;
   margin-left: 5%;
   margin-bottom: 1em;
 
-  background-color: #9da2ff3b;
+  background-color: white;
   color: #797c87;
   text-align: center;
   border-radius: 5px;
@@ -77,6 +78,7 @@ select:hover {
 .vis2 {
   float: right;
   width: 43.5%;
+  height: 20em;
   margin: auto;
   margin-right: 5%;
   margin-bottom: 1em;
@@ -111,10 +113,10 @@ select:hover {
   clear: both;
   margin-left: 25%;
   width: 50%;
+  height: 20em;
 
-  background-color: #d59dff26;
+  background-color: #9da2ff3b;
   color: #797c87;
   text-align: center;
   border-radius: 5px;
-  padding-bottom: 15em;
 }

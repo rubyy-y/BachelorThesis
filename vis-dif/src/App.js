@@ -1,6 +1,9 @@
 import './App.css';
+import React, {useState} from "react";
 
 function App() {
+  const [select, setSelect] = useState();
+
   return (
     <div className="App">
       
@@ -13,10 +16,10 @@ function App() {
       <body>
         <div className="dropdown">
           <label for="datasets">Choose a dataset: </label>
-          <select name="dog-names" id="dog-names">
-            <option value="iris">anscombe.json</option>
-            <option value="cars">barley.json</option>
-            <option value="wheat">burtin.json</option>
+          <select value={select} onChange={e=>setSelect(e.target.value)}>
+            <option value="anscombe">anscombe.json</option>
+            <option value="barley">barley.json</option>
+            <option value="burtin">burtin.json</option>
             <option value="cars">cars.json</option>
             <option value="crimea">crimea.json</option>
             <option value="driving">driving.json</option>
@@ -24,6 +27,7 @@ function App() {
             <option value="ohlc">ohlc.json</option>
             <option value="wheat">wheat.json</option>
           </select>
+          <p>You selected {select}</p>
         </div>
 
         <div id="vis1" className="vis1">
