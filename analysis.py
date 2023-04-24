@@ -145,9 +145,6 @@ def compare(a_json, b_json):
                 comp.write(bytes("\n]", 'utf-8'))
     return summary
 
-# compare("iris_source.json", "iris20_source.json")
-# compare("iris20_source.json", "iris_source.json")
-
 
 # main call not needed because this is a utility function, used in backend
 # if __name__ == "__name__":

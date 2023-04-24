@@ -3,9 +3,11 @@ import json
 import glob
 import os
 import random
+from analysis import statistics
 
 # change path to where json files are
-os.chdir("BachelorThesis\datasets")
+# os.chdir("BachelorThesis\datasets")
+os.chdir("..")
 
 abs_path = os.getcwd()
 json_files = abs_path + "\*.json"
@@ -16,23 +18,47 @@ files = glob.glob(json_files)
 for i, file in enumerate(files):
     files[i] = os.path.split(file)[-1]
 
-    
+
 # __________M_____O_____D_____I_____F_____I_____C_____A_____T_____I_____O_____N__________
 
-def modify(point: dict):
+def modify(point: dict, file: str):
     action = random.random()
-    for key in point.keys():
-        if type(point[key]) == int or type(point[key]) == float:
-
-            # 1. Skew
-            if action < 1/2:
+    
+    # 1. SKEW
+    if action < 1/2:
+        for key in point.keys():
+            if type(point[key]) == int or type(point[key]) == float:
                 # multiply value with random number between 0.5 and 1.5
                 point[key] = point[key]*random.randint(5,15)/10
 
-            # 2. Remove already done in Randomization
-            # 3. Add
-            else:
-                pass
+    # 3. ADD
+    else:        
+        stats = dict()
+        with open(file, "r") as f:
+            source = json.load(f)
+            for key in source[0].keys():
+                if type(source[0][key]) == int or type(source[0][key]) == float:
+                    try:
+                        minimum = min([dp[key] for dp in source if dp[key]!=None])
+                        maximum = max([dp[key] for dp in source if dp[key]!=None])
+                        
+                        stats[key+"_min"] = minimum
+                        stats[key+"_max"] = maximum
+
+                    except TypeError:
+                        pass
+
+                elif type(source[0][key]) == str:
+                    stats[key] = list({dp[key] for dp in source})
+
+        point = dict()
+        for k in source[0].keys():
+            try:
+                # randomly distributed value
+                point[k] = random.uniform(stats[k+"_max"], stats[k+"_min"])
+            except KeyError:
+                point[k] = random.choice(stats[k])
+
     return str(point).replace("'", "\"").replace("None", "null")
 
 
@@ -67,10 +93,11 @@ def randomize(json_file: str, p: float):
                 else:
                     # modify point
                     if random.random() < 1/3:
-                        # because nodified is the only one opened in write-mode
+                        # because modified is the only one opened in write-mode
+                        # 2. REMOVE
                         del point
                     else:
-                        string = modify(point)
+                        string = modify(point, json_file)
                         string = string.replace("'", "\"").replace("None", "null")
                         f.write(bytes(f"\t{string},\n", 'utf-8'))
             
@@ -83,8 +110,8 @@ def randomize(json_file: str, p: float):
     print(f"'{json_file}' has been altered and saved as '{modified}' in folder 'datasets_altered'.")
 
 
-# # randomize all files from 1% to 20% (in steps of 1)
-# if __name__ == "__main__":
-#     for file in files:
-#         for i in range(1, 21):
-#             randomize(file, i/100)
+# randomize all files from 1% to 20% (in steps of 1)
+if __name__ == "__main__":
+    for file in files:
+        for i in range(1, 21):
+            randomize(file, i/100)

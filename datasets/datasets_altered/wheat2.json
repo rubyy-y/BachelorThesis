@@ -20,7 +20,6 @@
 	{"year": "1655", "wheat": 40.5, "wages": 6.6},
 	{"year": "1660", "wheat": 46.5, "wages": 6.75},
 	{"year": "1665", "wheat": 32, "wages": 6.8},
-	{"year": "1670", "wheat": 37, "wages": 6.9},
 	{"year": "1675", "wheat": 43, "wages": 7},
 	{"year": "1680", "wheat": 35, "wages": 7.3},
 	{"year": "1685", "wheat": 27, "wages": 7.6},
@@ -49,6 +48,6 @@
 	{"year": "1800", "wheat": 79, "wages": 28.5},
 	{"year": "1805", "wheat": 81, "wages": 29.5},
 	{"year": "1810", "wheat": 99, "wages": 30},
-	{"year": "1815", "wheat": 78},
-	{"year": "1820", "wheat": 54}
+	{"year": "1815", "wheat": 78, "wages": 30.3},
+	{"year": "1820", "wheat": 54, "wages": 30.6}
 ]

@@ -1,6 +1,7 @@
 [
 	{"side": "left", "year": 1956, "miles": 3675, "gas": 2.38},
 	{"side": "right", "year": 1957, "miles": 3706, "gas": 2.4},
+	{"side": "bottom", "year": 1958, "miles": 3766, "gas": 2.26},
 	{"side": "top", "year": 1959, "miles": 3905, "gas": 2.31},
 	{"side": "right", "year": 1960, "miles": 3935, "gas": 2.27},
 	{"side": "bottom", "year": 1961, "miles": 3977, "gas": 2.25},
