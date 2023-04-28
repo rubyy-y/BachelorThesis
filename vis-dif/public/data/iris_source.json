@@ -6,6 +6,10 @@
     "mark": "point",
     "encoding": {
       "color": {"field": "species", "type": "nominal"},
+      "tooltip": [
+        {"field": "sepalLength", "type": "quantitative"},
+        {"field": "sepalWidth", "type": "quantitative"}
+      ],
       "x": {"field": "sepalLength", "type": "quantitative"},
       "y": {"field": "sepalWidth", "type": "quantitative"}
     },

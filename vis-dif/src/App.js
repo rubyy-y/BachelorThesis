@@ -5,9 +5,9 @@ import vegaEmbed from 'vega-embed';
 function App() {
   const [select, setSelect] = useState();
 
-vegaEmbed('#vis1', 'iris_source.json');
-vegaEmbed('#vis2', 'iris20_source.json');
-vegaEmbed('#dif', 'iris_COMP_iris20.json');
+vegaEmbed('#vis1', 'data/iris_source.json');
+vegaEmbed('#vis2', 'data/iris20_source.json');
+vegaEmbed('#dif', 'data/iris_COMP_iris20.json');
 
   return (
     <div className="App">
