@@ -1,8 +1,13 @@
 import './App.css';
 import React, {useState} from "react";
+import vegaEmbed from 'vega-embed';
 
 function App() {
   const [select, setSelect] = useState();
+
+vegaEmbed('#vis1', 'iris_source.json');
+vegaEmbed('#vis2', 'iris20_source.json');
+vegaEmbed('#dif', 'iris_COMP_iris20.json');
 
   return (
     <div className="App">

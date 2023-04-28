@@ -5,12 +5,6 @@
   padding: 0.5em;
 }
 
-/* img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-} */
-
 p {
   clear: both;
   margin-left: 5%;
@@ -57,8 +51,8 @@ select:hover {
   margin-bottom: 2%;
   padding: 2%;
 
-  background-color: #ff9dea21;
-  border-radius: 5px;
+  /* background-color: #ff9dea21;
+  border-radius: 5px; */
 } 
 
 .vis1 {
@@ -69,7 +63,7 @@ select:hover {
   margin-left: 5%;
   margin-bottom: 1em;
 
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   color: #797c87;
   text-align: center;
   border-radius: 5px;
@@ -83,7 +77,7 @@ select:hover {
   margin-right: 5%;
   margin-bottom: 1em;
 
-  background-color: #9da2ff3b;
+  background-color: rgba(255, 255, 255, 0.3);
   color: #797c87;
   text-align: center;
   border-radius: 5px;
@@ -95,8 +89,8 @@ select:hover {
   margin-left: 5%;
   margin-bottom: 1em;
 
-  background-color: #9dcbff1f;
-  border-radius: 5px;
+  /* background-color: #9dcbff1f;
+  border-radius: 5px; */
 }
 
 .file2 {
@@ -105,8 +99,8 @@ select:hover {
   margin-right: 5%;
   margin-bottom: 1em;
 
-  background-color: #9dcbff1f;
-  border-radius: 5px;
+  /* background-color: #9dcbff1f;
+  border-radius: 5px; */
 }
 
 .dif {
@@ -115,7 +109,7 @@ select:hover {
   width: 50%;
   height: 20em;
 
-  background-color: #9da2ff3b;
+  background-color: rgba(255, 255, 255, 0.3);
   color: #797c87;
   text-align: center;
   border-radius: 5px;
