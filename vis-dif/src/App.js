@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import vegaEmbed from 'vega-embed';
 
 function App() {
-  const [select, setSelect] = useState();
+  const [select, setSelect] = useState("iris");
 
   const data = {
     anscombe: 'data/anscombe',

@@ -1,11 +1,12 @@
 # import section
-import json
-import glob
 import os
+import glob
+import json
 import random
 from analysis import statistics
 
 # change path to where json files are
+# print(os.getcwd())
 # os.chdir("BachelorThesis\datasets")
 os.chdir("..")
 
@@ -27,8 +28,11 @@ def modify(point: dict, file: str):
     # 1. SKEW
     if action < 1/2:
         for key in point.keys():
-            if type(point[key]) == int or type(point[key]) == float:
-                # multiply value with random number between 0.5 and 1.5
+            # multiply value with random number between 0.5 and 1.5
+            if type(point[key]) == int:
+                point[key] = int(point[key]*random.randint(5,15)/10)
+            
+            elif type(point[key]) == float:
                 point[key] = point[key]*random.randint(5,15)/10
 
     # 3. ADD
@@ -53,10 +57,16 @@ def modify(point: dict, file: str):
 
         point = dict()
         for k in source[0].keys():
-            try:
-                # randomly distributed value
+            # values are type int
+            if type(source[0][k]) == int:
+                point[k] = int(random.uniform(stats[k+"_max"], stats[k+"_min"]))
+
+            # values are type float
+            elif type(source[0][k]) == float:
                 point[k] = random.uniform(stats[k+"_max"], stats[k+"_min"])
-            except KeyError:
+
+            # values are type string
+            elif type(source[0][k]) == str:
                 point[k] = random.choice(stats[k])
 
     return str(point).replace("'", "\"").replace("None", "null")
@@ -109,9 +119,8 @@ def randomize(json_file: str, p: float):
 
     print(f"'{json_file}' has been altered and saved as '{modified}' in folder 'datasets_altered'.")
 
-
-# randomize all files from 1% to 20% (in steps of 1)
+# randomize all files from 5% to 20% (in steps of 5)
 if __name__ == "__main__":
     for file in files:
-        for i in range(1, 21):
+        for i in range(5, 21, 5):
             randomize(file, i/100)

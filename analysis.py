@@ -145,7 +145,7 @@ def compare(a_json, b_json):
                 comp.write(bytes("\n]", 'utf-8'))
     return summary
 
-print(compare("burtin_source.json", "burtin20_source.json"));
+# print(compare("burtin_source.json", "burtin20_source.json"));
 
 # main call not needed because this is a utility function, used in backend
 # if __name__ == "__name__":
