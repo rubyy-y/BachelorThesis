@@ -6,24 +6,30 @@ function App() {
   const [select, setSelect] = useState();
 
   const data = {
-    anscombe: 'data/anscombe_source.json',
-    barley: 'data/barley_source.json',
-    burtin: 'data/burtin_source.json',
-    cars: 'data/cars_source.json',
-    crimea: 'data/crimea_source.json',
-    driving: 'data/driving_source.json',
-    iris: 'data/iris_source.json',
-    ohlc: 'data/ohlc_source.json',
-    wheat: 'data/wheat_source.json',
+    anscombe: 'data/anscombe',
+    barley: 'data/barley',
+    burtin: 'data/burtin',
+    cars: 'data/cars',
+    crimea: 'data/crimea',
+    driving: 'data/driving',
+    iris: 'data/iris',
+    ohlc: 'data/ohlc',
+    wheat: 'data/wheat',
   };
 
   const handleChange = (e) => {
     setSelect(e.target.options[e.target.selectedIndex].value);
   };
 
-  vegaEmbed('#vis1', data[select]);
-  vegaEmbed('#vis2', 'data/iris20_source.json');
-  vegaEmbed('#dif', 'data/iris_COMP_iris20.json');
+  var original = data[select] + "_source.json";
+  vegaEmbed('#vis1', original);
+
+  // TODO - int of variability change by slider
+  var altered = data[select]+'20_source.json';
+  vegaEmbed('#vis2', altered);
+
+  var comp = data[select] + "_COMP_" + select + "20.json";
+  vegaEmbed('#dif', comp);
 
   return (
     <div className="App">
@@ -45,7 +51,6 @@ function App() {
             <option value="ohlc">ohlc.json</option>
             <option value="wheat">wheat.json</option>
           </select>
-          <p>You selected {select}</p>
         </div>
 
         <div id="vis1" className="vis1">

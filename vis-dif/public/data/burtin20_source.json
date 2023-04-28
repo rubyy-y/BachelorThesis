@@ -1,6 +1,6 @@
 {
   "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
-  "data": {"name": "data-8833440f737304311e72aeeffd7b9881"},
+  "data": {"name": "data-5a2549c8f3a0dd5ca2948e1af0c6eaa1"},
   "mark": "bar",
   "encoding": {
     "color": {"field": "Penicillin", "type": "nominal"},
@@ -9,7 +9,7 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-8833440f737304311e72aeeffd7b9881": [
+    "data-5a2549c8f3a0dd5ca2948e1af0c6eaa1": [
       {
         "Bacteria": "Aerobacter aerogenes",
         "Penicillin": 870,
@@ -40,14 +40,6 @@
         "Streptomycin": 11,
         "Neomycin": 10,
         "Gram_Staining": "positive",
-        "Genus": "other"
-      },
-      {
-        "Bacteria": "Escherichia coli",
-        "Penicillin": 100,
-        "Streptomycin": 0.4,
-        "Neomycin": 0.1,
-        "Gram_Staining": "negative",
         "Genus": "other"
       },
       {
@@ -132,9 +124,9 @@
       },
       {
         "Bacteria": "Streptococcus viridans",
-        "Penicillin": 0.005,
+        "Penicillin": 0.0035000000000000005,
         "Streptomycin": 10,
-        "Neomycin": 40,
+        "Neomycin": 44,
         "Gram_Staining": "positive",
         "Genus": "Streptococcus"
       }
