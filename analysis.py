@@ -124,8 +124,6 @@ def compare(a_json, b_json):
             # create file to add non identical datapoints
             comp = f"{a_json[:-(len('_source.json'))]}_COMP_{b_json[:-(len('_source.json'))]}.json"
 
-            # opening file in byte mode
-            # else seek operation not available
             with open(f"comparisons\{comp}", 'wb') as comp:
                 comp.write(bytes("[\n", 'utf-8'))
                 for a_point in dataset_a:
@@ -145,7 +143,26 @@ def compare(a_json, b_json):
                 comp.write(bytes("\n]", 'utf-8'))
     return summary
 
-# print(compare("burtin_source.json", "burtin20_source.json"));
+
+# compare all the files in the data folder of our app-directory
+os.chdir("../../vis-dif/public/data")
+
+# datasets = ["anscombe", "barley", "burtin", 
+#             "cars", "crimea", "driving", 
+#             "iris", "ohlc", "wheat"]
+datasets = ["burtin", 
+            "cars", "crimea", "driving", 
+            "iris", "wheat"]
+percent = [20]
+
+for dataset in datasets:
+    if dataset+"_source.json" in os.listdir():
+        original = f"{dataset}_source.json"
+        for p in percent:
+            if dataset+str(p)+"_source.json" in os.listdir():
+                alternation = f"{dataset+str(p)}_source.json"
+                compare(original, alternation)
+
 
 # main call not needed because this is a utility function, used in backend
 # if __name__ == "__name__":

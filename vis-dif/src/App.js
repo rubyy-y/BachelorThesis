@@ -6,29 +6,29 @@ function App() {
   const [select, setSelect] = useState("iris");
 
   const data = {
-    anscombe: 'data/anscombe',
-    barley: 'data/barley',
-    burtin: 'data/burtin',
-    cars: 'data/cars',
-    crimea: 'data/crimea',
-    driving: 'data/driving',
-    iris: 'data/iris',
-    ohlc: 'data/ohlc',
-    wheat: 'data/wheat',
+    anscombe: 'anscombe',
+    barley: 'barley',
+    burtin: 'burtin',
+    cars: 'cars',
+    crimea: 'crimea',
+    driving: 'driving',
+    iris: 'iris',
+    ohlc: 'ohlc',
+    wheat: 'wheat',
   };
 
   const handleChange = (e) => {
     setSelect(e.target.options[e.target.selectedIndex].value);
   };
 
-  var original = data[select] + "_source.json";
+  var original = "data/" + data[select] + "_source.json";
   vegaEmbed('#vis1', original);
 
   // TODO - int of variability change by slider
-  var altered = data[select]+'20_source.json';
+  var altered = "data/" + data[select]+'20_source.json';
   vegaEmbed('#vis2', altered);
 
-  var comp = data[select] + "_COMP_" + select + "20.json";
+  var comp = "data/comparisons/" + data[select] + "_COMP_" + select + "20.json"; 
   vegaEmbed('#dif', comp);
 
   return (
