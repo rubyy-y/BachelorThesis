@@ -11,6 +11,16 @@
          "field": "Penicillin",
          "type": "nominal"
       },
+      "tooltip": [
+         {
+            "field": "Bacteria",
+            "type": "nominal"
+         },
+         {
+            "field": "Penicillin",
+            "type": "quantitative"
+         }
+      ],
       "x": {
          "field": "Bacteria",
          "type": "nominal"

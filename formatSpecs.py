@@ -3,10 +3,7 @@ import os
 import json
 
 # navigate to source files
-try:
-    os.chdir("BachelorThesis/vis-dif/public/data")
-except:
-    pass
+os.chdir("BachelorThesis/vis-dif/public/data")
 
 datasets = ["anscombe", "barley", "burtin", 
             "cars", "crimea", "driving", 

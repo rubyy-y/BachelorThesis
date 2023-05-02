@@ -3,7 +3,7 @@
    "height": "container",
    "background": null,
    "data": {
-      "name": "data-8753caf51c0541129bb116bcd912eac4"
+      "name": "data-824e8cd304a2592c52a5587b4ec4c7c1"
    },
    "mark": "bar",
    "encoding": {
@@ -11,6 +11,16 @@
          "field": "Penicillin",
          "type": "nominal"
       },
+      "tooltip": [
+         {
+            "field": "Bacteria",
+            "type": "nominal"
+         },
+         {
+            "field": "Penicillin",
+            "type": "quantitative"
+         }
+      ],
       "x": {
          "field": "Bacteria",
          "type": "nominal"
@@ -22,14 +32,14 @@
    },
    "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
    "datasets": {
-      "data-8753caf51c0541129bb116bcd912eac4": [
+      "data-824e8cd304a2592c52a5587b4ec4c7c1": [
          {
-            "Bacteria": "Aerobacter aerogenes",
-            "Penicillin": 870,
-            "Streptomycin": 1,
-            "Neomycin": 1.6,
+            "Bacteria": "Mycobacterium tuberculosis",
+            "Penicillin": 801,
+            "Streptomycin": 10,
+            "Neomycin": 10.998707742649092,
             "Gram_Staining": "negative",
-            "Genus": "other"
+            "Genus": "Salmonella"
          },
          {
             "Bacteria": "Bacillus anthracis",
@@ -40,11 +50,27 @@
             "Genus": "other"
          },
          {
+            "Bacteria": "Brucella abortus",
+            "Penicillin": 1,
+            "Streptomycin": 2,
+            "Neomycin": 0.02,
+            "Gram_Staining": "negative",
+            "Genus": "other"
+         },
+         {
             "Bacteria": "Diplococcus pneumoniae",
-            "Penicillin": 0.005,
-            "Streptomycin": 11,
-            "Neomycin": 10,
+            "Penicillin": 0.006500000000000001,
+            "Streptomycin": 8,
+            "Neomycin": 8,
             "Gram_Staining": "positive",
+            "Genus": "other"
+         },
+         {
+            "Bacteria": "Escherichia coli",
+            "Penicillin": 100,
+            "Streptomycin": 0.4,
+            "Neomycin": 0.1,
+            "Gram_Staining": "negative",
             "Genus": "other"
          },
          {
@@ -121,9 +147,9 @@
          },
          {
             "Bacteria": "Streptococcus hemolyticus",
-            "Penicillin": 0.0008,
-            "Streptomycin": 9,
-            "Neomycin": 13,
+            "Penicillin": 0.001,
+            "Streptomycin": 14,
+            "Neomycin": 10,
             "Gram_Staining": "positive",
             "Genus": "Streptococcus"
          },

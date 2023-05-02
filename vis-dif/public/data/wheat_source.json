@@ -11,6 +11,16 @@
          "field": "year",
          "type": "quantitative"
       },
+      "tooltip": [
+         {
+            "field": "wages",
+            "type": "quantitative"
+         },
+         {
+            "field": "wheat",
+            "type": "quantitative"
+         }
+      ],
       "x": {
          "field": "wages",
          "type": "quantitative"
@@ -21,7 +31,7 @@
       }
    },
    "selection": {
-      "selector036": {
+      "selector010": {
          "type": "interval",
          "bind": "scales",
          "encodings": [

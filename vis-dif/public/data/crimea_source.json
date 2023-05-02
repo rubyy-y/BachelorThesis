@@ -11,6 +11,16 @@
          "field": "other",
          "type": "ordinal"
       },
+      "tooltip": [
+         {
+            "field": "disease",
+            "type": "quantitative"
+         },
+         {
+            "field": "other",
+            "type": "quantitative"
+         }
+      ],
       "x": {
          "field": "date",
          "type": "nominal"

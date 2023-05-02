@@ -3,7 +3,7 @@
    "height": "container",
    "background": null,
    "data": {
-      "name": "data-19ebd00b2fd3c34ad9f4da33aa55d1ea"
+      "name": "data-d9f5807e0a0f70aae828cec43beb3f1d"
    },
    "mark": "point",
    "encoding": {
@@ -11,6 +11,16 @@
          "field": "year",
          "type": "quantitative"
       },
+      "tooltip": [
+         {
+            "field": "wages",
+            "type": "quantitative"
+         },
+         {
+            "field": "wheat",
+            "type": "quantitative"
+         }
+      ],
       "x": {
          "field": "wages",
          "type": "quantitative"
@@ -32,7 +42,7 @@
    },
    "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
    "datasets": {
-      "data-19ebd00b2fd3c34ad9f4da33aa55d1ea": [
+      "data-d9f5807e0a0f70aae828cec43beb3f1d": [
          {
             "year": "1565",
             "wheat": 41,
@@ -62,6 +72,11 @@
             "year": "1595",
             "wheat": 64,
             "wages": 5.54
+         },
+         {
+            "year": "1600",
+            "wheat": 27,
+            "wages": 5.61
          },
          {
             "year": "1605",
@@ -99,6 +114,11 @@
             "wages": 6.3
          },
          {
+            "year": "1640",
+            "wheat": 39,
+            "wages": 6.37
+         },
+         {
             "year": "1645",
             "wheat": 53,
             "wages": 6.45
@@ -109,19 +129,19 @@
             "wages": 6.5
          },
          {
-            "year": "1655",
-            "wheat": 40.5,
-            "wages": 6.6
+            "year": "1645",
+            "wheat": 76,
+            "wages": 5
          },
          {
-            "year": "1660",
-            "wheat": 46.5,
-            "wages": 6.75
+            "year": "1785",
+            "wheat": 95,
+            "wages": 19
          },
          {
-            "year": "1665",
-            "wheat": 32,
-            "wages": 6.8
+            "year": "1735",
+            "wheat": 52,
+            "wages": 5
          },
          {
             "year": "1670",
@@ -154,11 +174,6 @@
             "wages": 8.5
          },
          {
-            "year": "1700",
-            "wheat": 30,
-            "wages": 9
-         },
-         {
             "year": "1705",
             "wheat": 32,
             "wages": 10
@@ -169,9 +184,9 @@
             "wages": 11
          },
          {
-            "year": "1740",
-            "wheat": 44,
-            "wages": 25
+            "year": "1715",
+            "wheat": 33,
+            "wages": 11.75
          },
          {
             "year": "1720",
@@ -184,19 +199,14 @@
             "wages": 13
          },
          {
-            "year": "1730",
-            "wheat": 26,
-            "wages": 13.3
-         },
-         {
-            "year": "1735",
-            "wheat": 32,
-            "wages": 13.6
-         },
-         {
             "year": "1740",
             "wheat": 27,
             "wages": 14
+         },
+         {
+            "year": "1745",
+            "wheat": 27.5,
+            "wages": 14.5
          },
          {
             "year": "1750",
@@ -207,6 +217,11 @@
             "year": "1755",
             "wheat": 35.5,
             "wages": 15.7
+         },
+         {
+            "year": "1760",
+            "wheat": 24,
+            "wages": 23.1
          },
          {
             "year": "1765",
@@ -239,9 +254,9 @@
             "wages": 25.5
          },
          {
-            "year": "1795",
-            "wheat": 76,
-            "wages": 27.5
+            "year": "1635",
+            "wheat": 39,
+            "wages": 6
          },
          {
             "year": "1800",

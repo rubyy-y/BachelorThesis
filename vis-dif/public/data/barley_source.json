@@ -11,6 +11,16 @@
          "field": "year",
          "type": "nominal"
       },
+      "tooltip": [
+         {
+            "field": "yield",
+            "type": "quantitative"
+         },
+         {
+            "field": "site",
+            "type": "nominal"
+         }
+      ],
       "x": {
          "field": "yield",
          "type": "quantitative"

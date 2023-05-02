@@ -9,6 +9,7 @@ from analysis import statistics
 # print(os.getcwd())
 # os.chdir("BachelorThesis\datasets")
 os.chdir("..")
+os.chdir("../../datasets")
 
 abs_path = os.getcwd()
 json_files = abs_path + "\*.json"
@@ -19,6 +20,7 @@ files = glob.glob(json_files)
 for i, file in enumerate(files):
     files[i] = os.path.split(file)[-1]
 
+unchanged = ["year", "Cylinders"]
 
 # __________M_____O_____D_____I_____F_____I_____C_____A_____T_____I_____O_____N__________
 
@@ -29,7 +31,7 @@ def modify(point: dict, file: str):
     if action < 1/2:
         for key in point.keys():
             # multiply value with random number between 0.5 and 1.5
-            if type(point[key]) == int:
+            if type(point[key]) == int and key not in unchanged:
                 point[key] = int(point[key]*random.randint(5,15)/10)
             
             elif type(point[key]) == float:
@@ -59,16 +61,17 @@ def modify(point: dict, file: str):
         for k in source[0].keys():
             # values are type int
             if type(source[0][k]) == int:
+                # print("int: ", k)
                 point[k] = int(random.uniform(stats[k+"_max"], stats[k+"_min"]))
 
             # values are type float
             elif type(source[0][k]) == float:
+                # print("float: ", k)
                 point[k] = random.uniform(stats[k+"_max"], stats[k+"_min"])
 
             # values are type string
             elif type(source[0][k]) == str:
                 point[k] = random.choice(stats[k])
-
     return str(point).replace("'", "\"").replace("None", "null")
 
 
@@ -118,6 +121,10 @@ def randomize(json_file: str, p: float):
             f.write(bytes("\n]", 'utf-8'))
 
     print(f"'{json_file}' has been altered and saved as '{modified}' in folder 'datasets_altered'.")
+
+# randomize("cars.json", 0.7)
+# randomize("wheat.json", 0.7)
+# randomize("driving.json", 0.7)
 
 # randomize all files from 5% to 20% (in steps of 5)
 if __name__ == "__main__":
