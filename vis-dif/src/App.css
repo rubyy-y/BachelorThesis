@@ -63,7 +63,7 @@ select:hover {
   margin-left: 5%;
   margin-bottom: 1em;
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
   color: #a4a4a4;
   text-align: center;
   border-radius: 5px;
@@ -77,7 +77,7 @@ select:hover {
   margin-right: 5%;
   margin-bottom: 1em;
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
   color: #a4a4a4;
   text-align: center;
   border-radius: 5px;
@@ -109,7 +109,7 @@ select:hover {
   width: 50%;
   height: 20em;
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.25);
   color: #a4a4a4;
   text-align: center;
   border-radius: 5px;

@@ -9,9 +9,17 @@ datasets = ["anscombe", "barley", "burtin",
             "cars", "crimea", "driving", 
             "iris", "ohlc", "wheat"]
 
-props = {"width": "container",
-         "height": "container",
-         "background": None}
+props = {
+    "width": "container",
+    "height": "container",
+    "background": None,
+    "config": {
+        "legend": {"labelColor": "white", "titleColor": "white"},
+        "axis": {"gridColor": "white"},
+        "axisX": {"labelColor": "white", "titleColor": "white"},
+        "axisY": {"labelColor": "white", "titleColor": "white"}
+            }
+}
 
 for dataset in datasets:
     data = None

@@ -2,6 +2,23 @@
    "width": "container",
    "height": "container",
    "background": null,
+   "config": {
+      "legend": {
+         "labelColor": "white",
+         "titleColor": "white"
+      },
+      "axis": {
+         "gridColor": "white"
+      },
+      "axisX": {
+         "labelColor": "white",
+         "titleColor": "white"
+      },
+      "axisY": {
+         "labelColor": "white",
+         "titleColor": "white"
+      }
+   },
    "data": {
       "name": "data-7fffe06bda3e50436136d2bcde2286bc"
    },

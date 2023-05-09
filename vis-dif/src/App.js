@@ -22,14 +22,14 @@ function App() {
   };
 
   var original = "data/" + data[select] + "_source.json";
-  vegaEmbed('#vis1', original);
+  vegaEmbed('#vis1', original, {"actions": false});
 
   // TODO - int of variability change by slider
   var altered = "data/" + data[select]+'20_source.json';
-  vegaEmbed('#vis2', altered);
+  vegaEmbed('#vis2', altered, {"actions": false});
 
   var comp = "data/comparisons/" + data[select] + "_COMP_" + select + "20.json"; 
-  vegaEmbed('#dif', comp);
+  vegaEmbed('#dif', comp, {"actions": false});
 
   return (
     <div className="App">

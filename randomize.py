@@ -3,7 +3,6 @@ import os
 import glob
 import json
 import random
-from analysis import statistics
 
 # change path to where json files are
 # print(os.getcwd())
@@ -61,12 +60,10 @@ def modify(point: dict, file: str):
         for k in source[0].keys():
             # values are type int
             if type(source[0][k]) == int:
-                # print("int: ", k)
                 point[k] = int(random.uniform(stats[k+"_max"], stats[k+"_min"]))
 
             # values are type float
             elif type(source[0][k]) == float:
-                # print("float: ", k)
                 point[k] = random.uniform(stats[k+"_max"], stats[k+"_min"])
 
             # values are type string
