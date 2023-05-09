@@ -175,7 +175,7 @@ def compare(a_json, b_json):
                     break
             if not identical:
                 diffs.append(dp_a)
-                dp_a["file"] = "file 1"
+                dp_a["file of origin"] = "File 1"
                 diffs_files.append(dp_a)
 
         # iterate through second file
@@ -187,14 +187,14 @@ def compare(a_json, b_json):
                     break
             if not identical:
                 diffs.append(dp_b)
-                dp_b["file"] = "file 2"
+                dp_b["file of origin"] = "File 2"
                 diffs_files.append(dp_b)
 
-        # specs
+        # specs - mandatory
         hash_ = hash_a
         mark = a_vl["mark"]
         encoding = a_vl["encoding"]
-        encoding["color"]["field"] = "file"
+        encoding["color"]["field"] = "file of origin"
         encoding["color"]["type"] = "nominal"
 
         output_vl = {
@@ -206,18 +206,18 @@ def compare(a_json, b_json):
             },
             "mark": mark,
             "encoding": encoding,
-            # "selection": selection,
             "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
             "datasets": {
                 hash_: diffs
             }
         }
 
+        # specs - optional
+        # selector
         try:
             selection = a_vl["selection"]
             output_vl["selection"] = selection
         except:
-            # no selector
             pass
 
         with open("comparisons/" + output_file, 'w') as out:
@@ -228,22 +228,28 @@ def compare(a_json, b_json):
 os.chdir("BachelorThesis/vis-dif/public/data")
 # compare("iris_source.json", "iris20_source.json")
 
-# datasets = ["anscombe", "barley", "burtin", 
-#             "cars", "crimea", "driving", 
-#             "iris", "ohlc", "wheat"]
-datasets = ["burtin", 
+datasets = ["anscombe", "barley", "burtin", 
             "cars", "crimea", "driving", 
-            "iris", "wheat"]
+            "iris", "ohlc", "wheat"]
+
+# datasets = ["burtin", 
+#             "cars", "crimea", "driving", 
+#             "iris", "wheat"]
 percent = [20]
 
 for dataset in datasets:
-    print(dataset, ":\n")
+    print(dataset+": ")
     if dataset+"_source.json" in os.listdir():
         original = f"{dataset}_source.json"
         for p in percent:
             if dataset+str(p)+"_source.json" in os.listdir():
                 alternation = f"{dataset+str(p)}_source.json"
-                compare(original, alternation)
+                try:
+                    compare(original, alternation)
+                    print("successful\n")
+                except:
+                    print("!! unsuccessful\n")
+
 
 # main call not needed because this is a utility function, used in backend
 # if __name__ == "__name__":
