@@ -24,10 +24,6 @@ def compare(a_json, b_json):
         hash_b = list(data_b.keys())[0]
         data_b = b_vl["datasets"][hash_b]
 
-        # color values
-        encoding_a = str(a_vl["encoding"])
-        encoding_b = str(b_vl["encoding"])
-
         # save differences to list of dictionaries
         diffs = []
         

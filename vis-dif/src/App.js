@@ -44,22 +44,10 @@ function App() {
   
         <div className="radio">
           <label htmlFor="per">Select a degree of variation: <br/></label>
-          <label>
-            <input type="radio" name="percent" value="5" checked={percent === "5"} onChange={(e) => setPercent(e.target.value)}/>
-            5%
-          </label>
-          <label>
-            <input type="radio" name="percent" value="10" checked={percent === "10"} onChange={(e) => setPercent(e.target.value)}/>
-            10%
-          </label>
-          <label>
-            <input type="radio" name="percent" value="15" checked={percent === "15"} onChange={(e) => setPercent(e.target.value)}/>
-            15%
-          </label>
-          <label>
-            <input type="radio" name="percent" value="20" checked={percent === "20"} onChange={(e) => setPercent(e.target.value)}/>
-            20%
-          </label>
+          <input type="radio" name="percent" value="5" checked={percent === "5"} onChange={(e) => setPercent(e.target.value)}/>5%
+          <input type="radio" name="percent" value="10" checked={percent === "10"} onChange={(e) => setPercent(e.target.value)}/>10%
+          <input type="radio" name="percent" value="15" checked={percent === "15"} onChange={(e) => setPercent(e.target.value)}/>15%
+          <input type="radio" name="percent" value="20" checked={percent === "20"} onChange={(e) => setPercent(e.target.value)}/>20%
         </div>
   
         <div id="vis1" className="vis1">
@@ -86,7 +74,6 @@ function App() {
       </div>
     </div>
   );
-  
 }
 
 export default App;
