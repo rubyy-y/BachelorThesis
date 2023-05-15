@@ -5,7 +5,7 @@ import json
 # navigate to source files
 os.chdir("BachelorThesis/vis-dif/public/data")
 
-datasets = ["anscombe", "barley", "burtin", 
+datasets = ["barley", "burtin", 
             "cars", "crimea", "driving", 
             "iris", "ohlc", "wheat"]
 
@@ -39,7 +39,7 @@ for dataset in datasets:
         print(f"{dataset}_source.json has been reformatted.")
 
     # ALTERNATIONS
-    percentages = [20]
+    percentages = [5, 10, 15, 20]
     for percent in percentages:
         data = None
         with open(f"{dataset}{percent}_source.json") as a:

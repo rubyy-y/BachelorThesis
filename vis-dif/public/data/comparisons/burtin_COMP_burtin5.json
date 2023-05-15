@@ -1,0 +1,83 @@
+{
+   "width": "container",
+   "height": "container",
+   "background": null,
+   "config": {
+      "legend": {
+         "labelColor": "white",
+         "titleColor": "white"
+      },
+      "axis": {
+         "gridColor": "white"
+      },
+      "axisX": {
+         "labelColor": "white",
+         "titleColor": "white"
+      },
+      "axisY": {
+         "labelColor": "white",
+         "titleColor": "white"
+      }
+   },
+   "data": {
+      "name": "data-8833440f737304311e72aeeffd7b9881"
+   },
+   "mark": "bar",
+   "encoding": {
+      "color": {
+         "field": "file of origin",
+         "type": "nominal",
+         "scale": {
+            "domain": [
+               "File 1",
+               "File 2"
+            ],
+            "range": [
+               "lightblue",
+               "gold"
+            ]
+         }
+      },
+      "tooltip": [
+         {
+            "field": "Bacteria",
+            "type": "nominal"
+         },
+         {
+            "field": "Penicillin",
+            "type": "quantitative"
+         }
+      ],
+      "x": {
+         "field": "Bacteria",
+         "type": "nominal"
+      },
+      "y": {
+         "field": "Streptomycin",
+         "type": "quantitative"
+      }
+   },
+   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+   "datasets": {
+      "data-8833440f737304311e72aeeffd7b9881": [
+         {
+            "Bacteria": "Salmonella schottmuelleri",
+            "Penicillin": 10,
+            "Streptomycin": 0.8,
+            "Neomycin": 0.09,
+            "Gram_Staining": "negative",
+            "Genus": "Salmonella",
+            "file of origin": "File 1"
+         },
+         {
+            "Bacteria": "Diplococcus pneumoniae",
+            "Penicillin": 792,
+            "Streptomycin": 3,
+            "Neomycin": 12.687610109342657,
+            "Gram_Staining": "negative",
+            "Genus": "Staphylococcus",
+            "file of origin": "File 2"
+         }
+      ]
+   }
+}

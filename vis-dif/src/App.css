@@ -6,7 +6,6 @@
 }
 
 p {
-  clear: both;
   margin-left: 5%;
   margin-bottom: 0;
   font-size: smaller;
@@ -31,7 +30,6 @@ select {
   border: 0;
   background: #61626a;
   border-radius: 5px;
-  width: 30%;
   padding: 0.5em;
   color: white;
   font-size: medium;
@@ -43,73 +41,47 @@ select:hover {
   cursor: pointer;
 }
 
-.dropdown {
-  display: block;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 2%;
+.dropdown,
+.radio {
+  display: inline-block;
+  width: 45%;
+  height: 50px;
+  margin: 0 2.5% 1em 2.5%;
+  padding-top: 1.5%;
+  text-align: center;
 
   /* background-color: #ff9dea21;
   border-radius: 5px; */
-} 
-
-.vis1 {
-  float: left;
-  width: 43.5%;
-  height: 20em;
-  margin: auto;
-  margin-left: 5%;
-  margin-bottom: 1em;
-
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #a4a4a4;
-  text-align: center;
-  border-radius: 5px;
 }
 
+.vis1,
 .vis2 {
-  float: right;
-  width: 43.5%;
+  display: inline-block;
+  width: 45%;
   height: 20em;
-  margin: auto;
-  margin-right: 5%;
-  margin-bottom: 1em;
-
+  margin: 0 2.5% 1em 2.5%;
   background-color: rgba(255, 255, 255, 0.15);
   color: #a4a4a4;
   text-align: center;
   border-radius: 5px;
 }
 
-.file1 {
-  width: 43.5%;
-  float: left;
-  margin-left: 5%;
-  margin-bottom: 1em;
-
-  /* background-color: #9dcbff1f;
-  border-radius: 5px; */
-}
-
+.file1,
 .file2 {
-  width: 43.5%;
-  float: right;
-  margin-right: 5%;
-  margin-bottom: 1em;
-
+  display: inline-block;
+  width: 45%;
+  margin: 0.5em 2.5% 1em 2.5%;
+  
   /* background-color: #9dcbff1f;
   border-radius: 5px; */
 }
 
 .dif {
-  clear: both;
-  margin-left: 25%;
+  display: inline-block;
   width: 50%;
   height: 20em;
-
-  background-color: rgba(255, 255, 255, 0.25);
+  margin: 0 25%;
+  background-color: rgba(255, 255, 255, 0.15);
   color: #a4a4a4;
   text-align: center;
   border-radius: 5px;

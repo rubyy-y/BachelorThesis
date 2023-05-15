@@ -107,11 +107,11 @@ def compare(a_json, b_json):
 # compare all the files in the data folder of our app-directory
 os.chdir("BachelorThesis/vis-dif/public/data")
 
-datasets = ["anscombe", "barley", "burtin", 
+datasets = ["barley", "burtin", 
             "cars", "crimea", "driving", 
             "iris", "ohlc", "wheat"]
 
-percent = [20]
+percent = [5, 10, 15, 20]
 
 for dataset in datasets:
     print(dataset+": ")
