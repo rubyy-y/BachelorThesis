@@ -25,18 +25,8 @@
    "mark": "point",
    "encoding": {
       "color": {
-         "field": "file of origin",
-         "type": "nominal",
-         "scale": {
-            "domain": [
-               "File 1",
-               "File 2"
-            ],
-            "range": [
-               "lightblue",
-               "gold"
-            ]
-         }
+         "field": "year",
+         "type": "quantitative"
       },
       "tooltip": [
          {

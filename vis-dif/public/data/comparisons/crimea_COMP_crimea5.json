@@ -25,18 +25,8 @@
    "mark": "bar",
    "encoding": {
       "color": {
-         "field": "file of origin",
-         "type": "nominal",
-         "scale": {
-            "domain": [
-               "File 1",
-               "File 2"
-            ],
-            "range": [
-               "lightblue",
-               "gold"
-            ]
-         }
+         "field": "other",
+         "type": "ordinal"
       },
       "tooltip": [
          {

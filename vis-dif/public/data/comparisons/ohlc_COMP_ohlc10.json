@@ -29,19 +29,7 @@
             "value": "#1a9850",
             "test": "datum.open <= datum.close"
          },
-         "value": "#d73027",
-         "field": "file of origin",
-         "type": "nominal",
-         "scale": {
-            "domain": [
-               "File 1",
-               "File 2"
-            ],
-            "range": [
-               "lightblue",
-               "gold"
-            ]
-         }
+         "value": "#d73027"
       },
       "tooltip": [
          {
