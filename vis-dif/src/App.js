@@ -2,6 +2,8 @@ import './App.css';
 import React, { useState, useEffect } from "react";
 import vegaEmbed from 'vega-embed';
 
+import { compare, formatSpecs } from './utilities.js';
+
 function App() {
   const [select, setSelect] = useState("iris");
   const [percent, setPercent] = useState("20");
@@ -12,7 +14,8 @@ function App() {
   useEffect(() => {
     // Visualization 1
     if (file1Content) {
-      vegaEmbed('#vis1', file1Content, {"actions": false});
+      const file1Formatted = formatSpecs(file1Content);
+      vegaEmbed('#vis1', file1Formatted, {"actions": false});
     } else {
       var original = "data/" + select + "_source.json";
       vegaEmbed('#vis1', original, {"actions": false});
@@ -20,21 +23,24 @@ function App() {
 
     // Visualization 2
     if (file2Content) {
-      vegaEmbed('#vis2', file2Content, {"actions": false});
+      const file2Formatted = formatSpecs(file2Content);
+      vegaEmbed('#vis2', file2Formatted, {"actions": false});
     } else {
       var altered = "data/" + select + percent + '_source.json';
       vegaEmbed('#vis2', altered, {"actions": false});
     }
-    if (file1Content && file2Content) {
-      console.log("two files uploaded.")
-    }
 
     // Comparison
-    var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
+    if (file1Content && file2Content) {
+      const spec = compare(file1Content, file2Content);
+      vegaEmbed('#dif', spec, {"actions": false});
+    } else {
+      var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
     if (isHovering) {
       comp = "data/comparisons/filecolor/" + select + "_COMP_" + select + percent + ".json";
     }
     vegaEmbed('#dif', comp, {"actions": false});
+    }
   }, [select, percent, isHovering, file1Content, file2Content]);  
 
   const handleChange = (e) => {

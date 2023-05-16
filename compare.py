@@ -97,12 +97,12 @@ def compare(a_json, b_json):
             "range": ["lightblue", "gold"]
         }
         output_vl["encoding"]["tooltip"].insert(0, {'field' : "from file"})    
-        # print(output_vl["encoding"]["tooltip"])  
 
         with open("comparisons/filecolor/" + output_file, 'w') as out:
             json.dump(output_vl, out, indent=3)
 
         print("successful\n")
+        return(output_vl)
         
 
 # compare all the files in the data folder of our app-directory
