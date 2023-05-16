@@ -25,7 +25,7 @@
    "mark": "point",
    "encoding": {
       "color": {
-         "field": "file of origin",
+         "field": "from file",
          "type": "nominal",
          "scale": {
             "domain": [
@@ -66,7 +66,7 @@
             "petalLength": 1.4,
             "petalWidth": 0.2,
             "species": "setosa",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 5.5,
@@ -74,7 +74,7 @@
             "petalLength": 1.4,
             "petalWidth": 0.2,
             "species": "setosa",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 7,
@@ -82,7 +82,7 @@
             "petalLength": 4.7,
             "petalWidth": 1.4,
             "species": "versicolor",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 6.999728248796552,
@@ -90,7 +90,7 @@
             "petalLength": 4.025571630129784,
             "petalWidth": 1.3309010023768193,
             "species": "setosa",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "sepalLength": 4.95,
@@ -98,7 +98,7 @@
             "petalLength": 0.9799999999999999,
             "petalWidth": 0.3,
             "species": "setosa",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    },

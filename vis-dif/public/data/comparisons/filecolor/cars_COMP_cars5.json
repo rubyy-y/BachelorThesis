@@ -25,7 +25,7 @@
    "mark": "point",
    "encoding": {
       "color": {
-         "field": "file of origin",
+         "field": "from file",
          "type": "nominal",
          "scale": {
             "domain": [
@@ -70,7 +70,7 @@
             "Acceleration": 10,
             "Year": "1970-01-01T00:00:00",
             "Origin": "USA",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "peugeot 504",
@@ -82,7 +82,7 @@
             "Acceleration": 17.5,
             "Year": "1970-01-01T00:00:00",
             "Origin": "Europe",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "amc gremlin",
@@ -94,7 +94,7 @@
             "Acceleration": 15,
             "Year": "1970-01-01T00:00:00",
             "Origin": "USA",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "ford gran torino",
@@ -106,7 +106,7 @@
             "Acceleration": 14.5,
             "Year": "1973-01-01T00:00:00",
             "Origin": "USA",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "chevrolet impala",
@@ -118,7 +118,7 @@
             "Acceleration": 14,
             "Year": "1973-01-01T00:00:00",
             "Origin": "USA",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "ford maverick",
@@ -130,7 +130,7 @@
             "Acceleration": 17,
             "Year": "1974-01-01T00:00:00",
             "Origin": "USA",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "vokswagen rabbit",
@@ -142,7 +142,7 @@
             "Acceleration": 15.3,
             "Year": "1980-01-01T00:00:00",
             "Origin": "Europe",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "ford granada l",
@@ -154,7 +154,7 @@
             "Acceleration": 14.7,
             "Year": "1982-01-01T00:00:00",
             "Origin": "USA",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Name": "dodge challenger se",
@@ -166,7 +166,7 @@
             "Acceleration": 14,
             "Year": "1970-01-01",
             "Origin": "USA",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "Name": "dodge coronet brougham",
@@ -178,7 +178,7 @@
             "Acceleration": 17,
             "Year": "1980-01-01",
             "Origin": "Japan",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "Name": "chevrolet impala",
@@ -190,7 +190,7 @@
             "Acceleration": 12,
             "Year": "1973-01-01",
             "Origin": "USA",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "Name": "amc hornet",
@@ -202,7 +202,7 @@
             "Acceleration": 24,
             "Year": "1970-01-01",
             "Origin": "Europe",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "Name": "peugeot 504",
@@ -214,7 +214,7 @@
             "Acceleration": 15.329999999999998,
             "Year": "1976-01-01",
             "Origin": "Europe",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    },

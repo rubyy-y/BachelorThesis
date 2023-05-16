@@ -56,7 +56,7 @@
             "petalLength": 4.7,
             "petalWidth": 1.4,
             "species": "versicolor",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 6.1,
@@ -64,7 +64,7 @@
             "petalLength": 4.7,
             "petalWidth": 1.4,
             "species": "versicolor",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 5.8,
@@ -72,7 +72,7 @@
             "petalLength": 4,
             "petalWidth": 1.2,
             "species": "versicolor",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 6.9,
@@ -80,7 +80,7 @@
             "petalLength": 5.7,
             "petalWidth": 2.3,
             "species": "virginica",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 5.6,
@@ -88,7 +88,7 @@
             "petalLength": 4.9,
             "petalWidth": 2,
             "species": "virginica",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "sepalLength": 4.41,
@@ -96,7 +96,7 @@
             "petalLength": 0.9,
             "petalWidth": 0.24000000000000005,
             "species": "setosa",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "sepalLength": 5.8417811979621455,
@@ -104,7 +104,7 @@
             "petalLength": 2.2647909238157435,
             "petalWidth": 1.6222983329867677,
             "species": "virginica",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "sepalLength": 6.288560424638081,
@@ -112,7 +112,7 @@
             "petalLength": 6.786759382968182,
             "petalWidth": 0.269195351340044,
             "species": "setosa",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "sepalLength": 10.35,
@@ -120,7 +120,7 @@
             "petalLength": 6.2700000000000005,
             "petalWidth": 3.2199999999999998,
             "species": "virginica",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "sepalLength": 7.839999999999999,
@@ -128,7 +128,7 @@
             "petalLength": 7.35,
             "petalWidth": 3,
             "species": "virginica",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "sepalLength": 5.22,
@@ -136,7 +136,7 @@
             "petalLength": 3.5699999999999994,
             "petalWidth": 2.6599999999999997,
             "species": "virginica",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    },

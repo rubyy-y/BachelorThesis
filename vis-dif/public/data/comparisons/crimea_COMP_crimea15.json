@@ -55,329 +55,329 @@
             "wounds": 0,
             "other": 110,
             "disease": 110,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-05-01T00:00:00",
             "wounds": 0,
             "other": 95,
             "disease": 105,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-06-01T00:00:00",
             "wounds": 0,
             "other": 40,
             "disease": 95,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-07-01T00:00:00",
             "wounds": 0,
             "other": 140,
             "disease": 520,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-08-01T00:00:00",
             "wounds": 20,
             "other": 150,
             "disease": 800,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-09-01T00:00:00",
             "wounds": 220,
             "other": 230,
             "disease": 740,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-10-01T00:00:00",
             "wounds": 305,
             "other": 310,
             "disease": 600,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-11-01T00:00:00",
             "wounds": 480,
             "other": 290,
             "disease": 820,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-12-01T00:00:00",
             "wounds": 295,
             "other": 310,
             "disease": 1100,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-01-01T00:00:00",
             "wounds": 230,
             "other": 460,
             "disease": 1440,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-02-01T00:00:00",
             "wounds": 180,
             "other": 520,
             "disease": 1270,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-03-01T00:00:00",
             "wounds": 155,
             "other": 350,
             "disease": 935,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-04-01T00:00:00",
             "wounds": 195,
             "other": 195,
             "disease": 560,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-05-01T00:00:00",
             "wounds": 180,
             "other": 155,
             "disease": 550,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-06-01T00:00:00",
             "wounds": 330,
             "other": 130,
             "disease": 650,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-07-01T00:00:00",
             "wounds": 260,
             "other": 130,
             "disease": 430,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-08-01T00:00:00",
             "wounds": 290,
             "other": 110,
             "disease": 490,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-09-01T00:00:00",
             "wounds": 355,
             "other": 100,
             "disease": 290,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-10-01T00:00:00",
             "wounds": 135,
             "other": 95,
             "disease": 245,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-11-01T00:00:00",
             "wounds": 100,
             "other": 140,
             "disease": 325,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1855-12-01T00:00:00",
             "wounds": 40,
             "other": 120,
             "disease": 215,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1856-01-01T00:00:00",
             "wounds": 0,
             "other": 160,
             "disease": 160,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1856-02-01T00:00:00",
             "wounds": 0,
             "other": 100,
             "disease": 100,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1856-03-01T00:00:00",
             "wounds": 0,
             "other": 125,
             "disease": 90,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "date": "1854-04-01",
             "wounds": 0,
             "other": 110,
             "disease": 110,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-05-01",
             "wounds": 0,
             "other": 95,
             "disease": 105,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-06-01",
             "wounds": 0,
             "other": 40,
             "disease": 95,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-07-01",
             "wounds": 0,
             "other": 140,
             "disease": 520,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-08-01",
             "wounds": 20,
             "other": 150,
             "disease": 800,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-09-01",
             "wounds": 220,
             "other": 230,
             "disease": 740,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-10-01",
             "wounds": 305,
             "other": 310,
             "disease": 600,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-08-01",
             "wounds": 172,
             "other": 439,
             "disease": 305,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1854-12-01",
             "wounds": 295,
             "other": 310,
             "disease": 1100,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-02-01",
             "wounds": 180,
             "other": 520,
             "disease": 1270,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-03-01",
             "wounds": 155,
             "other": 350,
             "disease": 935,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-04-01",
             "wounds": 195,
             "other": 195,
             "disease": 560,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-05-01",
             "wounds": 180,
             "other": 155,
             "disease": 550,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-06-01",
             "wounds": 330,
             "other": 130,
             "disease": 650,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-07-01",
             "wounds": 260,
             "other": 130,
             "disease": 430,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-08-01",
             "wounds": 290,
             "other": 110,
             "disease": 490,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-09-01",
             "wounds": 319,
             "other": 90,
             "disease": 435,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-09-01",
             "wounds": 66,
             "other": 219,
             "disease": 336,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-11-01",
             "wounds": 100,
             "other": 140,
             "disease": 325,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1855-12-01",
             "wounds": 40,
             "other": 120,
             "disease": 215,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1856-01-01",
             "wounds": 0,
             "other": 160,
             "disease": 160,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1856-02-01",
             "wounds": 0,
             "other": 100,
             "disease": 100,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "date": "1856-03-01",
             "wounds": 0,
             "other": 125,
             "disease": 90,
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    }

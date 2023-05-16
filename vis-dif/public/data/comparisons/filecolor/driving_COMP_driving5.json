@@ -25,7 +25,7 @@
    "mark": "point",
    "encoding": {
       "color": {
-         "field": "file of origin",
+         "field": "from file",
          "type": "nominal",
          "scale": {
             "domain": [
@@ -65,147 +65,147 @@
             "year": 1963,
             "miles": 4218,
             "gas": 2.12,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "right",
             "year": 1969,
             "miles": 5207,
             "gas": 2.07,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "bottom",
             "year": 1971,
             "miles": 5617,
             "gas": 1.9300000000000002,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "bottom",
             "year": 1988,
             "miles": 8089,
             "gas": 1.6800000000000002,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "bottom",
             "year": 1994,
             "miles": 8909,
             "gas": 1.5899999999999999,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "right",
             "year": 1997,
             "miles": 9416,
             "gas": 1.65,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "bottom",
             "year": 1998,
             "miles": 9590,
             "gas": 1.3900000000000001,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "top",
             "year": 2000,
             "miles": 9717,
             "gas": 1.8900000000000001,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "bottom",
             "year": 2002,
             "miles": 9814,
             "gas": 1.6400000000000001,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "right",
             "year": 2003,
             "miles": 9868,
             "gas": 1.8599999999999999,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "left",
             "year": 2005,
             "miles": 10067,
             "gas": 2.5300000000000002,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "side": "bottom",
             "year": 1963,
             "miles": 5905,
             "gas": 2.332,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "right",
             "year": 1997,
             "miles": 9789,
             "gas": 1.844889818772846,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "bottom",
             "year": 1971,
             "miles": 5617,
             "gas": 1.93,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "bottom",
             "year": 1994,
             "miles": 8909,
             "gas": 1.59,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "right",
             "year": 1997,
             "miles": 7532,
             "gas": 2.3099999999999996,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "bottom",
             "year": 1998,
             "miles": 9590,
             "gas": 1.39,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "top",
             "year": 2000,
             "miles": 9717,
             "gas": 1.89,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "bottom",
             "year": 2002,
             "miles": 9814,
             "gas": 1.64,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "right",
             "year": 2003,
             "miles": 9868,
             "gas": 1.86,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "side": "left",
             "year": 2005,
             "miles": 10067,
             "gas": 2.53,
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    },

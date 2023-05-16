@@ -57,7 +57,7 @@
             "Neomycin": 0.02,
             "Gram_Staining": "negative",
             "Genus": "other",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Bacteria": "Escherichia coli",
@@ -66,7 +66,7 @@
             "Neomycin": 0.1,
             "Gram_Staining": "negative",
             "Genus": "other",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Bacteria": "Staphylococcus albus",
@@ -75,7 +75,7 @@
             "Neomycin": 0.001,
             "Gram_Staining": "positive",
             "Genus": "Staphylococcus",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Bacteria": "Bacillus anthracis",
@@ -84,7 +84,7 @@
             "Neomycin": 23.940468943809478,
             "Gram_Staining": "positive",
             "Genus": "other",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "Bacteria": "Escherichia coli",
@@ -93,7 +93,7 @@
             "Neomycin": 0.15,
             "Gram_Staining": "negative",
             "Genus": "other",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "Bacteria": "Pseudomonas aeruginosa",
@@ -102,7 +102,7 @@
             "Neomycin": 5.109170899338423,
             "Gram_Staining": "negative",
             "Genus": "other",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    }

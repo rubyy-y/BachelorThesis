@@ -54,85 +54,85 @@
             "year": 1625,
             "wheat": 33,
             "wages": 6.12,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1635,
             "wheat": 33,
             "wages": 6.3,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1740,
             "wheat": 27,
             "wages": 14,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1760,
             "wheat": 31,
             "wages": 16.5,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1785,
             "wheat": 42,
             "wages": 23,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1805,
             "wheat": 81,
             "wages": 29.5,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1815,
             "wheat": 78,
             "wages": null,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1820,
             "wheat": 54,
             "wages": null,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": "1645",
             "wheat": 64,
             "wages": 7,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1760",
             "wheat": 27,
             "wages": 11.55,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1715",
             "wheat": 82,
             "wages": 26,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1805",
             "wheat": 48,
             "wages": 44.25,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1815",
             "wheat": 78,
             "wages": 30.3,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1820",
             "wheat": 54,
             "wages": 30.6,
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    },

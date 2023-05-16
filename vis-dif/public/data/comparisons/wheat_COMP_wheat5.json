@@ -54,67 +54,67 @@
             "year": 1690,
             "wheat": 40,
             "wages": 8,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1705,
             "wheat": 32,
             "wages": 10,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1745,
             "wheat": 27.5,
             "wages": 14.5,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1770,
             "wheat": 47,
             "wages": 18.5,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1815,
             "wheat": 78,
             "wages": null,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": 1820,
             "wheat": 54,
             "wages": null,
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "year": "1690",
             "wheat": 52,
             "wages": 5,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1745",
             "wheat": 22,
             "wages": 11.6,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1655",
             "wheat": 33,
             "wages": 20,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1815",
             "wheat": 78,
             "wages": 30.3,
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "year": "1820",
             "wheat": 54,
             "wages": 30.6,
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    },

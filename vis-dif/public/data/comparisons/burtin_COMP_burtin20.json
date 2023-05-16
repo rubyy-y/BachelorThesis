@@ -57,7 +57,7 @@
             "Neomycin": 1.6,
             "Gram_Staining": "negative",
             "Genus": "other",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Bacteria": "Diplococcus pneumoniae",
@@ -66,7 +66,7 @@
             "Neomycin": 10,
             "Gram_Staining": "positive",
             "Genus": "other",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Bacteria": "Mycobacterium tuberculosis",
@@ -75,7 +75,7 @@
             "Neomycin": 10.998707742649092,
             "Gram_Staining": "negative",
             "Genus": "Salmonella",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "Bacteria": "Diplococcus pneumoniae",
@@ -84,7 +84,7 @@
             "Neomycin": 8,
             "Gram_Staining": "positive",
             "Genus": "other",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    }

@@ -55,49 +55,49 @@
             "variety": "Svansota",
             "year": 1931,
             "site": "Crookston",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 33.6,
             "variety": "No. 457",
             "year": 1931,
             "site": "Duluth",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 48.56666,
             "variety": "Peatland",
             "year": 1931,
             "site": "Waseca",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 25.86667,
             "variety": "Glabron",
             "year": 1932,
             "site": "Duluth",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 41.83333,
             "variety": "Trebi",
             "year": 1932,
             "site": "Crookston",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 15.520002,
             "variety": "Glabron",
             "year": 1932,
             "site": "Duluth",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "yield": 15,
             "variety": "Svansota",
             "year": 1931,
             "site": "Grand Rapids",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    }

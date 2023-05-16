@@ -25,7 +25,7 @@
    "mark": "bar",
    "encoding": {
       "color": {
-         "field": "file of origin",
+         "field": "from file",
          "type": "nominal",
          "scale": {
             "domain": [
@@ -67,7 +67,7 @@
             "Neomycin": 0.09,
             "Gram_Staining": "negative",
             "Genus": "Salmonella",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Bacteria": "Diplococcus pneumoniae",
@@ -76,7 +76,7 @@
             "Neomycin": 12.687610109342657,
             "Gram_Staining": "negative",
             "Genus": "Staphylococcus",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    }

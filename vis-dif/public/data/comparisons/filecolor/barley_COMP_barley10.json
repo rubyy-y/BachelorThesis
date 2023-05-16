@@ -25,7 +25,7 @@
    "mark": "point",
    "encoding": {
       "color": {
-         "field": "file of origin",
+         "field": "from file",
          "type": "nominal",
          "scale": {
             "domain": [
@@ -65,91 +65,91 @@
             "variety": "Manchuria",
             "year": 1931,
             "site": "Grand Rapids",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 36.6,
             "variety": "No. 462",
             "year": 1931,
             "site": "University Farm",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 34.7,
             "variety": "Peatland",
             "year": 1931,
             "site": "Grand Rapids",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 32,
             "variety": "Peatland",
             "year": 1931,
             "site": "Duluth",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 35.13333,
             "variety": "Glabron",
             "year": 1932,
             "site": "Morris",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 20.63333,
             "variety": "Svansota",
             "year": 1932,
             "site": "Crookston",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 22.23333,
             "variety": "Svansota",
             "year": 1932,
             "site": "Duluth",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 30.6,
             "variety": "Trebi",
             "year": 1932,
             "site": "Duluth",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 31.36667,
             "variety": "Peatland",
             "year": 1932,
             "site": "Duluth",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "yield": 32.940000000000005,
             "variety": "No. 462",
             "year": 1931,
             "site": "University Farm",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "yield": 59,
             "variety": "Manchuria",
             "year": 1931,
             "site": "Duluth",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "yield": 55,
             "variety": "No. 475",
             "year": 1931,
             "site": "Waseca",
-            "file of origin": "File 2"
+            "from file": "File 2"
          },
          {
             "yield": 57,
             "variety": "Manchuria",
             "year": 1931,
             "site": "University Farm",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    }

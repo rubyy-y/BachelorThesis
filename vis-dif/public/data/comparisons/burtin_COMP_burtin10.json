@@ -57,7 +57,7 @@
             "Neomycin": 0.1,
             "Gram_Staining": "positive",
             "Genus": "Streptococcus",
-            "file of origin": "File 1"
+            "from file": "File 1"
          },
          {
             "Bacteria": "Salmonella schottmuelleri",
@@ -66,7 +66,7 @@
             "Neomycin": 15.562814300309835,
             "Gram_Staining": "positive",
             "Genus": "Streptococcus",
-            "file of origin": "File 2"
+            "from file": "File 2"
          }
       ]
    }

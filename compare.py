@@ -35,7 +35,7 @@ def compare(a_json, b_json):
                     identical = True
                     break
             if not identical:
-                dp_a["file of origin"] = "File 1"
+                dp_a["from file"] = "File 1"
                 diffs.append(dp_a)
 
         # iterate through second file
@@ -46,19 +46,13 @@ def compare(a_json, b_json):
                     identical = True
                     break
             if not identical:
-                dp_b["file of origin"] = "File 2"
+                dp_b["from file"] = "File 2"
                 diffs.append(dp_b)
 
         # specs - mandatory
         hash_ = hash_a
         mark = a_vl["mark"]
         encoding = a_vl["encoding"]
-        # encoding["color"]["field"] = "file of origin"
-        # encoding["color"]["type"] = "nominal"
-        # encoding["color"]["scale"] = {
-        #     "domain": ["File 1", "File 2"],
-        #     "range": ["lightblue", "gold"]
-        # }
 
         output_vl = {
             "width": "container",
@@ -95,7 +89,7 @@ def compare(a_json, b_json):
             json.dump(output_vl, out, indent=3)
 
         # save with file color encoding
-        output_vl["encoding"]["color"]["field"] = "file of origin"
+        output_vl["encoding"]["color"]["field"] = "from file"
         output_vl["encoding"]["color"]["type"] = "nominal"
         output_vl["encoding"]["color"]["scale"] = {
             "domain": ["File 1", "File 2"],
