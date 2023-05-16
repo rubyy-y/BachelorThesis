@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -27,10 +23,11 @@
       "color": {
          "field": "from file",
          "type": "nominal",
+         "legend": null,
          "scale": {
             "domain": [
-               "File 1",
-               "File 2"
+               "1",
+               "2"
             ],
             "range": [
                "lightblue",
@@ -39,6 +36,9 @@
          }
       },
       "tooltip": [
+         {
+            "field": "from file"
+         },
          {
             "field": "Bacteria",
             "type": "nominal"
@@ -67,7 +67,7 @@
             "Neomycin": 0.1,
             "Gram_Staining": "positive",
             "Genus": "Streptococcus",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "Bacteria": "Salmonella schottmuelleri",
@@ -76,7 +76,7 @@
             "Neomycin": 15.562814300309835,
             "Gram_Staining": "positive",
             "Genus": "Streptococcus",
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    }

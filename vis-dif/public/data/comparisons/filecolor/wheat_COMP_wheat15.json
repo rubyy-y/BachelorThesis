@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -27,10 +23,11 @@
       "color": {
          "field": "from file",
          "type": "nominal",
+         "legend": null,
          "scale": {
             "domain": [
-               "File 1",
-               "File 2"
+               "1",
+               "2"
             ],
             "range": [
                "lightblue",
@@ -39,6 +36,9 @@
          }
       },
       "tooltip": [
+         {
+            "field": "from file"
+         },
          {
             "field": "wages",
             "type": "quantitative"
@@ -64,91 +64,91 @@
             "year": 1575,
             "wheat": 42,
             "wages": 5.08,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": 1585,
             "wheat": 41.5,
             "wages": 5.15,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": 1610,
             "wheat": 32,
             "wages": 5.78,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": 1645,
             "wheat": 53,
             "wages": 6.45,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": 1650,
             "wheat": 42,
             "wages": 6.5,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": 1765,
             "wheat": 43,
             "wages": 17.6,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": 1815,
             "wheat": 78,
             "wages": null,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": 1820,
             "wheat": 54,
             "wages": null,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "year": "1585",
             "wheat": 41.5,
             "wages": 6.180000000000001,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "year": "1795",
             "wheat": 85,
             "wages": 15,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "year": "1790",
             "wheat": 48,
             "wages": 14,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "year": "1785",
             "wheat": 69,
             "wages": 11,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "year": "1765",
             "wheat": 43,
             "wages": 24.640000000000004,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "year": "1815",
             "wheat": 78,
             "wages": 30.3,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "year": "1820",
             "wheat": 54,
             "wages": 30.6,
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    },

@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -27,10 +23,11 @@
       "color": {
          "field": "from file",
          "type": "nominal",
+         "legend": null,
          "scale": {
             "domain": [
-               "File 1",
-               "File 2"
+               "1",
+               "2"
             ],
             "range": [
                "lightblue",
@@ -39,6 +36,9 @@
          }
       },
       "tooltip": [
+         {
+            "field": "from file"
+         },
          {
             "field": "yield",
             "type": "quantitative"
@@ -65,91 +65,91 @@
             "variety": "Manchuria",
             "year": 1931,
             "site": "Grand Rapids",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 36.6,
             "variety": "No. 462",
             "year": 1931,
             "site": "University Farm",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 34.7,
             "variety": "Peatland",
             "year": 1931,
             "site": "Grand Rapids",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 32,
             "variety": "Peatland",
             "year": 1931,
             "site": "Duluth",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 35.13333,
             "variety": "Glabron",
             "year": 1932,
             "site": "Morris",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 20.63333,
             "variety": "Svansota",
             "year": 1932,
             "site": "Crookston",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 22.23333,
             "variety": "Svansota",
             "year": 1932,
             "site": "Duluth",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 30.6,
             "variety": "Trebi",
             "year": 1932,
             "site": "Duluth",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 31.36667,
             "variety": "Peatland",
             "year": 1932,
             "site": "Duluth",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 32.940000000000005,
             "variety": "No. 462",
             "year": 1931,
             "site": "University Farm",
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "yield": 59,
             "variety": "Manchuria",
             "year": 1931,
             "site": "Duluth",
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "yield": 55,
             "variety": "No. 475",
             "year": 1931,
             "site": "Waseca",
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "yield": 57,
             "variety": "Manchuria",
             "year": 1931,
             "site": "University Farm",
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    }

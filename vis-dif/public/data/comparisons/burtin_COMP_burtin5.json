@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -26,7 +22,8 @@
    "encoding": {
       "color": {
          "field": "Penicillin",
-         "type": "nominal"
+         "type": "nominal",
+         "legend": null
       },
       "tooltip": [
          {
@@ -57,7 +54,7 @@
             "Neomycin": 0.09,
             "Gram_Staining": "negative",
             "Genus": "Salmonella",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "Bacteria": "Diplococcus pneumoniae",
@@ -66,7 +63,7 @@
             "Neomycin": 12.687610109342657,
             "Gram_Staining": "negative",
             "Genus": "Staphylococcus",
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    }

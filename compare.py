@@ -35,7 +35,7 @@ def compare(a_json, b_json):
                     identical = True
                     break
             if not identical:
-                dp_a["from file"] = "File 1"
+                dp_a["from file"] = "1"
                 diffs.append(dp_a)
 
         # iterate through second file
@@ -46,20 +46,20 @@ def compare(a_json, b_json):
                     identical = True
                     break
             if not identical:
-                dp_b["from file"] = "File 2"
+                dp_b["from file"] = "2"
                 diffs.append(dp_b)
 
         # specs - mandatory
         hash_ = hash_a
         mark = a_vl["mark"]
         encoding = a_vl["encoding"]
+        encoding["color"]["legend"] = None
 
         output_vl = {
             "width": "container",
             "height": "container",
             "background": None,
             "config": {
-                "legend": {"labelColor": "white", "titleColor": "white"},
                 "axis": {"gridColor": "white"},
                 "axisX": {"labelColor": "white", "titleColor": "white"},
                 "axisY": {"labelColor": "white", "titleColor": "white"}
@@ -89,12 +89,15 @@ def compare(a_json, b_json):
             json.dump(output_vl, out, indent=3)
 
         # save with file color encoding
+        output_vl["encoding"]["color"]["legend"] = None
         output_vl["encoding"]["color"]["field"] = "from file"
         output_vl["encoding"]["color"]["type"] = "nominal"
         output_vl["encoding"]["color"]["scale"] = {
-            "domain": ["File 1", "File 2"],
+            "domain": ["1", "2"],
             "range": ["lightblue", "gold"]
         }
+        output_vl["encoding"]["tooltip"].insert(0, {'field' : "from file"})    
+        # print(output_vl["encoding"]["tooltip"])  
 
         with open("comparisons/filecolor/" + output_file, 'w') as out:
             json.dump(output_vl, out, indent=3)

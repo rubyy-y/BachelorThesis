@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -27,10 +23,11 @@
       "color": {
          "field": "from file",
          "type": "nominal",
+         "legend": null,
          "scale": {
             "domain": [
-               "File 1",
-               "File 2"
+               "1",
+               "2"
             ],
             "range": [
                "lightblue",
@@ -39,6 +36,9 @@
          }
       },
       "tooltip": [
+         {
+            "field": "from file"
+         },
          {
             "field": "yield",
             "type": "quantitative"
@@ -65,49 +65,49 @@
             "variety": "Svansota",
             "year": 1931,
             "site": "Crookston",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 33.6,
             "variety": "No. 457",
             "year": 1931,
             "site": "Duluth",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 48.56666,
             "variety": "Peatland",
             "year": 1931,
             "site": "Waseca",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 25.86667,
             "variety": "Glabron",
             "year": 1932,
             "site": "Duluth",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 41.83333,
             "variety": "Trebi",
             "year": 1932,
             "site": "Crookston",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "yield": 15.520002,
             "variety": "Glabron",
             "year": 1932,
             "site": "Duluth",
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "yield": 15,
             "variety": "Svansota",
             "year": 1931,
             "site": "Grand Rapids",
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    }

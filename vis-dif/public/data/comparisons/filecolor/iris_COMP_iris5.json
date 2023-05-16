@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -27,10 +23,11 @@
       "color": {
          "field": "from file",
          "type": "nominal",
+         "legend": null,
          "scale": {
             "domain": [
-               "File 1",
-               "File 2"
+               "1",
+               "2"
             ],
             "range": [
                "lightblue",
@@ -39,6 +36,9 @@
          }
       },
       "tooltip": [
+         {
+            "field": "from file"
+         },
          {
             "field": "sepalLength",
             "type": "quantitative"
@@ -66,7 +66,7 @@
             "petalLength": 1.4,
             "petalWidth": 0.2,
             "species": "setosa",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "sepalLength": 5.5,
@@ -74,7 +74,7 @@
             "petalLength": 1.4,
             "petalWidth": 0.2,
             "species": "setosa",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "sepalLength": 7,
@@ -82,7 +82,7 @@
             "petalLength": 4.7,
             "petalWidth": 1.4,
             "species": "versicolor",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "sepalLength": 6.999728248796552,
@@ -90,7 +90,7 @@
             "petalLength": 4.025571630129784,
             "petalWidth": 1.3309010023768193,
             "species": "setosa",
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "sepalLength": 4.95,
@@ -98,7 +98,7 @@
             "petalLength": 0.9799999999999999,
             "petalWidth": 0.3,
             "species": "setosa",
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    },

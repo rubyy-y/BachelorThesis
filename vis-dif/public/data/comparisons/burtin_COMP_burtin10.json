@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -26,7 +22,8 @@
    "encoding": {
       "color": {
          "field": "Penicillin",
-         "type": "nominal"
+         "type": "nominal",
+         "legend": null
       },
       "tooltip": [
          {
@@ -57,7 +54,7 @@
             "Neomycin": 0.1,
             "Gram_Staining": "positive",
             "Genus": "Streptococcus",
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "Bacteria": "Salmonella schottmuelleri",
@@ -66,7 +63,7 @@
             "Neomycin": 15.562814300309835,
             "Gram_Staining": "positive",
             "Genus": "Streptococcus",
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    }

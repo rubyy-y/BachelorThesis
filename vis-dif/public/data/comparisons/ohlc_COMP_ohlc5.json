@@ -3,10 +3,6 @@
    "height": "container",
    "background": null,
    "config": {
-      "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
-      },
       "axis": {
          "gridColor": "white"
       },
@@ -29,7 +25,8 @@
             "value": "#1a9850",
             "test": "datum.open <= datum.close"
          },
-         "value": "#d73027"
+         "value": "#d73027",
+         "legend": null
       },
       "tooltip": [
          {
@@ -76,7 +73,7 @@
             "close": 30.04,
             "signal": "short",
             "ret": -4.89396411092985,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-02T00:00:00",
@@ -86,7 +83,7 @@
             "close": 29.63,
             "signal": "short",
             "ret": -0.32258064516129503,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-03T00:00:00",
@@ -96,7 +93,7 @@
             "close": 31.02,
             "signal": "short",
             "ret": 3.68663594470045,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-04T00:00:00",
@@ -106,7 +103,7 @@
             "close": 30.18,
             "signal": "short",
             "ret": 4.51010886469673,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-05T00:00:00",
@@ -116,7 +113,7 @@
             "close": 29.62,
             "signal": "short",
             "ret": 6.08424336973478,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-08T00:00:00",
@@ -126,7 +123,7 @@
             "close": 29.77,
             "signal": "short",
             "ret": 1.2539184952978,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-09T00:00:00",
@@ -136,7 +133,7 @@
             "close": 28.27,
             "signal": "short",
             "ret": -5.02431118314424,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-10T00:00:00",
@@ -146,7 +143,7 @@
             "close": 28.46,
             "signal": "short",
             "ret": -5.46623794212217,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-11T00:00:00",
@@ -156,7 +153,7 @@
             "close": 28.11,
             "signal": "short",
             "ret": -8.3743842364532,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-12T00:00:00",
@@ -166,7 +163,7 @@
             "close": 28.15,
             "signal": "short",
             "ret": -5.52763819095477,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-15T00:00:00",
@@ -176,7 +173,7 @@
             "close": 30.81,
             "signal": "long",
             "ret": 3.4920634920635,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-16T00:00:00",
@@ -186,7 +183,7 @@
             "close": 32.68,
             "signal": "short",
             "ret": 0.155038759689914,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-17T00:00:00",
@@ -196,7 +193,7 @@
             "close": 31.54,
             "signal": "short",
             "ret": 5.82822085889571,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-18T00:00:00",
@@ -206,7 +203,7 @@
             "close": 30.03,
             "signal": "short",
             "ret": 8.17610062893082,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-19T00:00:00",
@@ -216,7 +213,7 @@
             "close": 27.99,
             "signal": "short",
             "ret": 8.59872611464968,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-22T00:00:00",
@@ -226,7 +223,7 @@
             "close": 31.17,
             "signal": "short",
             "ret": 15.4907975460123,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-23T00:00:00",
@@ -236,7 +233,7 @@
             "close": 30.58,
             "signal": "short",
             "ret": 11.7370892018779,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-24T00:00:00",
@@ -246,7 +243,7 @@
             "close": 29.05,
             "signal": "long",
             "ret": -10.4234527687296,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-25T00:00:00",
@@ -256,7 +253,7 @@
             "close": 26.36,
             "signal": "long",
             "ret": 0,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-26T00:00:00",
@@ -266,7 +263,7 @@
             "close": 25.93,
             "signal": "long",
             "ret": 0,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-29T00:00:00",
@@ -276,7 +273,7 @@
             "close": 25.35,
             "signal": "long",
             "ret": 5.26315789473684,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-30T00:00:00",
@@ -286,7 +283,7 @@
             "close": 26.35,
             "signal": "long",
             "ret": 6.73758865248228,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-01T00:00:00",
@@ -296,7 +293,7 @@
             "close": 26.22,
             "signal": "long",
             "ret": 7.83645655877341,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-02T00:00:00",
@@ -306,7 +303,7 @@
             "close": 27.95,
             "signal": "long",
             "ret": 2.7642276422764303,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-06T00:00:00",
@@ -316,7 +313,7 @@
             "close": 29,
             "signal": "short",
             "ret": -2.14521452145214,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-07T00:00:00",
@@ -326,7 +323,7 @@
             "close": 30.85,
             "signal": "short",
             "ret": 3.03514376996805,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-08T00:00:00",
@@ -336,7 +333,7 @@
             "close": 31.3,
             "signal": "short",
             "ret": 5.68720379146919,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-09T00:00:00",
@@ -346,7 +343,7 @@
             "close": 29.78,
             "signal": "short",
             "ret": 8.22784810126583,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-10T00:00:00",
@@ -356,7 +353,7 @@
             "close": 29.02,
             "signal": "short",
             "ret": 8.64779874213836,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-13T00:00:00",
@@ -366,7 +363,7 @@
             "close": 26.31,
             "signal": "short",
             "ret": 7.32899022801303,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-14T00:00:00",
@@ -376,7 +373,7 @@
             "close": 25.02,
             "signal": "short",
             "ret": 7.30897009966778,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-15T00:00:00",
@@ -386,7 +383,7 @@
             "close": 25.89,
             "signal": "neutral",
             "ret": 0,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-16T00:00:00",
@@ -396,7 +393,7 @@
             "close": 25.42,
             "signal": "long",
             "ret": -9.82758620689656,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-17T00:00:00",
@@ -406,7 +403,7 @@
             "close": 24.34,
             "signal": "long",
             "ret": -10.8433734939759,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-20T00:00:00",
@@ -416,7 +413,7 @@
             "close": 24.4,
             "signal": "long",
             "ret": -7.55711775043936,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-21T00:00:00",
@@ -426,7 +423,7 @@
             "close": 23.87,
             "signal": "long",
             "ret": -2.5089605734767,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-22T00:00:00",
@@ -436,7 +433,7 @@
             "close": 23.47,
             "signal": "long",
             "ret": 0.915750915750916,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-23T00:00:00",
@@ -446,7 +443,7 @@
             "close": 23.43,
             "signal": "long",
             "ret": 2.47148288973383,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-24T00:00:00",
@@ -456,7 +453,7 @@
             "close": 23.09,
             "signal": "long",
             "ret": 4.22264875239922,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-27T00:00:00",
@@ -466,7 +463,7 @@
             "close": 24.28,
             "signal": "long",
             "ret": -0.189393939393929,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-28T00:00:00",
@@ -476,7 +473,7 @@
             "close": 25.01,
             "signal": "long",
             "ret": -4.3795620437956195,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-29T00:00:00",
@@ -486,7 +483,7 @@
             "close": 25.61,
             "signal": "long",
             "ret": -4.48504983388705,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-30T00:00:00",
@@ -496,7 +493,7 @@
             "close": 25.4,
             "signal": "long",
             "ret": -1.70357751277683,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-07-31T00:00:00",
@@ -506,7 +503,7 @@
             "close": 25.92,
             "signal": "short",
             "ret": 5.06756756756757,
-            "from file": "File 1"
+            "from file": "1"
          },
          {
             "date": "2009-06-01",
@@ -516,7 +513,7 @@
             "close": 30.04,
             "signal": "short",
             "ret": -4.89396411092985,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-02",
@@ -526,7 +523,7 @@
             "close": 29.63,
             "signal": "short",
             "ret": -0.322580645161295,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-03",
@@ -536,7 +533,7 @@
             "close": 31.02,
             "signal": "short",
             "ret": 3.68663594470045,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-04",
@@ -546,7 +543,7 @@
             "close": 30.18,
             "signal": "short",
             "ret": 4.51010886469673,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-08",
@@ -556,7 +553,7 @@
             "close": 29.77,
             "signal": "short",
             "ret": 1.2539184952978,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-09",
@@ -566,7 +563,7 @@
             "close": 28.27,
             "signal": "short",
             "ret": -5.02431118314424,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-10",
@@ -576,7 +573,7 @@
             "close": 28.46,
             "signal": "short",
             "ret": -5.46623794212217,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-11",
@@ -586,7 +583,7 @@
             "close": 28.11,
             "signal": "short",
             "ret": -8.3743842364532,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-12",
@@ -596,7 +593,7 @@
             "close": 28.15,
             "signal": "short",
             "ret": -5.52763819095477,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-15",
@@ -606,7 +603,7 @@
             "close": 30.81,
             "signal": "long",
             "ret": 3.4920634920635,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-16",
@@ -616,7 +613,7 @@
             "close": 32.68,
             "signal": "short",
             "ret": 0.155038759689914,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-17",
@@ -626,7 +623,7 @@
             "close": 31.54,
             "signal": "short",
             "ret": 5.82822085889571,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-18",
@@ -636,7 +633,7 @@
             "close": 30.03,
             "signal": "short",
             "ret": 8.17610062893082,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-19",
@@ -646,7 +643,7 @@
             "close": 27.99,
             "signal": "short",
             "ret": 8.59872611464968,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-22",
@@ -656,7 +653,7 @@
             "close": 31.17,
             "signal": "short",
             "ret": 15.4907975460123,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-23",
@@ -666,7 +663,7 @@
             "close": 30.58,
             "signal": "short",
             "ret": 11.7370892018779,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-24",
@@ -676,7 +673,7 @@
             "close": 29.05,
             "signal": "long",
             "ret": -10.4234527687296,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-25",
@@ -686,7 +683,7 @@
             "close": 26.36,
             "signal": "long",
             "ret": 0,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-26",
@@ -696,7 +693,7 @@
             "close": 25.93,
             "signal": "long",
             "ret": 0,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-29",
@@ -706,7 +703,7 @@
             "close": 25.35,
             "signal": "long",
             "ret": 5.26315789473684,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-06-30",
@@ -716,7 +713,7 @@
             "close": 26.35,
             "signal": "long",
             "ret": 6.73758865248228,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-01",
@@ -726,7 +723,7 @@
             "close": 26.22,
             "signal": "long",
             "ret": 7.83645655877341,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-02",
@@ -736,7 +733,7 @@
             "close": 27.95,
             "signal": "long",
             "ret": 2.76422764227643,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-06",
@@ -746,7 +743,7 @@
             "close": 29,
             "signal": "short",
             "ret": -2.14521452145214,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-07",
@@ -756,7 +753,7 @@
             "close": 30.85,
             "signal": "short",
             "ret": 3.03514376996805,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-08",
@@ -766,7 +763,7 @@
             "close": 31.3,
             "signal": "short",
             "ret": 5.68720379146919,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-09",
@@ -776,7 +773,7 @@
             "close": 29.78,
             "signal": "short",
             "ret": 8.22784810126583,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-10",
@@ -786,7 +783,7 @@
             "close": 29.02,
             "signal": "short",
             "ret": 8.64779874213836,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-13",
@@ -796,7 +793,7 @@
             "close": 26.31,
             "signal": "short",
             "ret": 7.32899022801303,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-14",
@@ -806,7 +803,7 @@
             "close": 32.525999999999996,
             "signal": "short",
             "ret": 5.847176079734224,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-15",
@@ -816,7 +813,7 @@
             "close": 25.89,
             "signal": "neutral",
             "ret": 0,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-16",
@@ -826,7 +823,7 @@
             "close": 25.42,
             "signal": "long",
             "ret": -9.82758620689656,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-17",
@@ -836,7 +833,7 @@
             "close": 24.34,
             "signal": "long",
             "ret": -10.8433734939759,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-20",
@@ -846,7 +843,7 @@
             "close": 24.4,
             "signal": "long",
             "ret": -7.55711775043936,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-21",
@@ -856,7 +853,7 @@
             "close": 23.87,
             "signal": "long",
             "ret": -2.5089605734767,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-22",
@@ -866,7 +863,7 @@
             "close": 23.47,
             "signal": "long",
             "ret": 0.915750915750916,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-23",
@@ -876,7 +873,7 @@
             "close": 23.43,
             "signal": "long",
             "ret": 2.47148288973383,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-24",
@@ -886,7 +883,7 @@
             "close": 23.09,
             "signal": "long",
             "ret": 4.22264875239922,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-27",
@@ -896,7 +893,7 @@
             "close": 24.28,
             "signal": "long",
             "ret": -0.189393939393929,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-28",
@@ -906,7 +903,7 @@
             "close": 25.01,
             "signal": "long",
             "ret": -4.37956204379562,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-29",
@@ -916,7 +913,7 @@
             "close": 20.488,
             "signal": "long",
             "ret": -6.727574750830575,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-30",
@@ -926,7 +923,7 @@
             "close": 25.4,
             "signal": "long",
             "ret": -1.70357751277683,
-            "from file": "File 2"
+            "from file": "2"
          },
          {
             "date": "2009-07-31",
@@ -936,7 +933,7 @@
             "close": 25.92,
             "signal": "short",
             "ret": 5.06756756756757,
-            "from file": "File 2"
+            "from file": "2"
          }
       ]
    }
