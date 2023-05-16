@@ -1,5 +1,4 @@
 // translation of python compare function to javascript
-
 export function compare(a_json, b_json) {
 // x and y values
 const a_x = a_json.encoding.x.field;
@@ -22,8 +21,6 @@ try {
     data_b = b_json.data.values;
 }
 
-console.log(data_a, data_b);
-
 // save differences to list of dictionaries
 const diffs = [];
 
@@ -37,7 +34,8 @@ for (const dp_a of data_a) {
     }
     }
     if (!identical) {
-    diffs.push(dp_a);
+        dp_a.from_file = 1;
+        diffs.push(dp_a);
     }
 }
 
@@ -51,35 +49,36 @@ for (const dp_b of data_b) {
     }
     }
     if (!identical) {
-    diffs.push(dp_b);
+        dp_b.from_file = 2;
+        diffs.push(dp_b);
     }
 }
 
 // specs - mandatory
-var hash_ = null;
-try {
-    hash_ = a_json.data.name;
-} catch (err) {
-    // hash_ = a_json.data.values;
-}
 const mark = a_json.mark;
 const encoding = a_json.encoding;
-// encoding.color.legend = null;
+try {
+    encoding.color.legend = null;
+} catch (err) {;}
+encoding.tooltip = [
+    {
+       "field": "from_file"
+    }
+]
 
 const output_vl = {
     width: "container",
     height: "container",
     background: null,
     config: {
-    axis: { gridColor: "white" },
-    axisX: { labelColor: "white", titleColor: "white" },
-    axisY: { labelColor: "white", titleColor: "white" },
+        axis: { gridColor: "white" },
+        axisX: { labelColor: "white", titleColor: "white" },
+        axisY: { labelColor: "white", titleColor: "white" },
     },
-    data: { name: hash_ },
+    data: {values: diffs},
     mark: mark,
     encoding: encoding,
-    $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json",
-    datasets: { [hash_]: diffs },
+    $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json"
 };
 
 // specs - optional
@@ -88,27 +87,35 @@ try {
     output_vl.selection = selection;
 } catch (err) {}
 
-// output_vl.encoding.color.legend = null;
-console.log(output_vl);
 return output_vl;
 }
 
 
 // translation of formatSpecs.py as function
-
 export function formatSpecs(file) {
-    const props = {
-        "width": "container",
-        "height": "container",
-        "background": null,
-        "config": {
-            "legend": {"labelColor": "white", "titleColor": "white"},
-            "axis": {"gridColor": "white"},
-            "axisX": {"labelColor": "white", "titleColor": "white"},
-            "axisY": {"labelColor": "white", "titleColor": "white"}
-                }
+    var data = null;
+    try {
+        data = file.datasets[file.data.name];
+    } catch (err) {
+        data = file.data.values;
     }
 
-    // console.log(file.data.values);
-    return file;
+    const mark = file.mark;
+    const encoding = file.encoding;
+
+    const formatted = {
+        width: "container",
+        height: "container",
+        background: null,
+        config: {
+            axis: { gridColor: "white" },
+            axisX: { labelColor: "white", titleColor: "white" },
+            axisY: { labelColor: "white", titleColor: "white" },
+        },
+        data: {values: data},
+        mark: mark,
+        encoding: encoding,
+        $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json"
+    };
+    return formatted;
 }
