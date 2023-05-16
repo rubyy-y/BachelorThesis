@@ -10,24 +10,15 @@ function App() {
   const [file2Content, setFile2Content] = useState(null);
 
   useEffect(() => {
-    var original = "data/" + select + "_source.json";
-    // vegaEmbed('#vis1', original, {"actions": false});
-  
-    var altered = "data/" + select+ percent + '_source.json';
-    // vegaEmbed('#vis2', altered, {"actions": false});
-  
-    var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
-    if (isHovering) {
-      comp = "data/comparisons/filecolor/" + select + "_COMP_" + select + percent + ".json";
-    }
-    vegaEmbed('#dif', comp, {"actions": false});
-  
+    // Visualization 1
     if (file1Content) {
       vegaEmbed('#vis1', file1Content, {"actions": false});
     } else {
       var original = "data/" + select + "_source.json";
       vegaEmbed('#vis1', original, {"actions": false});
     }
+
+    // Visualization 2
     if (file2Content) {
       vegaEmbed('#vis2', file2Content, {"actions": false});
     } else {
@@ -37,10 +28,19 @@ function App() {
     if (file1Content && file2Content) {
       console.log("two files uploaded.")
     }
+
+    // Comparison
+    var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
+    if (isHovering) {
+      comp = "data/comparisons/filecolor/" + select + "_COMP_" + select + percent + ".json";
+    }
+    vegaEmbed('#dif', comp, {"actions": false});
   }, [select, percent, isHovering, file1Content, file2Content]);  
 
   const handleChange = (e) => {
     setSelect(e.target.options[e.target.selectedIndex].value);
+    setFile1Content(null);
+    setFile2Content(null);
   };
 
   const handleMouseEnter = () => {
