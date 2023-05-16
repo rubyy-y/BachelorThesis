@@ -64,6 +64,9 @@ function App() {
       const content = JSON.parse(event.target.result);
       setFile1Content(content);
     };
+    reader.onabort = () => {
+      setFile1Content(null);
+    };
     reader.readAsText(file);
   }; 
 
@@ -73,6 +76,9 @@ function App() {
     reader.onload = (event) => {
       const content = JSON.parse(event.target.result);
       setFile2Content(content);
+    };
+    reader.onabort = () => {
+      setFile2Content(null);
     };
     reader.readAsText(file);
   };   
