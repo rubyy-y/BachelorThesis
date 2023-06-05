@@ -3,6 +3,10 @@
    "height": "container",
    "background": null,
    "config": {
+      "legend": {
+         "labelColor": "white",
+         "titleColor": "white"
+      },
       "axis": {
          "gridColor": "white"
       },
@@ -22,8 +26,7 @@
    "encoding": {
       "color": {
          "field": "other",
-         "type": "ordinal",
-         "legend": null
+         "type": "ordinal"
       },
       "tooltip": [
          {

@@ -3,6 +3,10 @@
    "height": "container",
    "background": null,
    "config": {
+      "legend": {
+         "labelColor": "white",
+         "titleColor": "white"
+      },
       "axis": {
          "gridColor": "white"
       },
@@ -25,8 +29,7 @@
             "value": "#1a9850",
             "test": "datum.open <= datum.close"
          },
-         "value": "#d73027",
-         "legend": null
+         "value": "#d73027"
       },
       "tooltip": [
          {

@@ -14,10 +14,7 @@ abs_path = os.getcwd()
 json_files = abs_path + "\*.json"
 
 # scan for all .json files in this folder
-files = glob.glob(json_files)
-
-for i, file in enumerate(files):
-    files[i] = os.path.split(file)[-1]
+files = [os.path.split(file)[-1] for file in glob.glob(json_files)]
 
 unchanged = ["year", "Cylinders"]
 

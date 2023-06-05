@@ -2,19 +2,17 @@ import os
 import json
 
 def compare(a_json, b_json):
-    print("Comparing ", a_json, "and", b_json)
-
     with open(a_json) as a, open(b_json) as b:
         a_vl = json.load(a)
         b_vl = json.load(b)
 
-        # get x and y values
+        # x and y values
         a_x = a_vl["encoding"]["x"]["field"]
         a_y = a_vl["encoding"]["y"]["field"]
         b_x = b_vl["encoding"]["x"]["field"]
         b_y = b_vl["encoding"]["y"]["field"]
 
-        # datapoints
+        # datapoints (list of dicts)
         data_a = a_vl["datasets"][list(a_vl["datasets"].keys())[0]]
         data_b = b_vl["datasets"][list(b_vl["datasets"].keys())[0]]
 
@@ -39,13 +37,13 @@ def compare(a_json, b_json):
         hash_ = list(a_vl["datasets"].keys())[0]
         mark = a_vl["mark"]
         encoding = a_vl["encoding"]
-        encoding["color"]["legend"] = None
 
         output_vl = {
             "width": "container",
             "height": "container",
             "background": None,
             "config": {
+                "legend": {"labelColor": "white", "titleColor": "white"},
                 "axis": {"gridColor": "white"},
                 "axisX": {"labelColor": "white", "titleColor": "white"},
                 "axisY": {"labelColor": "white", "titleColor": "white"}
@@ -67,36 +65,31 @@ def compare(a_json, b_json):
         except KeyError:
             pass
 
-        # save tooltip
-        output_vl["encoding"]["tooltip"].insert(0, {'field' : "from file"})    
-
-        # save file
-        output_file = f"{a_json.rsplit('.', 1)[0]}_COMP_{b_json.rsplit('.', 1)[0]}.json"
-        with open(os.path.join("comparisons", output_file), 'w') as out:
-            json.dump(output_vl, out, indent=2)
-
-        print("successful\n")
-        return output_vl
+        output_vl["encoding"]["tooltip"].insert(0, {'field' : "from file"})
+        
+        fe = len('_source.json')    # length of file ending
+        output_file = f"{a_json[:-fe]}_COMP_{b_json[:-fe]}.json"
+        with open("comparisons/" + output_file, 'w') as out:
+            json.dump(output_vl, out, indent=3)
         
 
 # compare all the files in the data folder of our app-directory
 os.chdir("BachelorThesis/vis-dif/public/data")
 
+percent = [5, 10, 15, 20]
 datasets = ["barley", "burtin", 
             "cars", "crimea", "driving", 
             "iris", "ohlc", "wheat"]
 
-percent = [5, 10, 15, 20]
-
 for dataset in datasets:
-    print(dataset + ": ")
-    original_file = f"{dataset}_source.json"
-    if original_file in os.listdir():
-        for p in percent:
-            alternation_file = f"{dataset}{p}_source.json"
-            if alternation_file in os.listdir():
-                try:
-                    compare(original_file, alternation_file)
-                except:
-                    print("!! unsuccessful\n")
-                    
+    print(dataset+": ")
+    original = f"{dataset}_source.json"
+    for p in percent:
+        alternation = f"{dataset}{p}_source.json"
+
+        print(f"\n{original} and {alternation}: ")
+        try:
+            compare(original, alternation)
+            print("successful")
+        except:
+            print("!! unsuccessful\n")

@@ -1,13 +1,15 @@
-# imports
 import os
+import glob
 import json
 
-# navigate to source files
-os.chdir("BachelorThesis/vis-dif/public/data")
-
-datasets = ["barley", "burtin", 
-            "cars", "crimea", "driving", 
-            "iris", "ohlc", "wheat"]
+def update_json_file(file_path, props):
+    with open(file_path, 'r+') as file:
+        data = json.load(file)
+        data.pop("config", None)
+        data = {**props, **data}
+        file.seek(0)
+        json.dump(data, file, indent=3)
+        file.truncate()
 
 props = {
     "width": "container",
@@ -18,39 +20,15 @@ props = {
         "axis": {"gridColor": "white"},
         "axisX": {"labelColor": "white", "titleColor": "white"},
         "axisY": {"labelColor": "white", "titleColor": "white"}
-            }
+    }
 }
 
-for dataset in datasets:
-    data = None
-    with open(f"{dataset}_source.json") as f:
-        data = json.load(f)
-  
-    # edit data: remove config, add props
-    try:
-        data.pop("config", None)
-    except KeyError:
-        pass
-    data = {**props, **data}
 
-    # replace in file
-    with open(f"{dataset}_source.json", 'w') as f:
-        json.dump(data, f, indent=3)
-        print(f"{dataset}_source.json has been reformatted.")
+# get list of all JSON files in the directory
+os.chdir("BachelorThesis/vis-dif/public/data")
+json_files = glob.glob("*.json")
 
-    # ALTERNATIONS
-    percentages = [5, 10, 15, 20]
-    for percent in percentages:
-        data = None
-        with open(f"{dataset}{percent}_source.json") as a:
-            data = json.load(a)
-        
-        try:
-            data.pop("config", None)
-        except KeyError:
-            pass
-        data = {**props, **data}
-
-        with open(f"{dataset}{percent}_source.json", 'w') as a:
-            json.dump(data, a, indent=3)
-            print(f"{dataset}{percent}_source.json has been reformatted.")
+# loop over each file
+for file in json_files:
+    update_json_file(file, props)
+    print(f"{file} has been reformatted.")

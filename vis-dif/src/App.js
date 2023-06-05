@@ -9,33 +9,34 @@ function App() {
   const [percent, setPercent] = useState("20");
   const [file1Content, setFile1Content] = useState(null);
   const [file2Content, setFile2Content] = useState(null);
+  const theme = 'googlecharts';
 
   useEffect(() => {
     // Visualization 1
     if (file1Content) {
       const file1Formatted = formatSpecs(file1Content);
-      vegaEmbed('#vis1', file1Formatted, {"actions": false});
+      vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
     } else {
       var original = "data/" + select + "_source.json";
-      vegaEmbed('#vis1', original, {"actions": false});
+      vegaEmbed('#vis1', original, {"actions": false, "theme": theme});
     }
 
     // Visualization 2
     if (file2Content) {
       const file2Formatted = formatSpecs(file2Content);
-      vegaEmbed('#vis2', file2Formatted, {"actions": false});
+      vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
     } else {
       var altered = "data/" + select + percent + '_source.json';
-      vegaEmbed('#vis2', altered, {"actions": false});
+      vegaEmbed('#vis2', altered, {"actions": false, "theme": theme});
     }
 
     // Comparison
     if (file1Content && file2Content) {
       const spec = compare(file1Content, file2Content);
-      vegaEmbed('#dif', spec, {"actions": false});
+      vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
     } else {
       var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
-    vegaEmbed('#dif', comp, {"actions": false});
+    vegaEmbed('#dif', comp, {"actions": false, "theme": theme});
     }
   }, [select, percent, file1Content, file2Content]);  
 
@@ -52,10 +53,10 @@ function App() {
       const content = JSON.parse(event.target.result);
       setFile1Content(content);
     };
+    reader.readAsText(file);
     reader.onabort = () => {
       setFile1Content(null);
     };
-    reader.readAsText(file);
   }; 
 
   const handleFileUpload2 = (event) => {

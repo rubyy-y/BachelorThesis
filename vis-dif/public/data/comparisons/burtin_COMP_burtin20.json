@@ -3,6 +3,10 @@
    "height": "container",
    "background": null,
    "config": {
+      "legend": {
+         "labelColor": "white",
+         "titleColor": "white"
+      },
       "axis": {
          "gridColor": "white"
       },
@@ -22,8 +26,7 @@
    "encoding": {
       "color": {
          "field": "Penicillin",
-         "type": "nominal",
-         "legend": null
+         "type": "nominal"
       },
       "tooltip": [
          {
