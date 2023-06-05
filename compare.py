@@ -1,56 +1,42 @@
-# import section
 import os
 import json
 
 def compare(a_json, b_json):
-    print(a_json, "and", b_json)
+    print("Comparing ", a_json, "and", b_json)
 
     with open(a_json) as a, open(b_json) as b:
         a_vl = json.load(a)
         b_vl = json.load(b)
 
-        # x and y values
+        # get x and y values
         a_x = a_vl["encoding"]["x"]["field"]
         a_y = a_vl["encoding"]["y"]["field"]
         b_x = b_vl["encoding"]["x"]["field"]
         b_y = b_vl["encoding"]["y"]["field"]
 
-        # datapoints (list of dicts)
-        data_a = a_vl["datasets"]
-        hash_a = list(data_a.keys())[0]
-        data_a = a_vl["datasets"][hash_a]
-
-        data_b = b_vl["datasets"]
-        hash_b = list(data_b.keys())[0]
-        data_b = b_vl["datasets"][hash_b]
+        # datapoints
+        data_a = a_vl["datasets"][list(a_vl["datasets"].keys())[0]]
+        data_b = b_vl["datasets"][list(b_vl["datasets"].keys())[0]]
 
         # save differences to list of dictionaries
         diffs = []
         
         # iterate through first file
         for dp_a in data_a:
-            identical = False
-            for dp_b in data_b:
-                if dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y]:
-                    identical = True
-                    break
+            identical = any(dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y] for dp_b in data_b)
             if not identical:
                 dp_a["from file"] = "1"
                 diffs.append(dp_a)
 
         # iterate through second file
         for dp_b in data_b:
-            identical = False
-            for dp_a in data_a:
-                if dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y]:
-                    identical = True
-                    break
+            identical = any(dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y] for dp_a in data_a)
             if not identical:
                 dp_b["from file"] = "2"
                 diffs.append(dp_b)
 
         # specs - mandatory
-        hash_ = hash_a
+        hash_ = list(a_vl["datasets"].keys())[0]
         mark = a_vl["mark"]
         encoding = a_vl["encoding"]
         encoding["color"]["legend"] = None
@@ -77,32 +63,20 @@ def compare(a_json, b_json):
 
         # specs - optional selector
         try:
-            selection = a_vl["selection"]
-            output_vl["selection"] = selection
-        except:
+            output_vl["selection"] = a_vl["selection"]
+        except KeyError:
             pass
 
-        # save with file coloring
-        fe = len('_source.json')    # length of file ending
-        output_file = f"{a_json[:-fe]}_COMP_{b_json[:-fe]}.json"
-        with open("comparisons/" + output_file, 'w') as out:
-            json.dump(output_vl, out, indent=3)
-
-        # save with file color encoding
-        output_vl["encoding"]["color"]["legend"] = None
-        output_vl["encoding"]["color"]["field"] = "from file"
-        output_vl["encoding"]["color"]["type"] = "nominal"
-        output_vl["encoding"]["color"]["scale"] = {
-            "domain": ["1", "2"],
-            "range": ["lightblue", "gold"]
-        }
+        # save tooltip
         output_vl["encoding"]["tooltip"].insert(0, {'field' : "from file"})    
 
-        with open("comparisons/filecolor/" + output_file, 'w') as out:
-            json.dump(output_vl, out, indent=3)
+        # save file
+        output_file = f"{a_json.rsplit('.', 1)[0]}_COMP_{b_json.rsplit('.', 1)[0]}.json"
+        with open(os.path.join("comparisons", output_file), 'w') as out:
+            json.dump(output_vl, out, indent=2)
 
         print("successful\n")
-        return(output_vl)
+        return output_vl
         
 
 # compare all the files in the data folder of our app-directory
@@ -115,17 +89,14 @@ datasets = ["barley", "burtin",
 percent = [5, 10, 15, 20]
 
 for dataset in datasets:
-    print(dataset+": ")
-    if dataset+"_source.json" in os.listdir():
-        original = f"{dataset}_source.json"
+    print(dataset + ": ")
+    original_file = f"{dataset}_source.json"
+    if original_file in os.listdir():
         for p in percent:
-            if dataset+str(p)+"_source.json" in os.listdir():
-                alternation = f"{dataset+str(p)}_source.json"
+            alternation_file = f"{dataset}{p}_source.json"
+            if alternation_file in os.listdir():
                 try:
-                    compare(original, alternation)
+                    compare(original_file, alternation_file)
                 except:
                     print("!! unsuccessful\n")
-
-# main call not needed because this is a utility function, used in backend
-# if __name__ == "__name__":
-#     pass
+                    

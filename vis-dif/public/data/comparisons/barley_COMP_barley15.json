@@ -27,6 +27,9 @@
       },
       "tooltip": [
          {
+            "field": "from file"
+         },
+         {
             "field": "yield",
             "type": "quantitative"
          },

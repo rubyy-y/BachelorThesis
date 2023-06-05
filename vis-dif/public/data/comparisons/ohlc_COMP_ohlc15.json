@@ -30,6 +30,9 @@
       },
       "tooltip": [
          {
+            "field": "from file"
+         },
+         {
             "field": "date",
             "type": "temporal"
          },

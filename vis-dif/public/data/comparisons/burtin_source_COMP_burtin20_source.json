@@ -1,0 +1,91 @@
+{
+  "width": "container",
+  "height": "container",
+  "background": null,
+  "config": {
+    "axis": {
+      "gridColor": "white"
+    },
+    "axisX": {
+      "labelColor": "white",
+      "titleColor": "white"
+    },
+    "axisY": {
+      "labelColor": "white",
+      "titleColor": "white"
+    }
+  },
+  "data": {
+    "name": "data-8833440f737304311e72aeeffd7b9881"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "Penicillin",
+      "type": "nominal",
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "from file"
+      },
+      {
+        "field": "Bacteria",
+        "type": "nominal"
+      },
+      {
+        "field": "Penicillin",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Bacteria",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Streptomycin",
+      "type": "quantitative"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-8833440f737304311e72aeeffd7b9881": [
+      {
+        "Bacteria": "Aerobacter aerogenes",
+        "Penicillin": 870,
+        "Streptomycin": 1,
+        "Neomycin": 1.6,
+        "Gram_Staining": "negative",
+        "Genus": "other",
+        "from file": "1"
+      },
+      {
+        "Bacteria": "Diplococcus pneumoniae",
+        "Penicillin": 0.005,
+        "Streptomycin": 11,
+        "Neomycin": 10,
+        "Gram_Staining": "positive",
+        "Genus": "other",
+        "from file": "1"
+      },
+      {
+        "Bacteria": "Mycobacterium tuberculosis",
+        "Penicillin": 801,
+        "Streptomycin": 10,
+        "Neomycin": 10.998707742649092,
+        "Gram_Staining": "negative",
+        "Genus": "Salmonella",
+        "from file": "2"
+      },
+      {
+        "Bacteria": "Diplococcus pneumoniae",
+        "Penicillin": 0.006500000000000001,
+        "Streptomycin": 8,
+        "Neomycin": 8,
+        "Gram_Staining": "positive",
+        "Genus": "other",
+        "from file": "2"
+      }
+    ]
+  }
+}

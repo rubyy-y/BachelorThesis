@@ -1,7 +1,15 @@
+:root {
+  --lightest: white;
+  --button: #61626a;
+  --hover: #9a9dad;
+  --accent-color: rgb(119, 72, 119);
+  --vis-background: rgba(255, 255, 255, 0.15);
+}
+
 .App-header {
   text-align: center;
   font-size: xx-large;
-  font-weight: light;
+  font-weight: bolder;
   padding: 0.5em;
 }
 
@@ -14,10 +22,10 @@ p {
 
 input[type="file"]::file-selector-button {
   border: 0;
-  background: #61626a;
-  border-radius: 5px;
-  color: white;
-  padding: 1em;
+  background: var(--button);
+  border-radius: 10px;
+  color: var(--lightest);
+  padding: 0.8em;
 }
 
 input::file-selector-button:hover {
@@ -26,17 +34,33 @@ input::file-selector-button:hover {
   cursor: pointer;
 }
 
+input[type="radio"] {
+  appearance: none;
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  width: 1em;
+  height: 1em;
+  border: 2px solid var(--lightest);
+  border-radius: 50%;
+  margin-left: 2em;
+  transition: 0.25s;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--accent-color);
+}
+
 select {
   border: 0;
-  background: #61626a;
+  background: var(--button);
   border-radius: 5px;
   padding: 0.5em;
-  color: white;
+  color: var(--lightest);
   font-size: medium;
 }
 
 select:hover {
-  background: #9a9dad;
+  background: var(--hover);
   transition: .5s;
   cursor: pointer;
 }
@@ -49,9 +73,6 @@ select:hover {
   margin: 0 2.5% 1em 2.5%;
   padding-top: 1.5%;
   text-align: center;
-
-  /* background-color: #ff9dea21;
-  border-radius: 5px; */
 }
 
 .vis1,
@@ -60,8 +81,7 @@ select:hover {
   width: 45%;
   height: 20em;
   margin: 0 2.5% 1em 2.5%;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #a4a4a4;
+  background-color: var(--vis-background);
   text-align: center;
   border-radius: 5px;
 }
@@ -71,9 +91,6 @@ select:hover {
   display: inline-block;
   width: 45%;
   margin: 0.5em 2.5% 1em 2.5%;
-  
-  /* background-color: #9dcbff1f;
-  border-radius: 5px; */
 }
 
 .dif {
@@ -81,8 +98,7 @@ select:hover {
   width: 50%;
   height: 20em;
   margin: 0 25%;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #a4a4a4;
+  background-color: var(--vis-background);
   text-align: center;
   border-radius: 5px;
 }

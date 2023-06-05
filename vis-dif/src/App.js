@@ -7,7 +7,6 @@ import { compare, formatSpecs } from './utilities.js';
 function App() {
   const [select, setSelect] = useState("iris");
   const [percent, setPercent] = useState("20");
-  const [isHovering, setIsHovering] = useState(false);
   const [file1Content, setFile1Content] = useState(null);
   const [file2Content, setFile2Content] = useState(null);
 
@@ -36,25 +35,14 @@ function App() {
       vegaEmbed('#dif', spec, {"actions": false});
     } else {
       var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
-    if (isHovering) {
-      comp = "data/comparisons/filecolor/" + select + "_COMP_" + select + percent + ".json";
-    }
     vegaEmbed('#dif', comp, {"actions": false});
     }
-  }, [select, percent, isHovering, file1Content, file2Content]);  
+  }, [select, percent, file1Content, file2Content]);  
 
   const handleChange = (e) => {
     setSelect(e.target.options[e.target.selectedIndex].value);
     setFile1Content(null);
     setFile2Content(null);
-  };
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
   };
 
   const handleFileUpload1 = (event) => {
@@ -120,7 +108,7 @@ function App() {
           This is where the second Visualization will go.
         </div>
   
-        <p>or choose you own JSON files:</p>
+        <p>or choose your own JSON files:</p>
   
         <div className="file1">
           <input type="file" id="fileUpload1" accept=".JSON" onChange={handleFileUpload1}></input>
@@ -129,7 +117,7 @@ function App() {
           <input type="file" id="fileUpload2" accept=".JSON" onChange={handleFileUpload2}></input>
         </div>
   
-        <div id="dif" className="dif" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div id="dif" className="dif">
           This is where a visualization of the differences will appear.
         </div>
       </div>
