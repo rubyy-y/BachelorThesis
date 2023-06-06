@@ -108,5 +108,16 @@
             "from file": "2"
          }
       ]
-   }
+   },
+   "params": [
+      {
+         "name": "placeholder",
+         "bind": {
+            "input": "range",
+            "min": 0.01,
+            "max": 14,
+            "step": 16
+         }
+      }
+   ]
 }

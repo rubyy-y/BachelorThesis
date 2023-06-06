@@ -406,15 +406,5 @@
             "from file": "2"
          }
       ]
-   },
-   "selection": {
-      "selector001": {
-         "type": "interval",
-         "bind": "scales",
-         "encodings": [
-            "x",
-            "y"
-         ]
-      }
    }
 }

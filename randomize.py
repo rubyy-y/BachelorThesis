@@ -5,10 +5,9 @@ import json
 import random
 
 # change path to where json files are
-# print(os.getcwd())
-# os.chdir("BachelorThesis\datasets")
-os.chdir("..")
-os.chdir("../../datasets")
+os.chdir("BachelorThesis\datasets")
+# os.chdir("..")
+# os.chdir("../../datasets")
 
 abs_path = os.getcwd()
 json_files = abs_path + "\*.json"
@@ -31,7 +30,7 @@ def modify(point: dict, file: str):
                 point[key] = int(point[key]*random.randint(5,15)/10)
             
             elif type(point[key]) == float:
-                point[key] = point[key]*random.randint(5,15)/10
+                point[key] = round(point[key]*random.randint(5,15)/10, 3)
 
     # 3. ADD
     else:        
@@ -116,9 +115,6 @@ def randomize(json_file: str, p: float):
 
     print(f"'{json_file}' has been altered and saved as '{modified}' in folder 'datasets_altered'.")
 
-# randomize("cars.json", 0.7)
-# randomize("wheat.json", 0.7)
-# randomize("driving.json", 0.7)
 
 # randomize all files from 5% to 20% (in steps of 5)
 if __name__ == "__main__":

@@ -210,15 +210,5 @@
             "from file": "2"
          }
       ]
-   },
-   "selection": {
-      "selector006": {
-         "type": "interval",
-         "bind": "scales",
-         "encodings": [
-            "x",
-            "y"
-         ]
-      }
    }
 }

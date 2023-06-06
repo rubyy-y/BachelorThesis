@@ -81,30 +81,32 @@ export function compare(a_json, b_json) {
     } catch (err) {}
     return output_vl;
     }
-    // translation of formatSpecs.py as function
-    export function formatSpecs(file) {
-        var data = null;
-        try {
-            data = file.datasets[file.data.name];
-        } catch (err) {
-            data = file.data.values;
-        }
-        const mark = file.mark;
-        const encoding = file.encoding;
-        const formatted = {
-            width: "container",
-            height: "container",
-            background: null,
-            config: {
-                legend: {labelColor: '#3a393f', titleColor: "black"},
-                axis: { gridColor: "black" },
-                axisX: { labelColor: '#3a393f', titleColor: "black" },
-                axisY: { labelColor: '#3a393f', titleColor: "black" },
-            },
-            data: {values: data},
-            mark: mark,
-            encoding: encoding,
-            $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json"
-        };
-        return formatted;
+
+
+// translation of formatSpecs.py as function
+export function formatSpecs(file) {
+    var data = null;
+    try {
+        data = file.datasets[file.data.name];
+    } catch (err) {
+        data = file.data.values;
     }
+    const mark = file.mark;
+    const encoding = file.encoding;
+    const formatted = {
+        width: "container",
+        height: "container",
+        background: null,
+        config: {
+            legend: {labelColor: '#3a393f', titleColor: "black"},
+            axis: { gridColor: "black" },
+            axisX: { labelColor: '#3a393f', titleColor: "black" },
+            axisY: { labelColor: '#3a393f', titleColor: "black" },
+        },
+        data: {values: data},
+        mark: mark,
+        encoding: encoding,
+        $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json"
+    };
+    return formatted;
+}
