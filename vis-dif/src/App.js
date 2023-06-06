@@ -12,36 +12,37 @@ function App() {
   const theme = 'quartz';
 
   useEffect(() => {
-    // Visualization 1
+    // File 1 was uploaded
     if (file1Content) {
       const file1Formatted = formatSpecs(file1Content);
       vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
+      
+      // File 2 was uploaded
+      if (file2Content) {
+        const file2Formatted = formatSpecs(file2Content);
+        vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
+
+        const spec = compare(file1Content, file2Content);
+        // No difference
+        if (spec.data.values.length === 0) {
+          document.getElementById("dif").innerHTML = "The two visualizations are visually identical.";
+        // Difference
+        } else {
+          vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
+        }
+      
+      // File 2 was not uploaded
+      } else {
+        document.getElementById("vis2").innerHTML = "Upload second file.";
+        document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
+      } 
     } else {
       var original = "data/" + select + "_source.json";
-      vegaEmbed('#vis1', original, {"actions": false, "theme": theme});
-    }
-
-    // Visualization 2
-    if (file2Content) {
-      const file2Formatted = formatSpecs(file2Content);
-      vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
-    } else {
       var altered = "data/" + select + percent + '_source.json';
-      vegaEmbed('#vis2', altered, {"actions": false, "theme": theme});
-    }
-
-    // Comparison
-    if (file1Content && file2Content) {
-      const spec = compare(file1Content, file2Content);
-      if (spec.data.values.length === 0) {
-        // vegaEmbed('#dif', null);
-        // TODO - write function that resets div and add text
-      } else {
-        vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
-      }
-    } else {
       var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
-    vegaEmbed('#dif', comp, {"actions": false, "theme": theme});
+      vegaEmbed('#vis1', original, {"actions": false, "theme": theme});
+      vegaEmbed('#vis2', altered, {"actions": false, "theme": theme});
+      vegaEmbed('#dif', comp, {"actions": false, "theme": theme});
     }
   }, [select, percent, file1Content, file2Content]);  
 
@@ -49,6 +50,7 @@ function App() {
     setSelect(e.target.options[e.target.selectedIndex].value);
     setFile1Content(null);
     setFile2Content(null);
+    console.log(file1Content, file2Content);
   };
 
   const handleFileUpload1 = (event) => {
