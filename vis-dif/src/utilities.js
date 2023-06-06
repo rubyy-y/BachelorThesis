@@ -57,7 +57,7 @@ export function compare(a_json, b_json) {
     // specs - mandatory
     const mark = JSON.parse(JSON.stringify(a_json.mark));
     const encoding = JSON.parse(JSON.stringify(a_json.encoding));
-    encoding.tooltip = [
+    encoding.tooltip += [
         {
         "field": "from_file"
         }
@@ -68,10 +68,10 @@ export function compare(a_json, b_json) {
         height: "container",
         background: null,
         config: {
-            legend: {labelColor: "white", titleColor: "white"},
-            axis: { gridColor: "white" },
-            axisX: { labelColor: "white", titleColor: "white" },
-            axisY: { labelColor: "white", titleColor: "white" },
+            legend: {labelColor: '#3a393f', titleColor: "black"},
+            axis: { gridColor: "black" },
+            axisX: { labelColor: '#3a393f', titleColor: "black" },
+            axisY: { labelColor: '#3a393f', titleColor: "black" },
         },
         data: {values: diffs},
         mark: mark,
@@ -106,10 +106,10 @@ export function formatSpecs(file) {
         height: "container",
         background: null,
         config: {
-            legend: {labelColor: "white", titleColor: "white"},
-            axis: { gridColor: "white" },
-            axisX: { labelColor: "white", titleColor: "white" },
-            axisY: { labelColor: "white", titleColor: "white" },
+            legend: {labelColor: '#3a393f', titleColor: "black"},
+            axis: { gridColor: "black" },
+            axisX: { labelColor: '#3a393f', titleColor: "black" },
+            axisY: { labelColor: '#3a393f', titleColor: "black" },
         },
         data: {values: data},
         mark: mark,

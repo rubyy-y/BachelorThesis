@@ -1,16 +1,23 @@
 :root {
-  --lightest: white;
+  --lightest: #f0f0f0;
+  --background: #3a393f;
   --button: #61626a;
   --hover: #9a9dad;
-  --accent-color: rgb(119, 72, 119);
-  --vis-background: rgba(255, 255, 255, 0.15);
+  --accent-color1: #703c5c;
+  --accent-color2: #ab5787;
+  --accent-color3: #51b2e5;
+  --vis-background: rgba(255, 255, 255, 0.75);
+  --shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
 .App-header {
   text-align: center;
   font-size: xx-large;
   font-weight: bolder;
+  text-shadow: var(--shadow);
   padding: 0.5em;
+} :hover {
+  cursor: default;
 }
 
 p {
@@ -47,7 +54,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color1);
 }
 
 select {
@@ -76,7 +83,8 @@ select:hover {
 }
 
 .vis1,
-.vis2 {
+.vis2,
+.dif {
   display: inline-block;
   width: 45%;
   height: 20em;
@@ -84,6 +92,12 @@ select:hover {
   background-color: var(--vis-background);
   text-align: center;
   border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+:hover {
+  box-shadow: none;
+  transition: .8s;
 }
 
 .file1,
@@ -94,11 +108,7 @@ select:hover {
 }
 
 .dif {
-  display: inline-block;
   width: 50%;
   height: 20em;
   margin: 0 25%;
-  background-color: var(--vis-background);
-  text-align: center;
-  border-radius: 5px;
 }

@@ -43,10 +43,10 @@ def compare(a_json, b_json):
             "height": "container",
             "background": None,
             "config": {
-                "legend": {"labelColor": "white", "titleColor": "white"},
-                "axis": {"gridColor": "white"},
-                "axisX": {"labelColor": "white", "titleColor": "white"},
-                "axisY": {"labelColor": "white", "titleColor": "white"}
+                "legend": {"labelColor": "#3a393f", "titleColor": "black"},
+                "axis": {"gridColor": "black"},
+                "axisX": {"labelColor": "#3a393f", "titleColor": "black"},
+                "axisY": {"labelColor": "#3a393f", "titleColor": "black"}
             },
             "data": {
                 "name": hash_

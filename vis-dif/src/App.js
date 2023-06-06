@@ -9,7 +9,7 @@ function App() {
   const [percent, setPercent] = useState("20");
   const [file1Content, setFile1Content] = useState(null);
   const [file2Content, setFile2Content] = useState(null);
-  const theme = 'googlecharts';
+  const theme = 'quartz';
 
   useEffect(() => {
     // Visualization 1
@@ -33,7 +33,12 @@ function App() {
     // Comparison
     if (file1Content && file2Content) {
       const spec = compare(file1Content, file2Content);
-      vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
+      if (spec.data.values.length === 0) {
+        // vegaEmbed('#dif', null);
+        // TODO - write function that resets div and add text
+      } else {
+        vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
+      }
     } else {
       var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";
     vegaEmbed('#dif', comp, {"actions": false, "theme": theme});
@@ -53,10 +58,10 @@ function App() {
       const content = JSON.parse(event.target.result);
       setFile1Content(content);
     };
-    reader.readAsText(file);
     reader.onabort = () => {
       setFile1Content(null);
     };
+    reader.readAsText(file);
   }; 
 
   const handleFileUpload2 = (event) => {

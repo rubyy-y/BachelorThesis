@@ -4,19 +4,19 @@
    "background": null,
    "config": {
       "legend": {
-         "labelColor": "white",
-         "titleColor": "white"
+         "labelColor": "#3a393f",
+         "titleColor": "black"
       },
       "axis": {
-         "gridColor": "white"
+         "gridColor": "black"
       },
       "axisX": {
-         "labelColor": "white",
-         "titleColor": "white"
+         "labelColor": "#3a393f",
+         "titleColor": "black"
       },
       "axisY": {
-         "labelColor": "white",
-         "titleColor": "white"
+         "labelColor": "#3a393f",
+         "titleColor": "black"
       }
    },
    "data": {
