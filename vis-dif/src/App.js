@@ -12,30 +12,26 @@ function App() {
   const theme = 'quartz';
 
   useEffect(() => {
-    // File 1 was uploaded
-    if (file1Content) {
+    if (file1Content && file2Content) {
       const file1Formatted = formatSpecs(file1Content);
+      const file2Formatted = formatSpecs(file2Content);
       vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
-      
-      // File 2 was uploaded
-      if (file2Content) {
-        const file2Formatted = formatSpecs(file2Content);
-        vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
+      vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
 
-        const spec = compare(file1Content, file2Content);
-        // No difference
-        if (spec.data.values.length === 0) {
-          document.getElementById("dif").innerHTML = "The two visualizations are visually identical.";
-        // Difference
-        } else {
-          vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
-        }
-      
-      // File 2 was not uploaded
+      const spec = compare(file1Content, file2Content);
+      if (spec.data.values.length === 0) {
+        document.getElementById("dif").innerHTML = "The two visualizations are visually identical.";
       } else {
+        vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
+      }
+    } else if (file1Content || file2Content) {
+      if (file1Content) {
         document.getElementById("vis2").innerHTML = "Upload second file.";
         document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
-      } 
+      } else {
+        document.getElementById("vis1").innerHTML = "Upload another file.";
+        document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
+      }
     } else {
       var original = "data/" + select + "_source.json";
       var altered = "data/" + select + percent + '_source.json';
@@ -48,35 +44,40 @@ function App() {
 
   const handleChange = (e) => {
     setSelect(e.target.options[e.target.selectedIndex].value);
+    document.getElementById("fileUpload1").value = "";
+    document.getElementById("fileUpload2").value = "";
     setFile1Content(null);
     setFile2Content(null);
-    console.log(file1Content, file2Content);
   };
 
   const handleFileUpload1 = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const content = JSON.parse(event.target.result);
-      setFile1Content(content);
-    };
-    reader.onabort = () => {
-      setFile1Content(null);
-    };
+    try {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const content = JSON.parse(event.target.result);
+        setFile1Content(content);
+      };
     reader.readAsText(file);
-  }; 
+    } catch (err) {
+      document.getElementById("fileUpload1").value = "";
+      setFile1Content(null);
+    }
+  };   
 
   const handleFileUpload2 = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const content = JSON.parse(event.target.result);
-      setFile2Content(content);
-    };
-    reader.onabort = () => {
-      setFile2Content(null);
-    };
+    try {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const content = JSON.parse(event.target.result);
+        setFile2Content(content);
+      };
     reader.readAsText(file);
+    } catch (err) {
+      document.getElementById("fileUpload2").value = "";
+      setFile2Content(null);
+    }
   };   
 
   return (
