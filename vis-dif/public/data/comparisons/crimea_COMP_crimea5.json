@@ -1,104 +1,272 @@
 {
-   "width": "container",
-   "height": "container",
-   "background": null,
-   "config": {
-      "legend": {
-         "labelColor": "#3a393f",
-         "titleColor": "black"
-      },
-      "axis": {
-         "gridColor": "black"
-      },
-      "axisX": {
-         "labelColor": "#3a393f",
-         "titleColor": "black"
-      },
-      "axisY": {
-         "labelColor": "#3a393f",
-         "titleColor": "black"
-      }
-   },
-   "data": {
-      "name": "data-706bd1db8fd7b92d0ae2bc27b8274c2e"
-   },
-   "mark": "bar",
-   "encoding": {
-      "color": {
-         "field": "other",
-         "type": "ordinal"
-      },
-      "tooltip": [
-         {
-            "field": "from file"
-         },
-         {
-            "field": "disease",
-            "type": "quantitative"
-         },
-         {
-            "field": "other",
-            "type": "quantitative"
-         }
-      ],
-      "x": {
-         "field": "date",
-         "type": "nominal"
-      },
-      "y": {
-         "field": "disease",
-         "type": "quantitative"
-      }
-   },
-   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
-   "datasets": {
-      "data-706bd1db8fd7b92d0ae2bc27b8274c2e": [
-         {
-            "date": "1854-04-01",
-            "wounds": 0,
-            "other": 110,
-            "disease": 110,
-            "from file": "1"
-         },
-         {
-            "date": "1855-03-01",
-            "wounds": 155,
-            "other": 350,
-            "disease": 935,
-            "from file": "1"
-         },
-         {
-            "date": "1856-02-01",
-            "wounds": 0,
-            "other": 100,
-            "disease": 100,
-            "from file": "1"
-         },
-         {
-            "date": "1855-05-01",
-            "wounds": 158,
-            "other": 187,
-            "disease": 1439,
-            "from file": "2"
-         },
-         {
-            "date": "1856-02-01",
-            "wounds": 0,
-            "other": 120,
-            "disease": 110,
-            "from file": "2"
-         }
-      ]
-   },
-   "params": [
+  "width": "container",
+  "height": "container",
+  "background": null,
+  "config": {
+    "legend": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axis": {
+      "gridColor": "black"
+    },
+    "axisX": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axisY": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    }
+  },
+  "data": {
+    "name": "data-706bd1db8fd7b92d0ae2bc27b8274c2e"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "other",
+      "type": "ordinal"
+    },
+    "tooltip": [
       {
-         "name": "placeholder",
-         "bind": {
-            "input": "range",
-            "min": 90,
-            "max": 1440,
-            "step": 24
-         }
+        "field": "from file"
+      },
+      {
+        "field": "disease",
+        "type": "quantitative"
+      },
+      {
+        "field": "other",
+        "type": "quantitative"
       }
-   ]
+    ],
+    "x": {
+      "field": "date",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "disease",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          1600
+        ]
+      }
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-706bd1db8fd7b92d0ae2bc27b8274c2e": [
+      {
+        "date": "1854-04-01",
+        "wounds": 0,
+        "other": 110,
+        "disease": 110,
+        "from file": "1",
+        "status": "removed"
+      },
+      {
+        "date": "1854-05-01",
+        "wounds": 0,
+        "other": 95,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1854-06-01",
+        "wounds": 0,
+        "other": 40,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1854-07-01",
+        "wounds": 0,
+        "other": 140,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1854-08-01",
+        "wounds": 20,
+        "other": 150,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1854-09-01",
+        "wounds": 220,
+        "other": 230,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1854-10-01",
+        "wounds": 305,
+        "other": 310,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1854-11-01",
+        "wounds": 480,
+        "other": 290,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1854-12-01",
+        "wounds": 295,
+        "other": 310,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-01-01",
+        "wounds": 230,
+        "other": 460,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-02-01",
+        "wounds": 180,
+        "other": 520,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-03-01",
+        "wounds": 155,
+        "other": 350,
+        "disease": 935,
+        "from file": "1",
+        "status": "removed"
+      },
+      {
+        "date": "1855-04-01",
+        "wounds": 195,
+        "other": 195,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-05-01",
+        "wounds": 180,
+        "other": 155,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-06-01",
+        "wounds": 330,
+        "other": 130,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-07-01",
+        "wounds": 260,
+        "other": 130,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-08-01",
+        "wounds": 290,
+        "other": 110,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-09-01",
+        "wounds": 355,
+        "other": 100,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-10-01",
+        "wounds": 135,
+        "other": 95,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-11-01",
+        "wounds": 100,
+        "other": 140,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1855-12-01",
+        "wounds": 40,
+        "other": 120,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1856-01-01",
+        "wounds": 0,
+        "other": 160,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1856-02-01",
+        "wounds": 0,
+        "other": 100,
+        "disease": 100,
+        "from file": "1",
+        "status": "removed"
+      },
+      {
+        "date": "1856-03-01",
+        "wounds": 0,
+        "other": 125,
+        "disease": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
+        "date": "1856-03-01",
+        "wounds": 0,
+        "other": 125,
+        "disease": 90,
+        "from file": "2",
+        "status": "added"
+      },
+      {
+        "date": "1856-03-01",
+        "wounds": 0,
+        "other": 125,
+        "disease": 90,
+        "from file": "2",
+        "status": "added"
+      }
+    ]
+  }
 }
