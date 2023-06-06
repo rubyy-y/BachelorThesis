@@ -50,8 +50,8 @@
       "type": "quantitative",
       "scale": {
         "domain": [
-          0,
-          1600
+          -14,
+          14
         ]
       }
     }
@@ -72,12 +72,11 @@
       {
         "Bacteria": "Bacillus anthracis",
         "Penicillin": 0.001,
+        "Streptomycin": -0.01,
         "Neomycin": 0.007,
         "Gram_Staining": "positive",
         "Genus": "other",
-        "Streptomycin": 0.0,
-        "from file": "1",
-        "status": "modified"
+        "from file": "1"
       },
       {
         "Bacteria": "Brucella abortus",
@@ -162,12 +161,12 @@
       {
         "Bacteria": "Salmonella schottmuelleri",
         "Penicillin": 10,
-        "Streptomycin": 0.8,
         "Neomycin": 0.09,
         "Gram_Staining": "negative",
         "Genus": "Salmonella",
+        "Streptomycin": 0.0,
         "from file": "1",
-        "status": "removed"
+        "status": "modified"
       },
       {
         "Bacteria": "Staphylococcus albus",
@@ -220,14 +219,13 @@
         "status": "modified"
       },
       {
-        "Bacteria": "Streptococcus viridans",
-        "Penicillin": 0.005,
-        "Streptomycin": 10,
-        "Neomycin": 40,
+        "Bacteria": "Brucella abortus",
+        "Penicillin": 206,
+        "Streptomycin": 12,
+        "Neomycin": 37.95264795321462,
         "Gram_Staining": "positive",
-        "Genus": "Streptococcus",
-        "from file": "2",
-        "status": "added"
+        "Genus": "other",
+        "from file": "2"
       }
     ]
   }

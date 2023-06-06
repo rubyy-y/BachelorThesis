@@ -54,108 +54,31 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 27,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 48.86667,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "Waseca",
-        "from file": "1"
-      },
-      {
-        "yield": 39.93333,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 28.96667,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "1"
-      },
-      {
-        "yield": 47.33333,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "Waseca",
-        "from file": "1"
-      },
-      {
-        "yield": 25.76667,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 25.7,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "1"
-      },
-      {
-        "yield": 50.23333,
-        "variety": "Velvet",
-        "year": 1931,
-        "site": "Waseca",
-        "from file": "1"
-      },
-      {
-        "yield": 46.93333,
-        "variety": "Trebi",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 28.7,
-        "variety": "No. 457",
-        "year": 1931,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 29.86667,
+        "yield": 32.76667,
         "variety": "Peatland",
         "year": 1931,
-        "site": "Morris",
+        "site": "University Farm",
         "from file": "1"
       },
       {
-        "yield": 22.6,
+        "yield": 24.66667,
         "variety": "No. 475",
-        "year": 1931,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 33.06666,
-        "variety": "No. 475",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "1"
-      },
-      {
-        "yield": 39.3,
-        "variety": "Wisconsin No. 38",
         "year": 1931,
         "site": "University Farm",
         "from file": "1"
       },
       {
-        "yield": 49.86667,
-        "variety": "Wisconsin No. 38",
+        "yield": 44.1,
+        "variety": "No. 475",
         "year": 1931,
         "site": "Crookston",
+        "from file": "1"
+      },
+      {
+        "yield": 29.46667,
+        "variety": "Wisconsin No. 38",
+        "year": 1931,
+        "site": "Morris",
         "from file": "1"
       },
       {
@@ -166,6 +89,20 @@
         "from file": "1"
       },
       {
+        "yield": 32.96667,
+        "variety": "Manchuria",
+        "year": 1932,
+        "site": "Crookston",
+        "from file": "1"
+      },
+      {
+        "yield": 22.56667,
+        "variety": "Manchuria",
+        "year": 1932,
+        "site": "Duluth",
+        "from file": "1"
+      },
+      {
         "yield": 37.73333,
         "variety": "Glabron",
         "year": 1932,
@@ -173,52 +110,38 @@
         "from file": "1"
       },
       {
-        "yield": 35.13333,
-        "variety": "Glabron",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 26.16667,
-        "variety": "Glabron",
-        "year": 1932,
-        "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 35.03333,
+        "yield": 38.5,
         "variety": "Svansota",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 16.63333,
-        "variety": "Svansota",
-        "year": 1932,
-        "site": "Grand Rapids",
-        "from file": "1"
-      },
-      {
-        "yield": 26.8,
-        "variety": "Velvet",
-        "year": 1932,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 37.4,
-        "variety": "Velvet",
         "year": 1932,
         "site": "Waseca",
         "from file": "1"
       },
       {
-        "yield": 25.56667,
-        "variety": "No. 462",
+        "yield": 22.23333,
+        "variety": "Svansota",
         "year": 1932,
-        "site": "University Farm",
+        "site": "Duluth",
+        "from file": "1"
+      },
+      {
+        "yield": 22.46667,
+        "variety": "Velvet",
+        "year": 1932,
+        "site": "Duluth",
+        "from file": "1"
+      },
+      {
+        "yield": 20.63333,
+        "variety": "Trebi",
+        "year": 1932,
+        "site": "Grand Rapids",
+        "from file": "1"
+      },
+      {
+        "yield": 43.53334,
+        "variety": "No. 457",
+        "year": 1932,
+        "site": "Morris",
         "from file": "1"
       },
       {
@@ -229,150 +152,66 @@
         "from file": "1"
       },
       {
-        "yield": 47,
+        "yield": 19.9,
         "variety": "No. 462",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 36.03333,
-        "variety": "Peatland",
-        "year": 1932,
-        "site": "Waseca",
-        "from file": "1"
-      },
-      {
-        "yield": 43.2,
-        "variety": "Peatland",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 26.76667,
-        "variety": "Peatland",
         "year": 1932,
         "site": "Grand Rapids",
         "from file": "1"
       },
       {
-        "yield": 22,
-        "variety": "Peatland",
+        "yield": 22.5,
+        "variety": "No. 462",
+        "year": 1932,
+        "site": "Duluth",
+        "from file": "1"
+      },
+      {
+        "yield": 34,
+        "variety": "Svansota",
         "year": 1931,
         "site": "Morris",
         "from file": "2"
       },
       {
-        "yield": 39.093336,
-        "variety": "Manchuria",
+        "yield": 54,
+        "variety": "No. 462",
         "year": 1931,
-        "site": "Waseca",
+        "site": "Crookston",
         "from file": "2"
       },
       {
-        "yield": 23,
+        "yield": 49.45,
+        "variety": "Manchuria",
+        "year": 1932,
+        "site": "Crookston",
+        "from file": "2"
+      },
+      {
+        "yield": 26,
         "variety": "Wisconsin No. 38",
         "year": 1931,
-        "site": "Morris",
-        "from file": "2"
-      },
-      {
-        "yield": 43,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "2"
-      },
-      {
-        "yield": 28,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "2"
-      },
-      {
-        "yield": 40.18,
-        "variety": "No. 457",
-        "year": 1931,
-        "site": "Morris",
-        "from file": "2"
-      },
-      {
-        "yield": 64,
-        "variety": "No. 462",
-        "year": 1931,
-        "site": "Morris",
-        "from file": "2"
-      },
-      {
-        "yield": 38,
-        "variety": "No. 475",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "2"
-      },
-      {
-        "yield": 31,
-        "variety": "No. 462",
-        "year": 1931,
-        "site": "Morris",
-        "from file": "2"
-      },
-      {
-        "yield": 33.959997,
-        "variety": "Glabron",
-        "year": 1932,
-        "site": "Waseca",
-        "from file": "2"
-      },
-      {
-        "yield": 52,
-        "variety": "No. 475",
-        "year": 1931,
-        "site": "Waseca",
-        "from file": "2"
-      },
-      {
-        "yield": 23.010002999999998,
-        "variety": "No. 462",
-        "year": 1932,
         "site": "University Farm",
         "from file": "2"
       },
       {
-        "yield": 26.820000000000004,
-        "variety": "No. 462",
-        "year": 1932,
-        "site": "Waseca",
-        "from file": "2"
-      },
-      {
-        "yield": 23,
-        "variety": "No. 462",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "2"
-      },
-      {
-        "yield": 24,
-        "variety": "Wisconsin No. 38",
-        "year": 1931,
-        "site": "Morris",
-        "from file": "2"
-      },
-      {
-        "yield": 15,
+        "yield": 22.233,
         "variety": "Svansota",
+        "year": 1932,
+        "site": "Duluth",
+        "from file": "2"
+      },
+      {
+        "yield": 27,
+        "variety": "No. 462",
         "year": 1931,
         "site": "Crookston",
         "from file": "2"
       },
       {
-        "yield": 34.796671,
-        "variety": "Peatland",
+        "yield": 11.25,
+        "variety": "No. 462",
         "year": 1932,
-        "site": "Grand Rapids",
+        "site": "Duluth",
         "from file": "2"
       }
     ]

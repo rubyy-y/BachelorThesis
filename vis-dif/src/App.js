@@ -96,7 +96,6 @@ function App() {
             <option value="crimea">crimea.json</option>
             <option value="driving">driving.json</option>
             <option value="iris">iris.json</option>
-            <option value="ohlc">ohlc.json</option>
             <option value="wheat">wheat.json</option>
           </select>
         </div>

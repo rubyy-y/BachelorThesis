@@ -6,16 +6,21 @@ import random
 
 # change path to where json files are
 os.chdir("BachelorThesis\datasets")
-# os.chdir("..")
-# os.chdir("../../datasets")
-
-abs_path = os.getcwd()
-json_files = abs_path + "\*.json"
+json_files = os.getcwd() + "\*.json"
 
 # scan for all .json files in this folder
 files = [os.path.split(file)[-1] for file in glob.glob(json_files)]
 
-unchanged = ["year", "Cylinders"]
+# _______________________________________
+# function to get x, y and color encoding
+def getNotXYColor(file):
+    with open("../vis-dif/public/data/" + file) as f:
+        f_vl = json.load(f)
+
+        keys = list(f_vl["datasets"][list(f_vl["datasets"].keys())[0]][0].keys())
+        keys.remove(f_vl["encoding"]["x"]["field"])
+        keys.remove(f_vl["encoding"]["y"]["field"])
+        return keys
 
 # __________M_____O_____D_____I_____F_____I_____C_____A_____T_____I_____O_____N__________
 
@@ -26,6 +31,7 @@ def modify(point: dict, file: str):
     if action < 1/2:
         for key in point.keys():
             # multiply value with random number between 0.5 and 1.5
+            unchanged = getNotXYColor(file[:-5]+"_source.json")
             if type(point[key]) == int and key not in unchanged:
                 point[key] = int(point[key]*random.randint(5,15)/10)
             
@@ -112,8 +118,7 @@ def randomize(json_file: str, p: float):
             f.truncate()
 
             f.write(bytes("\n]", 'utf-8'))
-
-    print(f"'{json_file}' has been altered and saved as '{modified}' in folder 'datasets_altered'.")
+    return None
 
 
 # randomize all files from 5% to 20% (in steps of 5)
@@ -121,3 +126,4 @@ if __name__ == "__main__":
     for file in files:
         for i in range(5, 21, 5):
             randomize(file, i/100)
+            print(f"'{file}' has been altered and saved as '{file[:-5]}{i}.json'.")

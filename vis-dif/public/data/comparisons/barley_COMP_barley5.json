@@ -54,52 +54,45 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 40.46667,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 33.6,
-        "variety": "No. 457",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "1"
-      },
-      {
-        "yield": 48.56666,
-        "variety": "Peatland",
-        "year": 1931,
-        "site": "Waseca",
-        "from file": "1"
-      },
-      {
-        "yield": 25.86667,
-        "variety": "Glabron",
-        "year": 1932,
-        "site": "Duluth",
-        "from file": "1"
-      },
-      {
-        "yield": 41.83333,
-        "variety": "Trebi",
-        "year": 1932,
-        "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 15.520002,
-        "variety": "Glabron",
-        "year": 1932,
-        "site": "Duluth",
-        "from file": "2"
-      },
-      {
-        "yield": 15,
+        "yield": 29.66667,
         "variety": "Svansota",
         "year": 1931,
         "site": "Grand Rapids",
+        "from file": "1"
+      },
+      {
+        "yield": 44.1,
+        "variety": "No. 475",
+        "year": 1931,
+        "site": "Crookston",
+        "from file": "1"
+      },
+      {
+        "yield": 22.13333,
+        "variety": "Manchuria",
+        "year": 1932,
+        "site": "Grand Rapids",
+        "from file": "1"
+      },
+      {
+        "yield": 20.767,
+        "variety": "Svansota",
+        "year": 1931,
+        "site": "Grand Rapids",
+        "from file": "2"
+      },
+      {
+        "yield": 25,
+        "variety": "No. 462",
+        "year": 1931,
+        "site": "Crookston",
+        "from file": "2"
+      },
+      {
+        "yield": 38,
+        "variety": "No. 462",
+        "year": 1931,
+        "site": "Waseca",
         "from file": "2"
       }
     ]

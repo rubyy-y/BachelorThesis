@@ -50,8 +50,8 @@
       "type": "quantitative",
       "scale": {
         "domain": [
-          0,
-          1600
+          -14,
+          14
         ]
       }
     }
@@ -120,6 +120,16 @@
         "status": "modified"
       },
       {
+        "Bacteria": "Mycobacterium tuberculosis",
+        "Penicillin": 800,
+        "Neomycin": 2,
+        "Gram_Staining": "negative",
+        "Genus": "other",
+        "Streptomycin": 0,
+        "from file": "1",
+        "status": "modified"
+      },
+      {
         "Bacteria": "Proteus vulgaris",
         "Penicillin": 3,
         "Neomycin": 0.1,
@@ -142,12 +152,11 @@
       {
         "Bacteria": "Salmonella (Eberthella) typhosa",
         "Penicillin": 1,
+        "Streptomycin": -0.4,
         "Neomycin": 0.008,
         "Gram_Staining": "negative",
         "Genus": "Salmonella",
-        "Streptomycin": 0.0,
-        "from file": "1",
-        "status": "modified"
+        "from file": "1"
       },
       {
         "Bacteria": "Salmonella schottmuelleri",
@@ -182,12 +191,12 @@
       {
         "Bacteria": "Streptococcus fecalis",
         "Penicillin": 1,
-        "Streptomycin": 1,
         "Neomycin": 0.1,
         "Gram_Staining": "positive",
         "Genus": "Streptococcus",
+        "Streptomycin": 0,
         "from file": "1",
-        "status": "removed"
+        "status": "modified"
       },
       {
         "Bacteria": "Streptococcus hemolyticus",
@@ -210,14 +219,13 @@
         "status": "modified"
       },
       {
-        "Bacteria": "Streptococcus viridans",
-        "Penicillin": 0.005,
-        "Streptomycin": 10,
-        "Neomycin": 40,
-        "Gram_Staining": "positive",
-        "Genus": "Streptococcus",
-        "from file": "2",
-        "status": "added"
+        "Bacteria": "Bacillus anthracis",
+        "Penicillin": 560,
+        "Streptomycin": 13,
+        "Neomycin": 27.88014741378519,
+        "Gram_Staining": "negative",
+        "Genus": "Staphylococcus",
+        "from file": "2"
       }
     ]
   }

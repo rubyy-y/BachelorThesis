@@ -54,57 +54,81 @@
   "datasets": {
     "data-76d1ce26ea5761007c35827e1564d86c": [
       {
-        "year": 1585,
-        "wheat": 41.5,
-        "wages": 5.15,
+        "year": 1580,
+        "wheat": 49,
+        "wages": 5.12,
         "from file": "1"
       },
       {
-        "year": 1655,
-        "wheat": 40.5,
-        "wages": 6.6,
-        "from file": "1"
-      },
-      {
-        "year": 1660,
-        "wheat": 46.5,
-        "wages": 6.75,
-        "from file": "1"
-      },
-      {
-        "year": 1665,
+        "year": 1610,
         "wheat": 32,
-        "wages": 6.8,
+        "wages": 5.78,
         "from file": "1"
       },
       {
-        "year": 1700,
-        "wheat": 30,
-        "wages": 9,
+        "year": 1620,
+        "wheat": 35,
+        "wages": 6.01,
         "from file": "1"
       },
       {
-        "year": 1730,
-        "wheat": 26,
-        "wages": 13.3,
+        "year": 1625,
+        "wheat": 33,
+        "wages": 6.12,
         "from file": "1"
       },
       {
-        "year": 1735,
-        "wheat": 32,
-        "wages": 13.6,
+        "year": 1635,
+        "wheat": 33,
+        "wages": 6.3,
         "from file": "1"
       },
       {
-        "year": 1760,
-        "wheat": 31,
-        "wages": 16.5,
+        "year": 1650,
+        "wheat": 42,
+        "wages": 6.5,
         "from file": "1"
       },
       {
-        "year": 1795,
-        "wheat": 76,
-        "wages": 27.5,
+        "year": 1685,
+        "wheat": 27,
+        "wages": 7.6,
+        "from file": "1"
+      },
+      {
+        "year": 1715,
+        "wheat": 33,
+        "wages": 11.75,
+        "from file": "1"
+      },
+      {
+        "year": 1720,
+        "wheat": 29,
+        "wages": 12.5,
+        "from file": "1"
+      },
+      {
+        "year": 1770,
+        "wheat": 47,
+        "wages": 18.5,
+        "from file": "1"
+      },
+      {
+        "year": 1785,
+        "wheat": 42,
+        "wages": 23,
+        "from file": "1"
+      },
+      {
+        "year": 1790,
+        "wheat": 47.5,
+        "wages": 25.5,
+        "from file": "1"
+      },
+      {
+        "year": 1810,
+        "wheat": 99,
+        "wages": 30,
         "from file": "1"
       },
       {
@@ -120,39 +144,51 @@
         "from file": "1"
       },
       {
-        "year": "1645",
-        "wheat": 76,
-        "wages": 5,
+        "year": "1580",
+        "wheat": 63,
+        "wages": 7.68,
         "from file": "2"
       },
       {
-        "year": "1785",
-        "wheat": 95,
-        "wages": 19,
+        "year": "1775",
+        "wheat": 57,
+        "wages": 18,
         "from file": "2"
       },
       {
-        "year": "1735",
-        "wheat": 52,
-        "wages": 5,
-        "from file": "2"
-      },
-      {
-        "year": "1760",
-        "wheat": 24,
-        "wages": 23.1,
-        "from file": "2"
-      },
-      {
-        "year": "1635",
+        "year": "1625",
         "wheat": 39,
-        "wages": 6,
+        "wages": 7.344,
         "from file": "2"
       },
       {
-        "year": "1815",
-        "wheat": 78,
-        "wages": 30.3,
+        "year": "1650",
+        "wheat": 21,
+        "wages": 8.45,
+        "from file": "2"
+      },
+      {
+        "year": "1710",
+        "wheat": 47,
+        "wages": 15,
+        "from file": "2"
+      },
+      {
+        "year": "1695",
+        "wheat": 97,
+        "wages": 12,
+        "from file": "2"
+      },
+      {
+        "year": "1645",
+        "wheat": 45,
+        "wages": 20,
+        "from file": "2"
+      },
+      {
+        "year": "1810",
+        "wheat": 49,
+        "wages": 33,
         "from file": "2"
       },
       {

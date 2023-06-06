@@ -50,8 +50,8 @@
       "type": "quantitative",
       "scale": {
         "domain": [
-          0,
-          1600
+          -1440,
+          1440
         ]
       }
     }
@@ -135,9 +135,8 @@
         "date": "1855-01-01",
         "wounds": 230,
         "other": 460,
-        "disease": 0,
-        "from file": "1",
-        "status": "modified"
+        "disease": -1440,
+        "from file": "1"
       },
       {
         "date": "1855-02-01",
@@ -207,9 +206,9 @@
         "date": "1855-10-01",
         "wounds": 135,
         "other": 95,
-        "disease": 245,
+        "disease": 0,
         "from file": "1",
-        "status": "removed"
+        "status": "modified"
       },
       {
         "date": "1855-11-01",
@@ -231,17 +230,24 @@
         "date": "1856-01-01",
         "wounds": 0,
         "other": 160,
-        "disease": 160,
+        "disease": 0,
         "from file": "1",
-        "status": "removed"
+        "status": "modified"
       },
       {
         "date": "1856-02-01",
         "wounds": 0,
         "other": 100,
-        "disease": 0,
+        "disease": -40,
         "from file": "1",
         "status": "modified"
+      },
+      {
+        "date": "1856-02-01",
+        "wounds": 0,
+        "other": 100,
+        "disease": -100,
+        "from file": "1"
       },
       {
         "date": "1856-03-01",
@@ -250,6 +256,20 @@
         "disease": 0,
         "from file": "1",
         "status": "modified"
+      },
+      {
+        "date": "1856-03-01",
+        "wounds": 208,
+        "other": 327,
+        "disease": 1223,
+        "from file": "2"
+      },
+      {
+        "date": "1856-02-01",
+        "wounds": 0,
+        "other": 100,
+        "disease": 140,
+        "from file": "2"
       }
     ]
   }
