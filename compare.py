@@ -44,12 +44,6 @@ def compare(a_json, b_json):
                         y_dif = dp_a[a_y] - dp_b[b_y]
                         copy_a[a_y] = y_dif
 
-                        # if y_dif < 0:
-                        #     copy_a[a_color] = -100
-                        # elif y_dif > 0:
-                        #     copy_a[a_color] = 100
-                        # # stays the same if == 0
-
                         copy_a["from file"] = "1"
                         copy_a["status"] = "modified"
                         diffs.append(copy_a)
@@ -65,7 +59,7 @@ def compare(a_json, b_json):
                 if dp_b[b_y] > ylim:
                     ylim = dp_b[b_y]
 
-                # no identical in first fiel: got added
+                # no identical in first file: got added
                 identical = any(dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y] for dp_a in data_a)
                 if not identical:
                     dp_b["from file"] = "2"

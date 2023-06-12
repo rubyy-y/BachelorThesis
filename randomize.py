@@ -12,8 +12,12 @@ json_files = os.getcwd() + "\*.json"
 files = [os.path.split(file)[-1] for file in glob.glob(json_files)]
 
 # _______________________________________
-# function to get x, y and color encoding
 def getNotXYColor(file):
+    """
+    file: json source file
+    This function returns a list of the values that are NOT encoded
+    in the x or y field of the vega lite spec.
+    """
     with open("../vis-dif/public/data/" + file) as f:
         f_vl = json.load(f)
 
@@ -40,37 +44,45 @@ def modify(point: dict, file: str):
 
     # 3. ADD
     else:        
-        stats = dict()
+        stats = {}
         with open(file, "r") as f:
             source = json.load(f)
             for key in source[0].keys():
-                if type(source[0][key]) == int or type(source[0][key]) == float:
-                    try:
-                        minimum = min([dp[key] for dp in source if dp[key]!=None])
-                        maximum = max([dp[key] for dp in source if dp[key]!=None])
-                        
-                        stats[key+"_min"] = minimum
-                        stats[key+"_max"] = maximum
+                # if type(source[0][key]) == int or type(source[0][key]) == float:
+                #     # try:
+                #     minimum = min([dp[key] for dp in source if dp[key]!=None])
+                #     maximum = max([dp[key] for dp in source if dp[key]!=None])
+                    
+                #     stats[key+"_min"] = minimum
+                #     stats[key+"_max"] = maximum
 
-                    except TypeError:
-                        pass
+                #     # except TypeError:
+                #     #     pass
 
-                elif type(source[0][key]) == str:
-                    stats[key] = list({dp[key] for dp in source})
+                # elif type(source[0][key]) == str:
+                #     stats[key] = list({dp[key] for dp in source})
 
-        point = dict()
+                values = [dp[key] for dp in source if isinstance(dp[key], (int, float)) and dp[key] is not None]
+                if values:
+                    stats[key + "_min"] = min(values)
+                    stats[key + "_max"] = max(values)
+
+                elif isinstance(source[0][key], str):
+                    stats[key] = list({dp[key] for dp in source if dp[key] is not None})
+
+        point = {}
         for k in source[0].keys():
-            # values are type int
-            if type(source[0][k]) == int:
+            value_type = type(source[0][k])
+
+            if value_type == int:
                 point[k] = int(random.uniform(stats[k+"_max"], stats[k+"_min"]))
 
-            # values are type float
-            elif type(source[0][k]) == float:
+            elif value_type == float:
                 point[k] = random.uniform(stats[k+"_max"], stats[k+"_min"])
 
-            # values are type string
-            elif type(source[0][k]) == str:
+            elif value_type == str:
                 point[k] = random.choice(stats[k])
+
     return str(point).replace("'", "\"").replace("None", "null")
 
 
@@ -78,7 +90,7 @@ def modify(point: dict, file: str):
 
 def randomize(json_file: str, p: float):
     """
-    json_file: name of file as string
+    json_file: name of data file as string
     p: probability of each datapoint to be altered
     """
     # Error Handling
@@ -120,10 +132,12 @@ def randomize(json_file: str, p: float):
             f.write(bytes("\n]", 'utf-8'))
     return None
 
+print(getNotXYColor("burtin_source.json"))
+randomize("burtin.json", 0.7)
 
-# randomize all files from 5% to 20% (in steps of 5)
-if __name__ == "__main__":
-    for file in files:
-        for i in range(5, 21, 5):
-            randomize(file, i/100)
-            print(f"'{file}' has been altered and saved as '{file[:-5]}{i}.json'.")
+# # randomize all files from 5% to 20% (in steps of 5)
+# if __name__ == "__main__":
+#     for file in files:
+#         for i in range(5, 21, 5):
+#             randomize(file, i/100)
+#             print(f"'{file}' has been altered and saved as '{file[:-5]}{i}.json'.")
