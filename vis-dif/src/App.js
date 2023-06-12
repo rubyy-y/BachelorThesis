@@ -25,12 +25,15 @@ function App() {
         vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
       }
     } else if (file1Content || file2Content) {
+      document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
       if (file1Content) {
         document.getElementById("vis2").innerHTML = "Upload second file.";
-        document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
+        const file1Formatted = formatSpecs(file1Content);
+        vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
       } else {
         document.getElementById("vis1").innerHTML = "Upload another file.";
-        document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
+        const file2Formatted = formatSpecs(file2Content);
+        vegaEmbed('#vis1', file2Formatted, {"actions": false, "theme": theme});
       }
     } else {
       var original = "data/" + select + "_source.json";
