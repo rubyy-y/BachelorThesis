@@ -13,6 +13,10 @@ def compare(a_json, b_json):
         b_x = b_vl["encoding"]["x"]["field"]
         b_y = b_vl["encoding"]["y"]["field"]
 
+        # if not the same encoding, raise error (should not happen)
+        if not (a_x == b_x) or not (a_y == b_y) or not (a_vl["mark"] == b_vl["mark"]):
+            raise ValueError("Cannot compare.")
+
         # datapoints (list of dicts)
         data_a = a_vl["datasets"][list(a_vl["datasets"].keys())[0]]
         data_b = b_vl["datasets"][list(b_vl["datasets"].keys())[0]]
@@ -20,47 +24,43 @@ def compare(a_json, b_json):
         # save differences to list of dictionaries
         diffs = []
 
-        # barplot
-        isBarplot = False
-        if a_vl["mark"] == "bar" or b_vl["mark"] == "bar":
-            isBarplot = True
-
-        if isBarplot:
+        # Barplot
+        mark = a_vl["mark"]
+        if mark == "bar":
             ylim = float('-inf')
 
-            # add identicals, even if not identical in y
+            # find identicals, regardless of y value
             for dp_a in data_a:
                 if dp_a[a_y] > ylim:
                     ylim = dp_a[a_y]
 
-                copy_a = dp_a.copy()
-                del copy_a[a_y]
-
+                identical = False
                 for dp_b in data_b:
-                    copy_b = dp_b.copy()
-                    del copy_b[b_y]
-                    
-                    if copy_a == copy_b:
-                        y_dif = dp_a[a_y] - dp_b[b_y]
-                        copy_a[a_y] = y_dif
+                    if all(dp_a[key] == dp_b[key] for key in dp_a if key != a_y):
+                        difference = dp_a[a_y] - dp_b[b_y]
+                        # if completely identical, dp is added with y value 0, else, with difference
+                        dif = dp_a.copy()
+                        dif[a_y] = difference
+                        diffs.append(dif)
+                    identical = True
+                    break
 
-                        copy_a["from file"] = "1"
-                        copy_a["status"] = "modified"
-                        diffs.append(copy_a)
-            
-                # no identical dp in second file: got removed
-                identical = any(dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y] for dp_b in data_b)
+                # find points from a not in b (removed)
                 if not identical:
                     dp_a["from file"] = "1"
                     dp_a[a_y] *= -1
                     diffs.append(dp_a)
             
+            # find points from b not in a (added)
             for dp_b in data_b:
                 if dp_b[b_y] > ylim:
                     ylim = dp_b[b_y]
-
-                # no identical in first file: got added
-                identical = any(dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y] for dp_a in data_a)
+                
+                identical = False
+                for dp_a in data_a:
+                    if all(dp_a[key] == dp_b[key] for key in dp_a if key != a_y):
+                        identical = True
+                        break
                 if not identical:
                     dp_b["from file"] = "2"
                     diffs.append(dp_b)
@@ -107,7 +107,7 @@ def compare(a_json, b_json):
             }
         }
 
-        if isBarplot:
+        if mark == "bar":
             output_vl["encoding"]["y"]["scale"] = {"domain": [-ylim, ylim]}
         
         output_vl["encoding"]["tooltip"].insert(0, {'field' : "from file"})
