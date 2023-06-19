@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-77883295cde86609eb650c89dd0c5287"
+    "name": "data-e7b8d99020fc43d4f9eee8204fa075d1"
   },
   "mark": "bar",
   "encoding": {
@@ -49,22 +49,30 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-77883295cde86609eb650c89dd0c5287": [
+    "data-e7b8d99020fc43d4f9eee8204fa075d1": [
       {
         "Bacteria": "Aerobacter aerogenes",
         "Penicillin": 870,
-        "Streptomycin": 1,
-        "Neomycin": 1.6,
+        "Streptomycin": 0,
+        "Neomycin": 1.44,
         "Gram_Staining": "negative",
         "Genus": "other"
       },
       {
-        "Bacteria": "Streptococcus hemolyticus",
-        "Penicillin": 293,
-        "Streptomycin": 7,
-        "Neomycin": 2.0137160827129605,
+        "Bacteria": "Bacillus anthracis",
+        "Penicillin": 0.001,
+        "Streptomycin": 0.006,
+        "Neomycin": 0.008,
         "Gram_Staining": "positive",
-        "Genus": "Salmonella"
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Brucella abortus",
+        "Penicillin": 1,
+        "Streptomycin": 2,
+        "Neomycin": 0.02,
+        "Gram_Staining": "negative",
+        "Genus": "other"
       },
       {
         "Bacteria": "Diplococcus pneumoniae",
@@ -101,18 +109,18 @@
       {
         "Bacteria": "Proteus vulgaris",
         "Penicillin": 3,
-        "Streptomycin": 0.07,
-        "Neomycin": 0.14,
+        "Streptomycin": 0.1,
+        "Neomycin": 0.1,
         "Gram_Staining": "negative",
         "Genus": "other"
       },
       {
-        "Bacteria": "Proteus vulgaris",
-        "Penicillin": 443,
-        "Streptomycin": 7,
-        "Neomycin": 7.447800339714966,
+        "Bacteria": "Pseudomonas aeruginosa",
+        "Penicillin": 850,
+        "Streptomycin": 1,
+        "Neomycin": 0.32,
         "Gram_Staining": "negative",
-        "Genus": "Streptococcus"
+        "Genus": "other"
       },
       {
         "Bacteria": "Salmonella (Eberthella) typhosa",
@@ -139,12 +147,12 @@
         "Genus": "Staphylococcus"
       },
       {
-        "Bacteria": "Diplococcus pneumoniae",
-        "Penicillin": 82,
-        "Streptomycin": 5,
-        "Neomycin": 35.66919838912083,
+        "Bacteria": "Staphylococcus aureus",
+        "Penicillin": 0.03,
+        "Streptomycin": 0.03,
+        "Neomycin": 0.001,
         "Gram_Staining": "positive",
-        "Genus": "Salmonella"
+        "Genus": "Staphylococcus"
       },
       {
         "Bacteria": "Streptococcus fecalis",
@@ -164,8 +172,8 @@
       },
       {
         "Bacteria": "Streptococcus viridans",
-        "Penicillin": 0.003,
-        "Streptomycin": 11,
+        "Penicillin": 0.005,
+        "Streptomycin": 10,
         "Neomycin": 40,
         "Gram_Staining": "positive",
         "Genus": "Streptococcus"

@@ -6,7 +6,7 @@
   --accent-color1: #703c5c;
   --accent-color2: #ab5787;
   --accent-color3: #51b2e5;
-  --vis-background: rgba(255, 255, 255, 0.75);
+  --vis-background: rgba(255, 255, 255, 0.6);
   --shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
@@ -70,6 +70,11 @@ select:hover {
   background: var(--hover);
   transition: .5s;
   cursor: pointer;
+}
+
+.body {
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 .dropdown,

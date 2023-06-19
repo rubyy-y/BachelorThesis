@@ -54,109 +54,46 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 28.96667,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "1"
-      },
-      {
-        "yield": 35.13333,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 29.76667,
+        "yield": 43.76667,
         "variety": "Trebi",
         "year": 1931,
-        "site": "Grand Rapids",
-        "from file": "1"
+        "site": "Morris",
+        "from file": "original"
       },
       {
-        "yield": 41.6,
-        "variety": "Peatland",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 46.76667,
+        "yield": 33.06666,
         "variety": "No. 475",
         "year": 1931,
-        "site": "Waseca",
-        "from file": "1"
+        "site": "Duluth",
+        "from file": "original"
       },
       {
-        "yield": 38.5,
-        "variety": "Svansota",
+        "yield": 26.43334,
+        "variety": "No. 457",
         "year": 1932,
-        "site": "Waseca",
-        "from file": "1"
+        "site": "University Farm",
+        "from file": "original"
       },
       {
-        "yield": 49.2333,
-        "variety": "Trebi",
+        "yield": 19.46667,
+        "variety": "No. 457",
         "year": 1932,
-        "site": "Waseca",
-        "from file": "1"
+        "site": "Grand Rapids",
+        "from file": "original"
       },
       {
-        "yield": 25.56667,
+        "yield": 35.808,
         "variety": "No. 462",
-        "year": 1932,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 47.16667,
-        "variety": "Wisconsin No. 38",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 15,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "2"
-      },
-      {
-        "yield": 49.92,
-        "variety": "Peatland",
         "year": 1931,
         "site": "Crookston",
-        "from file": "2"
+        "from file": "alternation"
       },
       {
-        "yield": 19,
-        "variety": "Trebi",
-        "year": 1931,
-        "site": "Grand Rapids",
-        "from file": "2"
-      },
-      {
-        "yield": 26.95,
-        "variety": "Svansota",
-        "year": 1932,
-        "site": "Waseca",
-        "from file": "2"
-      },
-      {
-        "yield": 73.85,
-        "variety": "Trebi",
-        "year": 1932,
-        "site": "Waseca",
-        "from file": "2"
-      },
-      {
-        "yield": 58,
+        "yield": 18.904,
         "variety": "Velvet",
         "year": 1931,
         "site": "Duluth",
-        "from file": "2"
+        "from file": "alternation"
       }
     ]
   }

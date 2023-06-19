@@ -54,172 +54,172 @@
   "datasets": {
     "data-e24c277102dddc2eceb7d9aaeb087c70": [
       {
-        "side": "bottom",
-        "year": 1967,
-        "miles": 4827,
-        "gas": 2.14,
-        "from file": "1"
+        "side": "top",
+        "year": 1959,
+        "miles": 3905,
+        "gas": 2.31,
+        "from file": "original"
+      },
+      {
+        "side": "right",
+        "year": 1960,
+        "miles": 3935,
+        "gas": 2.27,
+        "from file": "original"
+      },
+      {
+        "side": "right",
+        "year": 1968,
+        "miles": 5038,
+        "gas": 2.13,
+        "from file": "original"
       },
       {
         "side": "bottom",
         "year": 1971,
         "miles": 5617,
         "gas": 1.9300000000000002,
-        "from file": "1"
+        "from file": "original"
       },
       {
-        "side": "bottom",
-        "year": 1976,
-        "miles": 6389,
-        "gas": 2.32,
-        "from file": "1"
+        "side": "left",
+        "year": 1980,
+        "miles": 6672,
+        "gas": 3.3,
+        "from file": "original"
+      },
+      {
+        "side": "left",
+        "year": 1986,
+        "miles": 7558,
+        "gas": 1.76,
+        "from file": "original"
       },
       {
         "side": "bottom",
         "year": 1988,
         "miles": 8089,
         "gas": 1.6800000000000002,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "side": "bottom",
         "year": 1994,
         "miles": 8909,
         "gas": 1.5899999999999999,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "side": "bottom",
         "year": 1998,
         "miles": 9590,
         "gas": 1.3900000000000001,
-        "from file": "1"
-      },
-      {
-        "side": "right",
-        "year": 1999,
-        "miles": 9687,
-        "gas": 1.5,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "side": "top",
         "year": 2000,
         "miles": 9717,
         "gas": 1.8900000000000001,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "side": "bottom",
         "year": 2002,
         "miles": 9814,
         "gas": 1.6400000000000001,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "side": "right",
         "year": 2003,
         "miles": 9868,
         "gas": 1.8599999999999999,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "side": "left",
         "year": 2005,
         "miles": 10067,
         "gas": 2.5300000000000002,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "side": "right",
         "year": 2006,
-        "miles": 10037,
-        "gas": 2.79,
-        "from file": "1"
+        "miles": 5031,
+        "gas": 2.916,
+        "from file": "alternation"
       },
       {
         "side": "right",
-        "year": 2007,
-        "miles": 10025,
-        "gas": 2.95,
-        "from file": "1"
+        "year": 1960,
+        "miles": 3935,
+        "gas": 2.951,
+        "from file": "alternation"
+      },
+      {
+        "side": "right",
+        "year": 1968,
+        "miles": 5038,
+        "gas": 1.704,
+        "from file": "alternation"
       },
       {
         "side": "bottom",
-        "year": 1967,
-        "miles": 6275,
-        "gas": 2.996,
-        "from file": "2"
+        "year": 1971,
+        "miles": 5617,
+        "gas": 1.93,
+        "from file": "alternation"
       },
       {
-        "side": "bottom",
-        "year": 1996,
-        "miles": 5674,
-        "gas": 1.4804913559922135,
-        "from file": "2"
+        "side": "left",
+        "year": 1992,
+        "miles": 4197,
+        "gas": 1.988,
+        "from file": "alternation"
       },
       {
         "side": "bottom",
         "year": 1988,
         "miles": 8089,
         "gas": 1.68,
-        "from file": "2"
+        "from file": "alternation"
       },
       {
         "side": "bottom",
         "year": 1994,
         "miles": 8909,
         "gas": 1.59,
-        "from file": "2"
+        "from file": "alternation"
       },
       {
         "side": "bottom",
         "year": 1998,
         "miles": 9590,
         "gas": 1.39,
-        "from file": "2"
-      },
-      {
-        "side": "right",
-        "year": 1999,
-        "miles": 12593,
-        "gas": 1.05,
-        "from file": "2"
+        "from file": "alternation"
       },
       {
         "side": "top",
         "year": 2000,
         "miles": 9717,
         "gas": 1.89,
-        "from file": "2"
+        "from file": "alternation"
       },
       {
         "side": "bottom",
         "year": 2002,
         "miles": 9814,
         "gas": 1.64,
-        "from file": "2"
-      },
-      {
-        "side": "right",
-        "year": 2003,
-        "miles": 9868,
-        "gas": 1.86,
-        "from file": "2"
+        "from file": "alternation"
       },
       {
         "side": "left",
         "year": 2005,
         "miles": 10067,
         "gas": 2.53,
-        "from file": "2"
-      },
-      {
-        "side": "right",
-        "year": 2006,
-        "miles": 11040,
-        "gas": 2.232,
-        "from file": "2"
+        "from file": "alternation"
       }
     ]
   }

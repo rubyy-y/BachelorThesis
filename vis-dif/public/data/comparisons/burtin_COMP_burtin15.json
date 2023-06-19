@@ -47,13 +47,7 @@
     },
     "y": {
       "field": "Streptomycin",
-      "type": "quantitative",
-      "scale": {
-        "domain": [
-          -14,
-          14
-        ]
-      }
+      "type": "quantitative"
     }
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
@@ -62,55 +56,133 @@
       {
         "Bacteria": "Aerobacter aerogenes",
         "Penicillin": 870,
-        "Streptomycin": 0,
+        "Streptomycin": 1,
         "Neomycin": 1.6,
+        "Gram_Staining": "negative",
+        "Genus": "other",
+        "from file": "removed from original"
+      },
+      {
+        "Bacteria": "Bacillus anthracis",
+        "Penicillin": 0.001,
+        "Streptomycin": 0.004,
+        "Neomycin": 0.007,
+        "Gram_Staining": "positive",
+        "Genus": "other",
+        "from file": "removed from original"
+      },
+      {
+        "Bacteria": "Brucella abortus",
+        "Penicillin": 1,
+        "Streptomycin": 0,
+        "Neomycin": 0.02,
         "Gram_Staining": "negative",
         "Genus": "other"
       },
       {
-        "Bacteria": "Streptococcus hemolyticus",
-        "Penicillin": 293,
-        "Streptomycin": 7,
-        "Neomycin": 2.0137160827129605,
+        "Bacteria": "Diplococcus pneumoniae",
+        "Penicillin": 0.005,
+        "Streptomycin": 0,
+        "Neomycin": 10,
         "Gram_Staining": "positive",
-        "Genus": "Salmonella",
-        "from file": "2"
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Escherichia coli",
+        "Penicillin": 100,
+        "Streptomycin": 0.0,
+        "Neomycin": 0.1,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Klebsiella pneumoniae",
+        "Penicillin": 850,
+        "Streptomycin": 0.0,
+        "Neomycin": 1,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Mycobacterium tuberculosis",
+        "Penicillin": 800,
+        "Streptomycin": 0,
+        "Neomycin": 2,
+        "Gram_Staining": "negative",
+        "Genus": "other"
       },
       {
         "Bacteria": "Proteus vulgaris",
         "Penicillin": 3,
-        "Streptomycin": 0.07,
-        "Neomycin": 0.14,
+        "Streptomycin": 0.0,
+        "Neomycin": 0.1,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Pseudomonas aeruginosa",
+        "Penicillin": 850,
+        "Streptomycin": 1,
+        "Neomycin": 0.4,
         "Gram_Staining": "negative",
         "Genus": "other",
-        "from file": "2"
+        "from file": "removed from original"
       },
       {
-        "Bacteria": "Proteus vulgaris",
-        "Penicillin": 443,
-        "Streptomycin": 7,
-        "Neomycin": 7.447800339714966,
+        "Bacteria": "Salmonella (Eberthella) typhosa",
+        "Penicillin": 1,
+        "Streptomycin": 0.0,
+        "Neomycin": 0.008,
         "Gram_Staining": "negative",
-        "Genus": "Streptococcus",
-        "from file": "2"
+        "Genus": "Salmonella"
       },
       {
-        "Bacteria": "Diplococcus pneumoniae",
-        "Penicillin": 82,
-        "Streptomycin": 5,
-        "Neomycin": 35.66919838912083,
+        "Bacteria": "Salmonella schottmuelleri",
+        "Penicillin": 10,
+        "Streptomycin": 0.0,
+        "Neomycin": 0.09,
+        "Gram_Staining": "negative",
+        "Genus": "Salmonella"
+      },
+      {
+        "Bacteria": "Staphylococcus albus",
+        "Penicillin": 0.007,
+        "Streptomycin": 0.0,
+        "Neomycin": 0.001,
         "Gram_Staining": "positive",
-        "Genus": "Salmonella",
-        "from file": "2"
+        "Genus": "Staphylococcus"
+      },
+      {
+        "Bacteria": "Staphylococcus aureus",
+        "Penicillin": 0.03,
+        "Streptomycin": 0.0,
+        "Neomycin": 0.001,
+        "Gram_Staining": "positive",
+        "Genus": "Staphylococcus"
+      },
+      {
+        "Bacteria": "Streptococcus fecalis",
+        "Penicillin": 1,
+        "Streptomycin": 0,
+        "Neomycin": 0.1,
+        "Gram_Staining": "positive",
+        "Genus": "Streptococcus"
+      },
+      {
+        "Bacteria": "Streptococcus hemolyticus",
+        "Penicillin": 0.001,
+        "Streptomycin": 0,
+        "Neomycin": 10,
+        "Gram_Staining": "positive",
+        "Genus": "Streptococcus"
       },
       {
         "Bacteria": "Streptococcus viridans",
-        "Penicillin": 0.003,
-        "Streptomycin": 11,
+        "Penicillin": 0.005,
+        "Streptomycin": 0,
         "Neomycin": 40,
         "Gram_Staining": "positive",
-        "Genus": "Streptococcus",
-        "from file": "2"
+        "Genus": "Streptococcus"
       }
     ]
   }

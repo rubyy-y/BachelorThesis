@@ -6,16 +6,14 @@ def compare(a_json, b_json):
         a_vl = json.load(a)
         b_vl = json.load(b)
 
-        # x and y values
+        # x and y, color values
         a_x = a_vl["encoding"]["x"]["field"]
         a_y = a_vl["encoding"]["y"]["field"]
 
         b_x = b_vl["encoding"]["x"]["field"]
         b_y = b_vl["encoding"]["y"]["field"]
 
-        # if not the same encoding, raise error (should not happen)
-        if not (a_x == b_x) or not (a_y == b_y) or not (a_vl["mark"] == b_vl["mark"]):
-            raise ValueError("Cannot compare.")
+        color = a_vl["encoding"]["color"]["field"]
 
         # datapoints (list of dicts)
         data_a = a_vl["datasets"][list(a_vl["datasets"].keys())[0]]
@@ -27,61 +25,60 @@ def compare(a_json, b_json):
         # Barplot
         mark = a_vl["mark"]
         if mark == "bar":
-            ylim = float('-inf')
-
             # find identicals, regardless of y value
             for dp_a in data_a:
-                if dp_a[a_y] > ylim:
-                    ylim = dp_a[a_y]
-
                 identical = False
                 for dp_b in data_b:
-                    if all(dp_a[key] == dp_b[key] for key in dp_a if key != a_y):
+                    if all(dp_a[key] == dp_b[key] for key in [a_x, color]):
+                        identical = True
+
                         difference = dp_a[a_y] - dp_b[b_y]
-                        # if completely identical, dp is added with y value 0, else, with difference
                         dif = dp_a.copy()
                         dif[a_y] = difference
-                        diffs.append(dif)
-                    identical = True
-                    break
 
-                # find points from a not in b (removed)
-                if not identical:
-                    dp_a["from file"] = "1"
+                        if difference < 0:
+                            dif["from file"] = "added to alternation"
+                        elif difference > 0:
+                            dif["from file"] = "removed from original"
+
+                        diffs.append(dif)
+                        break
+
+                if not identical:   # point was removed
+                    dp_a["from file"] = "original"
                     dp_a[a_y] *= -1
                     diffs.append(dp_a)
+
             
-            # find points from b not in a (added)
+            # search dor dp in b not in a
             for dp_b in data_b:
-                if dp_b[b_y] > ylim:
-                    ylim = dp_b[b_y]
-                
                 identical = False
                 for dp_a in data_a:
-                    if all(dp_a[key] == dp_b[key] for key in dp_a if key != a_y):
+                    if all(dp_a[key] == dp_b[key] for key in [a_x, color]):
                         identical = True
                         break
+
                 if not identical:
-                    dp_b["from file"] = "2"
+                    dp_b["from file"] = "alternation"
                     diffs.append(dp_b)
 
-        # scatterplot
+        # Scatterplot
         else:
             # iterate through first file
             for dp_a in data_a:
                 identical = any(dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y] for dp_b in data_b)
                 if not identical:
-                    dp_a["from file"] = "1"
+                    dp_a["from file"] = "original"
                     diffs.append(dp_a)
 
             # iterate through second file
             for dp_b in data_b:
                 identical = any(dp_a[a_x] == dp_b[b_x] and dp_a[a_y] == dp_b[b_y] for dp_a in data_a)
                 if not identical:
-                    dp_b["from file"] = "2"
+                    dp_b["from file"] = "alternation"
                     diffs.append(dp_b)
 
-        # specs - mandatory
+        # Make new specification
         hash_ = list(a_vl["datasets"].keys())[0]
         mark = a_vl["mark"]
         encoding = a_vl["encoding"]
@@ -107,9 +104,12 @@ def compare(a_json, b_json):
             }
         }
 
-        if mark == "bar":
-            output_vl["encoding"]["y"]["scale"] = {"domain": [-ylim, ylim]}
-        
+        # if mark == "bar":
+        #     ranges = [dif[a_y] for dif in diffs]
+        #     min_ = min(ranges)-(min(ranges)*0.5)
+        #     max_ = max(ranges)+(max(ranges)*0.5)
+        #     output_vl["encoding"]["y"]["scale"] = {"domain": [-max(ranges), max(ranges)]}
+
         output_vl["encoding"]["tooltip"].insert(0, {'field' : "from file"})
         
         fe = len('_source.json')    # length of file ending
@@ -117,6 +117,7 @@ def compare(a_json, b_json):
         with open("comparisons/" + output_file, 'w') as out:
             json.dump(output_vl, out, indent=2)
     return None        
+
 
 # function to update specs
 def update_json_file(file_path, props):
@@ -149,18 +150,19 @@ props = {
     }
 }
 
+
 if __name__ == "__main__":
     for dataset in datasets:
         original = f"{dataset}_source.json"
         update_json_file(original, props)
         for p in percent:
             alternation = f"{dataset}{p}_source.json"
-            update_json_file(alternation, props)
+            update_json_file(alternation, props)    # reformat alternation vis
             new_file = f"{dataset}_COMP_{dataset}{p}.json"
 
+            print(f"\nComparing {original} and {alternation}: ")
             try:
                 compare(original, alternation)
-                print(f"\ncomparing {original} and {alternation}: ")
                 update_json_file("comparisons/" + new_file, props)
                 print(f"new file {new_file} has been reformatted.")
 

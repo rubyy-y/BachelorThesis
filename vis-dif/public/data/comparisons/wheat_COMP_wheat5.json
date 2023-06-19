@@ -54,64 +54,40 @@
   "datasets": {
     "data-76d1ce26ea5761007c35827e1564d86c": [
       {
-        "year": 1605,
-        "wheat": 33,
-        "wages": 5.69,
-        "from file": "1"
+        "year": 1580,
+        "wheat": 49,
+        "wages": 5.12,
+        "from file": "original"
       },
       {
         "year": 1650,
         "wheat": 42,
         "wages": 6.5,
-        "from file": "1"
-      },
-      {
-        "year": 1720,
-        "wheat": 29,
-        "wages": 12.5,
-        "from file": "1"
-      },
-      {
-        "year": 1735,
-        "wheat": 32,
-        "wages": 13.6,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "year": 1815,
         "wheat": 78,
         "wages": null,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "year": 1820,
         "wheat": 54,
         "wages": null,
-        "from file": "1"
-      },
-      {
-        "year": "1720",
-        "wheat": 14,
-        "wages": 11.25,
-        "from file": "2"
-      },
-      {
-        "year": "1655",
-        "wheat": 55,
-        "wages": 8,
-        "from file": "2"
+        "from file": "original"
       },
       {
         "year": "1815",
         "wheat": 78,
         "wages": 30.3,
-        "from file": "2"
+        "from file": "alternation"
       },
       {
         "year": "1820",
         "wheat": 54,
         "wages": 30.6,
-        "from file": "2"
+        "from file": "alternation"
       }
     ]
   }

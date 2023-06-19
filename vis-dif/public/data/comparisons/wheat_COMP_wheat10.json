@@ -54,82 +54,88 @@
   "datasets": {
     "data-76d1ce26ea5761007c35827e1564d86c": [
       {
-        "year": 1600,
-        "wheat": 27,
-        "wages": 5.61,
-        "from file": "1"
+        "year": 1585,
+        "wheat": 41.5,
+        "wages": 5.15,
+        "from file": "original"
       },
       {
-        "year": 1605,
-        "wheat": 33,
-        "wages": 5.69,
-        "from file": "1"
+        "year": 1650,
+        "wheat": 42,
+        "wages": 6.5,
+        "from file": "original"
       },
       {
         "year": 1660,
         "wheat": 46.5,
         "wages": 6.75,
-        "from file": "1"
+        "from file": "original"
       },
       {
-        "year": 1720,
-        "wheat": 29,
-        "wages": 12.5,
-        "from file": "1"
+        "year": 1665,
+        "wheat": 32,
+        "wages": 6.8,
+        "from file": "original"
       },
       {
-        "year": 1725,
-        "wheat": 39,
-        "wages": 13,
-        "from file": "1"
+        "year": 1735,
+        "wheat": 32,
+        "wages": 13.6,
+        "from file": "original"
       },
       {
-        "year": 1755,
-        "wheat": 35.5,
-        "wages": 15.7,
-        "from file": "1"
+        "year": 1790,
+        "wheat": 47.5,
+        "wages": 25.5,
+        "from file": "original"
       },
       {
         "year": 1815,
         "wheat": 78,
         "wages": null,
-        "from file": "1"
+        "from file": "original"
       },
       {
         "year": 1820,
         "wheat": 54,
         "wages": null,
-        "from file": "1"
+        "from file": "original"
+      },
+      {
+        "year": "1805",
+        "wheat": 67.086,
+        "wages": 27.279,
+        "from file": "alternation"
+      },
+      {
+        "year": "1650",
+        "wheat": 54,
+        "wages": 6.5,
+        "from file": "alternation"
       },
       {
         "year": "1660",
-        "wheat": 55.8,
-        "wages": 8.775,
-        "from file": "2"
+        "wheat": 69.75,
+        "wages": 6.75,
+        "from file": "alternation"
       },
       {
-        "year": "1770",
-        "wheat": 90,
-        "wages": 5,
-        "from file": "2"
-      },
-      {
-        "year": "1755",
-        "wheat": 31.95,
-        "wages": 21.98,
-        "from file": "2"
+        "year": "1790",
+        "wheat": 61.75,
+        "wages": 25.5,
+        "from file": "alternation"
       },
       {
         "year": "1815",
         "wheat": 78,
         "wages": 30.3,
-        "from file": "2"
+        "from file": "alternation"
       },
       {
         "year": "1820",
         "wheat": 54,
         "wages": 30.6,
-        "from file": "2"
+        "from file": "alternation"
       }
     ]
   }

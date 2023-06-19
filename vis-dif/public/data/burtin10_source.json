@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-c65516bc36ac6ed47594e40094b1a1fe"
+    "name": "data-8833440f737304311e72aeeffd7b9881"
   },
   "mark": "bar",
   "encoding": {
@@ -49,7 +49,7 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-c65516bc36ac6ed47594e40094b1a1fe": [
+    "data-8833440f737304311e72aeeffd7b9881": [
       {
         "Bacteria": "Aerobacter aerogenes",
         "Penicillin": 870,
@@ -123,12 +123,12 @@
         "Genus": "other"
       },
       {
-        "Bacteria": "Bacillus anthracis",
-        "Penicillin": 560,
-        "Streptomycin": 13,
-        "Neomycin": 27.88014741378519,
+        "Bacteria": "Salmonella (Eberthella) typhosa",
+        "Penicillin": 1,
+        "Streptomycin": 0.4,
+        "Neomycin": 0.008,
         "Gram_Staining": "negative",
-        "Genus": "Staphylococcus"
+        "Genus": "Salmonella"
       },
       {
         "Bacteria": "Salmonella schottmuelleri",

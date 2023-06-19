@@ -54,235 +54,74 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 27,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 43.06666,
-        "variety": "Glabron",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 35.13333,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 25.7,
-        "variety": "Svansota",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "1"
-      },
-      {
         "yield": 36.56666,
         "variety": "Trebi",
         "year": 1931,
         "site": "University Farm",
-        "from file": "1"
+        "from file": "original"
       },
       {
-        "yield": 32.16667,
-        "variety": "No. 457",
-        "year": 1931,
-        "site": "Grand Rapids",
-        "from file": "1"
-      },
-      {
-        "yield": 33.6,
-        "variety": "No. 457",
+        "yield": 33.93333,
+        "variety": "Trebi",
         "year": 1931,
         "site": "Duluth",
-        "from file": "1"
+        "from file": "original"
       },
       {
-        "yield": 28.1,
-        "variety": "No. 462",
+        "yield": 58.1,
+        "variety": "No. 457",
         "year": 1931,
-        "site": "Duluth",
-        "from file": "1"
+        "site": "Waseca",
+        "from file": "original"
       },
       {
-        "yield": 34.7,
-        "variety": "Peatland",
+        "yield": 22.6,
+        "variety": "No. 475",
         "year": 1931,
-        "site": "Grand Rapids",
-        "from file": "1"
+        "site": "Morris",
+        "from file": "original"
       },
       {
-        "yield": 39.3,
-        "variety": "Wisconsin No. 38",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 36.8,
-        "variety": "Glabron",
+        "yield": 33.46667,
+        "variety": "Manchuria",
         "year": 1932,
-        "site": "University Farm",
-        "from file": "1"
+        "site": "Waseca",
+        "from file": "original"
       },
       {
-        "yield": 27.43334,
+        "yield": 22.56667,
+        "variety": "Manchuria",
+        "year": 1932,
+        "site": "Duluth",
+        "from file": "original"
+      },
+      {
+        "yield": 20.63333,
         "variety": "Svansota",
         "year": 1932,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 32.23333,
-        "variety": "Velvet",
-        "year": 1932,
-        "site": "Grand Rapids",
-        "from file": "1"
-      },
-      {
-        "yield": 41.83333,
-        "variety": "Trebi",
-        "year": 1932,
         "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 26.43334,
-        "variety": "No. 457",
-        "year": 1932,
-        "site": "University Farm",
-        "from file": "1"
-      },
-      {
-        "yield": 42.2,
-        "variety": "No. 457",
-        "year": 1932,
-        "site": "Waseca",
-        "from file": "1"
-      },
-      {
-        "yield": 19.9,
-        "variety": "No. 462",
-        "year": 1932,
-        "site": "Grand Rapids",
-        "from file": "1"
-      },
-      {
-        "yield": 36.03333,
-        "variety": "Peatland",
-        "year": 1932,
-        "site": "Waseca",
-        "from file": "1"
+        "from file": "original"
       },
       {
         "yield": 43.2,
         "variety": "Peatland",
         "year": 1932,
         "site": "Morris",
-        "from file": "1"
+        "from file": "original"
       },
       {
-        "yield": 47.16667,
-        "variety": "Wisconsin No. 38",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "1"
-      },
-      {
-        "yield": 35.9,
-        "variety": "Wisconsin No. 38",
-        "year": 1932,
-        "site": "Crookston",
-        "from file": "1"
-      },
-      {
-        "yield": 21,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "2"
-      },
-      {
-        "yield": 43,
-        "variety": "Peatland",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "2"
-      },
-      {
-        "yield": 50.4,
-        "variety": "No. 457",
-        "year": 1931,
-        "site": "Duluth",
-        "from file": "2"
-      },
-      {
-        "yield": 20,
+        "yield": 52.152,
         "variety": "Trebi",
         "year": 1931,
-        "site": "Crookston",
-        "from file": "2"
+        "site": "Grand Rapids",
+        "from file": "alternation"
       },
       {
-        "yield": 29,
-        "variety": "No. 457",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "2"
-      },
-      {
-        "yield": 13.717,
+        "yield": 30.63,
         "variety": "Svansota",
-        "year": 1932,
-        "site": "University Farm",
-        "from file": "2"
-      },
-      {
-        "yield": 34,
-        "variety": "Glabron",
-        "year": 1931,
-        "site": "University Farm",
-        "from file": "2"
-      },
-      {
-        "yield": 60,
-        "variety": "Wisconsin No. 38",
         "year": 1931,
         "site": "Grand Rapids",
-        "from file": "2"
-      },
-      {
-        "yield": 23.88,
-        "variety": "No. 462",
-        "year": 1932,
-        "site": "Grand Rapids",
-        "from file": "2"
-      },
-      {
-        "yield": 31,
-        "variety": "Wisconsin No. 38",
-        "year": 1931,
-        "site": "Crookston",
-        "from file": "2"
-      },
-      {
-        "yield": 47.52,
-        "variety": "Peatland",
-        "year": 1932,
-        "site": "Morris",
-        "from file": "2"
-      },
-      {
-        "yield": 50.26,
-        "variety": "Wisconsin No. 38",
-        "year": 1932,
-        "site": "Crookston",
-        "from file": "2"
+        "from file": "alternation"
       }
     ]
   }
