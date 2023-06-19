@@ -2,17 +2,25 @@
   {
     "Bacteria": "Aerobacter aerogenes",
     "Penicillin": 870,
-    "Streptomycin": 1,
-    "Neomycin": 1.6,
+    "Streptomycin": 0,
+    "Neomycin": 1.44,
     "Gram_Staining": "negative",
     "Genus": "other"
   },
   {
     "Bacteria": "Bacillus anthracis",
     "Penicillin": 0.001,
-    "Streptomycin": 0.01,
-    "Neomycin": 0.007,
+    "Streptomycin": 0.006,
+    "Neomycin": 0.008,
     "Gram_Staining": "positive",
+    "Genus": "other"
+  },
+  {
+    "Bacteria": "Brucella abortus",
+    "Penicillin": 1,
+    "Streptomycin": 2,
+    "Neomycin": 0.02,
+    "Gram_Staining": "negative",
     "Genus": "other"
   },
   {
@@ -51,15 +59,15 @@
     "Bacteria": "Proteus vulgaris",
     "Penicillin": 3,
     "Streptomycin": 0.1,
-    "Neomycin": 0.12,
+    "Neomycin": 0.1,
     "Gram_Staining": "negative",
     "Genus": "other"
   },
   {
     "Bacteria": "Pseudomonas aeruginosa",
     "Penicillin": 850,
-    "Streptomycin": 2,
-    "Neomycin": 0.4,
+    "Streptomycin": 1,
+    "Neomycin": 0.32,
     "Gram_Staining": "negative",
     "Genus": "other"
   },
@@ -89,8 +97,8 @@
   },
   {
     "Bacteria": "Staphylococcus aureus",
-    "Penicillin": 0.018,
-    "Streptomycin": 0.015,
+    "Penicillin": 0.03,
+    "Streptomycin": 0.03,
     "Neomycin": 0.001,
     "Gram_Staining": "positive",
     "Genus": "Staphylococcus"

@@ -32,6 +32,14 @@
     "Genus": "other"
   },
   {
+    "Bacteria": "Escherichia coli",
+    "Penicillin": 100,
+    "Streptomycin": 0.4,
+    "Neomycin": 0.1,
+    "Gram_Staining": "negative",
+    "Genus": "other"
+  },
+  {
     "Bacteria": "Klebsiella pneumoniae",
     "Penicillin": 850,
     "Streptomycin": 1.2,
@@ -56,12 +64,12 @@
     "Genus": "other"
   },
   {
-    "Bacteria": "Streptococcus viridans",
-    "Penicillin": 97,
-    "Streptomycin": 11,
-    "Neomycin": 23.105161669218756,
-    "Gram_Staining": "positive",
-    "Genus": "Staphylococcus"
+    "Bacteria": "Pseudomonas aeruginosa",
+    "Penicillin": 850,
+    "Streptomycin": 2,
+    "Neomycin": 0.4,
+    "Gram_Staining": "negative",
+    "Genus": "other"
   },
   {
     "Bacteria": "Salmonella (Eberthella) typhosa",

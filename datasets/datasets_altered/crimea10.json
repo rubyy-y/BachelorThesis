@@ -31,9 +31,9 @@
   },
   {
     "date": "1854-09-01",
-    "wounds": 220,
+    "wounds": 264,
     "other": 230,
-    "disease": 740
+    "disease": 518
   },
   {
     "date": "1854-10-01",
@@ -57,19 +57,19 @@
     "date": "1855-01-01",
     "wounds": 230,
     "other": 460,
-    "disease": 1296
+    "disease": 1440
   },
   {
     "date": "1855-02-01",
     "wounds": 180,
     "other": 520,
-    "disease": 1143
+    "disease": 1270
   },
   {
-    "date": "1855-03-01",
-    "wounds": 155,
-    "other": 350,
-    "disease": 935
+    "date": "1854-11-01",
+    "wounds": 41,
+    "other": 311,
+    "disease": 498
   },
   {
     "date": "1855-04-01",
@@ -94,12 +94,6 @@
     "wounds": 260,
     "other": 130,
     "disease": 430
-  },
-  {
-    "date": "1855-08-01",
-    "wounds": 290,
-    "other": 110,
-    "disease": 490
   },
   {
     "date": "1855-09-01",

@@ -6,8 +6,8 @@
     "site": "University Farm"
   },
   {
-    "yield": 36,
-    "variety": "Peatland",
+    "yield": 48.86667,
+    "variety": "Manchuria",
     "year": 1931,
     "site": "Waseca"
   },
@@ -48,8 +48,8 @@
     "site": "Waseca"
   },
   {
-    "yield": 44,
-    "variety": "Trebi",
+    "yield": 28.76667,
+    "variety": "Glabron",
     "year": 1931,
     "site": "Morris"
   },
@@ -126,6 +126,12 @@
     "site": "Morris"
   },
   {
+    "yield": 41.33333,
+    "variety": "Velvet",
+    "year": 1931,
+    "site": "Crookston"
+  },
+  {
     "yield": 23.03333,
     "variety": "Velvet",
     "year": 1931,
@@ -148,12 +154,6 @@
     "variety": "Trebi",
     "year": 1931,
     "site": "Waseca"
-  },
-  {
-    "yield": 43.76667,
-    "variety": "Trebi",
-    "year": 1931,
-    "site": "Morris"
   },
   {
     "yield": 46.93333,
@@ -204,10 +204,10 @@
     "site": "Grand Rapids"
   },
   {
-    "yield": 16,
-    "variety": "No. 475",
+    "yield": 33.6,
+    "variety": "No. 457",
     "year": 1931,
-    "site": "Crookston"
+    "site": "Duluth"
   },
   {
     "yield": 36.6,
@@ -222,10 +222,10 @@
     "site": "Waseca"
   },
   {
-    "yield": 15,
-    "variety": "Wisconsin No. 38",
+    "yield": 30.36667,
+    "variety": "No. 462",
     "year": 1931,
-    "site": "Waseca"
+    "site": "Morris"
   },
   {
     "yield": 48.56666,
@@ -246,10 +246,10 @@
     "site": "Duluth"
   },
   {
-    "yield": 27,
-    "variety": "No. 475",
+    "yield": 32.76667,
+    "variety": "Peatland",
     "year": 1931,
-    "site": "Duluth"
+    "site": "University Farm"
   },
   {
     "yield": 48.56666,
@@ -312,16 +312,10 @@
     "site": "Grand Rapids"
   },
   {
-    "yield": 33.06666,
-    "variety": "No. 475",
+    "yield": 39.3,
+    "variety": "Wisconsin No. 38",
     "year": 1931,
-    "site": "Duluth"
-  },
-  {
-    "yield": 63,
-    "variety": "Peatland",
-    "year": 1931,
-    "site": "Duluth"
+    "site": "University Farm"
   },
   {
     "yield": 58.8,
@@ -336,7 +330,7 @@
     "site": "Morris"
   },
   {
-    "yield": 59.84,
+    "yield": 49.86667,
     "variety": "Wisconsin No. 38",
     "year": 1931,
     "site": "Crookston"
@@ -366,6 +360,12 @@
     "site": "Waseca"
   },
   {
+    "yield": 34.36666,
+    "variety": "Manchuria",
+    "year": 1932,
+    "site": "Morris"
+  },
+  {
     "yield": 32.96667,
     "variety": "Manchuria",
     "year": 1932,
@@ -388,6 +388,12 @@
     "variety": "Glabron",
     "year": 1932,
     "site": "University Farm"
+  },
+  {
+    "yield": 37.73333,
+    "variety": "Glabron",
+    "year": 1932,
+    "site": "Waseca"
   },
   {
     "yield": 35.13333,
@@ -504,6 +510,12 @@
     "site": "Morris"
   },
   {
+    "yield": 41.83333,
+    "variety": "Trebi",
+    "year": 1932,
+    "site": "Crookston"
+  },
+  {
     "yield": 20.63333,
     "variety": "Trebi",
     "year": 1932,
@@ -516,10 +528,10 @@
     "site": "Duluth"
   },
   {
-    "yield": 26.43334,
-    "variety": "No. 457",
-    "year": 1932,
-    "site": "University Farm"
+    "yield": 35.808,
+    "variety": "No. 462",
+    "year": 1931,
+    "site": "Crookston"
   },
   {
     "yield": 42.2,
@@ -540,10 +552,10 @@
     "site": "Crookston"
   },
   {
-    "yield": 19.46667,
-    "variety": "No. 457",
-    "year": 1932,
-    "site": "Grand Rapids"
+    "yield": 18.904,
+    "variety": "Velvet",
+    "year": 1931,
+    "site": "Duluth"
   },
   {
     "yield": 22.7,
@@ -552,7 +564,7 @@
     "site": "Duluth"
   },
   {
-    "yield": 12.783,
+    "yield": 25.56667,
     "variety": "No. 462",
     "year": 1932,
     "site": "University Farm"
@@ -586,6 +598,12 @@
     "variety": "No. 462",
     "year": 1932,
     "site": "Duluth"
+  },
+  {
+    "yield": 28.06667,
+    "variety": "Peatland",
+    "year": 1932,
+    "site": "University Farm"
   },
   {
     "yield": 36.03333,

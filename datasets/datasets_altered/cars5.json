@@ -11,24 +11,24 @@
     "Origin": "USA"
   },
   {
-    "Name": "buick skylark 320",
-    "Miles_per_Gallon": 15,
-    "Cylinders": 8,
-    "Displacement": 350,
-    "Horsepower": 165,
-    "Weight_in_lbs": 3693,
-    "Acceleration": 11.5,
-    "Year": "1970-01-01",
+    "Name": "mercedes benz 300d",
+    "Miles_per_Gallon": 45,
+    "Cylinders": 6,
+    "Displacement": 126,
+    "Horsepower": 124,
+    "Weight_in_lbs": 3296,
+    "Acceleration": 11.195,
+    "Year": "1982-01-01",
     "Origin": "USA"
   },
   {
     "Name": "plymouth satellite",
-    "Miles_per_Gallon": 18,
+    "Miles_per_Gallon": 9,
     "Cylinders": 8,
-    "Displacement": 318,
+    "Displacement": 477,
     "Horsepower": 150,
-    "Weight_in_lbs": 3436,
-    "Acceleration": 11,
+    "Weight_in_lbs": 4810,
+    "Acceleration": 5,
     "Year": "1970-01-01",
     "Origin": "USA"
   },
@@ -89,10 +89,10 @@
   },
   {
     "Name": "pontiac catalina",
-    "Miles_per_Gallon": 21,
+    "Miles_per_Gallon": 14,
     "Cylinders": 8,
     "Displacement": 455,
-    "Horsepower": 292,
+    "Horsepower": 225,
     "Weight_in_lbs": 4425,
     "Acceleration": 10,
     "Year": "1970-01-01",
@@ -187,15 +187,26 @@
     "Origin": "USA"
   },
   {
-    "Name": "volkswagen super beetle 117",
-    "Miles_per_Gallon": 13,
-    "Cylinders": 6,
-    "Displacement": 346,
-    "Horsepower": 113,
-    "Weight_in_lbs": 3346,
-    "Acceleration": 13,
-    "Year": "1971-01-01",
-    "Origin": "Europe"
+    "Name": "ford mustang boss 302",
+    "Miles_per_Gallon": null,
+    "Cylinders": 8,
+    "Displacement": 302,
+    "Horsepower": 140,
+    "Weight_in_lbs": 3353,
+    "Acceleration": 8,
+    "Year": "1970-01-01",
+    "Origin": "USA"
+  },
+  {
+    "Name": "chevrolet monte carlo",
+    "Miles_per_Gallon": 15,
+    "Cylinders": 8,
+    "Displacement": 400,
+    "Horsepower": 150,
+    "Weight_in_lbs": 3761,
+    "Acceleration": 9.5,
+    "Year": "1970-01-01",
+    "Origin": "USA"
   },
   {
     "Name": "buick estate wagon (sw)",
@@ -308,17 +319,6 @@
     "Origin": "Europe"
   },
   {
-    "Name": "bmw 2002",
-    "Miles_per_Gallon": 26,
-    "Cylinders": 4,
-    "Displacement": 121,
-    "Horsepower": 113,
-    "Weight_in_lbs": 2234,
-    "Acceleration": 12.5,
-    "Year": "1970-01-01",
-    "Origin": "Europe"
-  },
-  {
     "Name": "amc gremlin",
     "Miles_per_Gallon": 21,
     "Cylinders": 6,
@@ -363,6 +363,17 @@
     "Origin": "USA"
   },
   {
+    "Name": "hi 1200d",
+    "Miles_per_Gallon": 9,
+    "Cylinders": 8,
+    "Displacement": 304,
+    "Horsepower": 193,
+    "Weight_in_lbs": 4732,
+    "Acceleration": 18.5,
+    "Year": "1970-01-01",
+    "Origin": "USA"
+  },
+  {
     "Name": "datsun pl510",
     "Miles_per_Gallon": 27,
     "Cylinders": 4,
@@ -396,6 +407,17 @@
     "Origin": "Japan"
   },
   {
+    "Name": "ford pinto",
+    "Miles_per_Gallon": 25,
+    "Cylinders": 4,
+    "Displacement": 98,
+    "Horsepower": null,
+    "Weight_in_lbs": 2046,
+    "Acceleration": 19,
+    "Year": "1971-01-01",
+    "Origin": "USA"
+  },
+  {
     "Name": "volkswagen super beetle 117",
     "Miles_per_Gallon": null,
     "Cylinders": 4,
@@ -418,17 +440,6 @@
     "Origin": "USA"
   },
   {
-    "Name": "plymouth satellite custom",
-    "Miles_per_Gallon": 16,
-    "Cylinders": 6,
-    "Displacement": 225,
-    "Horsepower": 105,
-    "Weight_in_lbs": 3439,
-    "Acceleration": 15.5,
-    "Year": "1971-01-01",
-    "Origin": "USA"
-  },
-  {
     "Name": "chevrolet chevelle malibu",
     "Miles_per_Gallon": 17,
     "Cylinders": 6,
@@ -441,12 +452,12 @@
   },
   {
     "Name": "ford torino 500",
-    "Miles_per_Gallon": 19,
+    "Miles_per_Gallon": 26,
     "Cylinders": 6,
-    "Displacement": 250,
+    "Displacement": 175,
     "Horsepower": 88,
-    "Weight_in_lbs": 3302,
-    "Acceleration": 15.5,
+    "Weight_in_lbs": 1981,
+    "Acceleration": 23.25,
     "Year": "1971-01-01",
     "Origin": "USA"
   },
@@ -572,25 +583,14 @@
     "Origin": "USA"
   },
   {
-    "Name": "ford mustang",
-    "Miles_per_Gallon": 18,
-    "Cylinders": 6,
-    "Displacement": 250,
-    "Horsepower": 88,
-    "Weight_in_lbs": 3139,
-    "Acceleration": 14.5,
-    "Year": "1971-01-01",
-    "Origin": "USA"
-  },
-  {
-    "Name": "mercury capri 2000",
-    "Miles_per_Gallon": 23,
-    "Cylinders": 4,
-    "Displacement": 122,
-    "Horsepower": 86,
-    "Weight_in_lbs": 2220,
-    "Acceleration": 14,
-    "Year": "1971-01-01",
+    "Name": "amc matador",
+    "Miles_per_Gallon": 13,
+    "Cylinders": 7,
+    "Displacement": 114,
+    "Horsepower": 123,
+    "Weight_in_lbs": 3656,
+    "Acceleration": 16.176,
+    "Year": "1982-01-01",
     "Origin": "USA"
   },
   {
@@ -748,22 +748,11 @@
     "Origin": "USA"
   },
   {
-    "Name": "plymouth fury iii",
-    "Miles_per_Gallon": 15,
-    "Cylinders": 8,
-    "Displacement": 318,
-    "Horsepower": 150,
-    "Weight_in_lbs": 4135,
-    "Acceleration": 13.5,
-    "Year": "1972-01-01",
-    "Origin": "USA"
-  },
-  {
     "Name": "ford galaxie 500",
-    "Miles_per_Gallon": 16,
+    "Miles_per_Gallon": 14,
     "Cylinders": 8,
     "Displacement": 351,
-    "Horsepower": 91,
+    "Horsepower": 153,
     "Weight_in_lbs": 4129,
     "Acceleration": 13,
     "Year": "1972-01-01",
@@ -843,6 +832,17 @@
     "Horsepower": 150,
     "Weight_in_lbs": 3892,
     "Acceleration": 12.5,
+    "Year": "1972-01-01",
+    "Origin": "USA"
+  },
+  {
+    "Name": "chevrolet chevelle concours (sw)",
+    "Miles_per_Gallon": 13,
+    "Cylinders": 8,
+    "Displacement": 307,
+    "Horsepower": 130,
+    "Weight_in_lbs": 4098,
+    "Acceleration": 14,
     "Year": "1972-01-01",
     "Origin": "USA"
   },
@@ -946,14 +946,14 @@
     "Origin": "Japan"
   },
   {
-    "Name": "ford mustang ii 2+2",
-    "Miles_per_Gallon": 41,
+    "Name": "dodge colt (sw)",
+    "Miles_per_Gallon": 28,
     "Cylinders": 4,
-    "Displacement": 416,
-    "Horsepower": 160,
-    "Weight_in_lbs": 3245,
-    "Acceleration": 24,
-    "Year": "1977-01-01",
+    "Displacement": 98,
+    "Horsepower": 80,
+    "Weight_in_lbs": 2164,
+    "Acceleration": 15,
+    "Year": "1972-01-01",
     "Origin": "USA"
   },
   {
@@ -1013,12 +1013,12 @@
   },
   {
     "Name": "dodge coronet custom",
-    "Miles_per_Gallon": 15,
+    "Miles_per_Gallon": 12,
     "Cylinders": 8,
-    "Displacement": 318,
+    "Displacement": 349,
     "Horsepower": 150,
-    "Weight_in_lbs": 3777,
-    "Acceleration": 12.5,
+    "Weight_in_lbs": 5287,
+    "Acceleration": 16.25,
     "Year": "1973-01-01",
     "Origin": "USA"
   },
@@ -1112,12 +1112,12 @@
   },
   {
     "Name": "chevrolet nova custom",
-    "Miles_per_Gallon": 16,
+    "Miles_per_Gallon": 17,
     "Cylinders": 6,
-    "Displacement": 250,
+    "Displacement": 150,
     "Horsepower": 100,
-    "Weight_in_lbs": 3278,
-    "Acceleration": 18,
+    "Weight_in_lbs": 1639,
+    "Acceleration": 27,
     "Year": "1973-01-01",
     "Origin": "USA"
   },
@@ -1189,7 +1189,7 @@
   },
   {
     "Name": "plymouth custom suburb",
-    "Miles_per_Gallon": 14,
+    "Miles_per_Gallon": 13,
     "Cylinders": 8,
     "Displacement": 360,
     "Horsepower": 170,
@@ -1442,10 +1442,10 @@
   },
   {
     "Name": "chevrolet nova",
-    "Miles_per_Gallon": 18,
+    "Miles_per_Gallon": 15,
     "Cylinders": 6,
     "Displacement": 250,
-    "Horsepower": 130,
+    "Horsepower": 100,
     "Weight_in_lbs": 3336,
     "Acceleration": 17,
     "Year": "1974-01-01",
@@ -1848,17 +1848,6 @@
     "Origin": "USA"
   },
   {
-    "Name": "chevrolet monza 2+2",
-    "Miles_per_Gallon": 20,
-    "Cylinders": 8,
-    "Displacement": 262,
-    "Horsepower": 110,
-    "Weight_in_lbs": 3221,
-    "Acceleration": 13.5,
-    "Year": "1975-01-01",
-    "Origin": "USA"
-  },
-  {
     "Name": "ford mustang ii",
     "Miles_per_Gallon": 13,
     "Cylinders": 8,
@@ -1914,14 +1903,14 @@
     "Origin": "USA"
   },
   {
-    "Name": "toyota mark ii",
-    "Miles_per_Gallon": 35,
-    "Cylinders": 5,
-    "Displacement": 409,
-    "Horsepower": 223,
-    "Weight_in_lbs": 3540,
-    "Acceleration": 14,
-    "Year": "1971-01-01",
+    "Name": "toyota corona",
+    "Miles_per_Gallon": 24,
+    "Cylinders": 4,
+    "Displacement": 134,
+    "Horsepower": 96,
+    "Weight_in_lbs": 2702,
+    "Acceleration": 13.5,
+    "Year": "1975-01-01",
     "Origin": "Japan"
   },
   {
@@ -1934,17 +1923,6 @@
     "Acceleration": 16.5,
     "Year": "1975-01-01",
     "Origin": "Europe"
-  },
-  {
-    "Name": "datsun 710",
-    "Miles_per_Gallon": 24,
-    "Cylinders": 4,
-    "Displacement": 119,
-    "Horsepower": 97,
-    "Weight_in_lbs": 2545,
-    "Acceleration": 17,
-    "Year": "1975-01-01",
-    "Origin": "Japan"
   },
   {
     "Name": "ford pinto",
@@ -2013,15 +1991,15 @@
     "Origin": "Europe"
   },
   {
-    "Name": "saab 99le",
-    "Miles_per_Gallon": 25,
-    "Cylinders": 4,
-    "Displacement": 121,
-    "Horsepower": 115,
-    "Weight_in_lbs": 2671,
-    "Acceleration": 13.5,
+    "Name": "honda Accelerationord cvcc",
+    "Miles_per_Gallon": 38,
+    "Cylinders": 5,
+    "Displacement": 235,
+    "Horsepower": 108,
+    "Weight_in_lbs": 1837,
+    "Acceleration": 23.071,
     "Year": "1975-01-01",
-    "Origin": "Europe"
+    "Origin": "USA"
   },
   {
     "Name": "honda civic cvcc",
@@ -2508,15 +2486,15 @@
     "Origin": "USA"
   },
   {
-    "Name": "oldsmobile omega",
-    "Miles_per_Gallon": 27,
-    "Cylinders": 4,
-    "Displacement": 198,
-    "Horsepower": 280,
-    "Weight_in_lbs": 2240,
-    "Acceleration": 8,
-    "Year": "1970-01-01",
-    "Origin": "Japan"
+    "Name": "chevrolet concours",
+    "Miles_per_Gallon": 17.5,
+    "Cylinders": 6,
+    "Displacement": 250,
+    "Horsepower": 110,
+    "Weight_in_lbs": 3520,
+    "Acceleration": 16.4,
+    "Year": "1977-01-01",
+    "Origin": "USA"
   },
   {
     "Name": "buick skylark",
@@ -2553,12 +2531,12 @@
   },
   {
     "Name": "pontiac grand prix lj",
-    "Miles_per_Gallon": 16,
+    "Miles_per_Gallon": 11,
     "Cylinders": 8,
-    "Displacement": 400,
+    "Displacement": 240,
     "Horsepower": 180,
-    "Weight_in_lbs": 4220,
-    "Acceleration": 11.1,
+    "Weight_in_lbs": 4642,
+    "Acceleration": 14.43,
     "Year": "1977-01-01",
     "Origin": "USA"
   },
@@ -2704,17 +2682,6 @@
     "Acceleration": 12.8,
     "Year": "1977-01-01",
     "Origin": "Europe"
-  },
-  {
-    "Name": "mazda rx-4",
-    "Miles_per_Gallon": 21.5,
-    "Cylinders": 3,
-    "Displacement": 80,
-    "Horsepower": 110,
-    "Weight_in_lbs": 2720,
-    "Acceleration": 13.5,
-    "Year": "1977-01-01",
-    "Origin": "Japan"
   },
   {
     "Name": "volkswagen rabbit custom diesel",
@@ -3004,12 +2971,12 @@
   },
   {
     "Name": "toyota celica gt liftback",
-    "Miles_per_Gallon": 21.1,
+    "Miles_per_Gallon": 16.88,
     "Cylinders": 4,
-    "Displacement": 134,
+    "Displacement": 67,
     "Horsepower": 95,
-    "Weight_in_lbs": 2515,
-    "Acceleration": 14.8,
+    "Weight_in_lbs": 1760,
+    "Acceleration": 17.76,
     "Year": "1978-01-01",
     "Origin": "Japan"
   },
@@ -3322,6 +3289,17 @@
     "Origin": "USA"
   },
   {
+    "Name": "peugeot 504",
+    "Miles_per_Gallon": 27.2,
+    "Cylinders": 4,
+    "Displacement": 141,
+    "Horsepower": 71,
+    "Weight_in_lbs": 3190,
+    "Acceleration": 24.8,
+    "Year": "1979-01-01",
+    "Origin": "Europe"
+  },
+  {
     "Name": "oldsmobile cutlass salon brougham",
     "Miles_per_Gallon": 23.9,
     "Cylinders": 8,
@@ -3411,12 +3389,12 @@
   },
   {
     "Name": "pontiac phoenix",
-    "Miles_per_Gallon": 26.8,
+    "Miles_per_Gallon": 33.5,
     "Cylinders": 4,
     "Displacement": 151,
-    "Horsepower": 63,
+    "Horsepower": 90,
     "Weight_in_lbs": 2556,
-    "Acceleration": 18.48,
+    "Acceleration": 13.2,
     "Year": "1979-01-01",
     "Origin": "USA"
   },
@@ -3498,14 +3476,14 @@
     "Origin": "USA"
   },
   {
-    "Name": "dodge aspen",
-    "Miles_per_Gallon": 19.1,
-    "Cylinders": 6,
-    "Displacement": 225,
-    "Horsepower": 90,
-    "Weight_in_lbs": 3381,
-    "Acceleration": 18.7,
-    "Year": "1980-01-01",
+    "Name": "dodge st. regis",
+    "Miles_per_Gallon": 14.642,
+    "Cylinders": 5,
+    "Displacement": 115,
+    "Horsepower": 128,
+    "Weight_in_lbs": 1901,
+    "Acceleration": 16.593,
+    "Year": "1982-01-01",
     "Origin": "USA"
   },
   {
@@ -3532,12 +3510,12 @@
   },
   {
     "Name": "mazda 626",
-    "Miles_per_Gallon": 31.3,
+    "Miles_per_Gallon": 46.95,
     "Cylinders": 4,
-    "Displacement": 120,
+    "Displacement": 84,
     "Horsepower": 75,
-    "Weight_in_lbs": 2542,
-    "Acceleration": 17.5,
+    "Weight_in_lbs": 1779,
+    "Acceleration": 21.0,
     "Year": "1980-01-01",
     "Origin": "Japan"
   },
@@ -3639,6 +3617,17 @@
     "Acceleration": 21.8,
     "Year": "1980-01-01",
     "Origin": "Europe"
+  },
+  {
+    "Name": "honda civic 1500 gl",
+    "Miles_per_Gallon": 44.6,
+    "Cylinders": 4,
+    "Displacement": 91,
+    "Horsepower": 67,
+    "Weight_in_lbs": 1850,
+    "Acceleration": 13.8,
+    "Year": "1980-01-01",
+    "Origin": "Japan"
   },
   {
     "Name": "renault lecar deluxe",
@@ -4202,15 +4191,15 @@
     "Origin": "USA"
   },
   {
-    "Name": "dodge aries wagon (sw)",
-    "Miles_per_Gallon": 30,
-    "Cylinders": 5,
-    "Displacement": 220,
-    "Horsepower": 218,
-    "Weight_in_lbs": 4081,
-    "Acceleration": 10,
-    "Year": "1976-01-01",
-    "Origin": "USA"
+    "Name": "nissan stanza xe",
+    "Miles_per_Gallon": 36,
+    "Cylinders": 4,
+    "Displacement": 120,
+    "Horsepower": 88,
+    "Weight_in_lbs": 2160,
+    "Acceleration": 14.5,
+    "Year": "1982-01-01",
+    "Origin": "Japan"
   },
   {
     "Name": "honda Accelerationord",
@@ -4242,6 +4231,17 @@
     "Horsepower": 67,
     "Weight_in_lbs": 1965,
     "Acceleration": 15,
+    "Year": "1982-01-01",
+    "Origin": "Japan"
+  },
+  {
+    "Name": "honda civic (auto)",
+    "Miles_per_Gallon": 32,
+    "Cylinders": 4,
+    "Displacement": 91,
+    "Horsepower": 67,
+    "Weight_in_lbs": 1965,
+    "Acceleration": 15.7,
     "Year": "1982-01-01",
     "Origin": "Japan"
   },
@@ -4324,12 +4324,12 @@
   },
   {
     "Name": "chevrolet camaro",
-    "Miles_per_Gallon": 35,
+    "Miles_per_Gallon": 27,
     "Cylinders": 4,
     "Displacement": 151,
-    "Horsepower": 108,
+    "Horsepower": 90,
     "Weight_in_lbs": 2950,
-    "Acceleration": 24.22,
+    "Acceleration": 17.3,
     "Year": "1982-01-01",
     "Origin": "USA"
   },
@@ -4363,6 +4363,17 @@
     "Horsepower": 84,
     "Weight_in_lbs": 2295,
     "Acceleration": 11.6,
+    "Year": "1982-01-01",
+    "Origin": "USA"
+  },
+  {
+    "Name": "ford ranger",
+    "Miles_per_Gallon": 28,
+    "Cylinders": 4,
+    "Displacement": 120,
+    "Horsepower": 79,
+    "Weight_in_lbs": 2625,
+    "Acceleration": 18.6,
     "Year": "1982-01-01",
     "Origin": "USA"
   },
