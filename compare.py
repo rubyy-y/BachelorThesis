@@ -4,6 +4,8 @@ import json
 with open("BachelorThesis/globals.json") as globs:
     globals = json.load(globs)
 
+id_sets = globals["ID_datasets"]
+
 def compare(a_json, b_json):
     with open(a_json) as a, open(b_json) as b:
         a_vl = json.load(a)
@@ -119,10 +121,25 @@ def compare(a_json, b_json):
         output_file = f"{a_json[:-fe]}_COMP_{b_json[:-fe]}.json"
         with open("comparisons/" + output_file, 'w') as out:
             json.dump(output_vl, out, indent=2)
-    return None        
+    return None  
 
 
-# function to update specs
+def id_compare(a_json, b_json):
+    """
+    This function compares datasets in case they have an ID feature.
+    """
+    with open(a_json) as a, open(b_json) as b:
+        a_vl = json.load(a)
+        b_vl = json.load(b)
+
+        # datapoints (list of dicts)
+        data_a = a_vl["datasets"][list(a_vl["datasets"].keys())[0]]
+        data_b = b_vl["datasets"][list(b_vl["datasets"].keys())[0]]
+
+        return None
+
+
+# __________U__P__D__A__T__E_____S__P__E__C__S__________
 def update_json_file(file_path, props):
     with open(file_path, 'r+') as file:
         data = json.load(file)
@@ -141,14 +158,6 @@ datasets = globals["datasets"]
 # Reformat specs
 props = globals["VL"]
 
-# TEST WITH IDs
-# __________________________________________________________________________________________________________________________
-
-id_sets = globals["ID_datasets"]
-
-cur = "id_datasets/[id]_" + id_sets[0] + "_source.json"
-
-# __________________________________________________________________________________________________________________________
 
 if __name__ == "__main__":
     for dataset in datasets:
@@ -161,9 +170,13 @@ if __name__ == "__main__":
 
             print(f"\nComparing {original} and {alternation}: ")
             try:
-                compare(original, alternation)
-                update_json_file("comparisons/" + new_file, props)
-                print(f"new file {new_file} has been reformatted.")
+                if dataset in id_sets:
+                    print("This is a dataset with ID values.")
+                    id_compare(original, alternation)
+                else:
+                    compare(original, alternation)
+                    update_json_file("comparisons/" + new_file, props)
+                    print(f"new file {new_file} has been reformatted.")
 
             except:
                 print("!! error")

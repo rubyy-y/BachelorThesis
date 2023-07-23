@@ -109,7 +109,10 @@ def randomize(json_file: str, p: float):
                     modified_point = {}
 
                     for k in data[0]:
-                        if isinstance(point[k], int) and k != "_ID_":
+                        if k == "_ID_":
+                            modified_point[k] = -1
+                        
+                        elif isinstance(point[k], int) and k != "_ID_":
                             modified_point[k] = int(random.uniform(stats[k+"_max"], stats[k+"_min"]))
                         
                         elif isinstance(point[k], float):
