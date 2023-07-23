@@ -1,6 +1,9 @@
 import os
 import json
 
+with open("BachelorThesis/globals.json") as globs:
+    globals = json.load(globs)
+
 def compare(a_json, b_json):
     with open(a_json) as a, open(b_json) as b:
         a_vl = json.load(a)
@@ -132,24 +135,20 @@ def update_json_file(file_path, props):
 # compare all the files in the data folder of our app-directory
 os.chdir("BachelorThesis/vis-dif/public/data")
 
-percent = [5, 10, 15, 20]
-datasets = ["barley", "burtin", 
-            "cars", "crimea", "driving", 
-            "iris", "wheat"]
+percent = globals["percent"]
+datasets = globals["datasets"]
 
 # Reformat specs
-props = {
-    "width": "container",
-    "height": "container",
-    "background": None,
-    "config": {
-        "legend": {"labelColor": "#3a393f", "titleColor": "black"},
-        "axis": {"gridColor": "black"},
-        "axisX": {"labelColor": "#3a393f", "titleColor": "black"},
-        "axisY": {"labelColor": "#3a393f", "titleColor": "black"}
-    }
-}
+props = globals["VL"]
 
+# TEST WITH IDs
+# __________________________________________________________________________________________________________________________
+
+id_sets = globals["ID_datasets"]
+
+cur = "id_datasets/[id]_" + id_sets[0] + "_source.json"
+
+# __________________________________________________________________________________________________________________________
 
 if __name__ == "__main__":
     for dataset in datasets:

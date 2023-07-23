@@ -5,6 +5,9 @@ import json
 import random
 random.seed(10)
 
+with open("BachelorThesis/globals.json") as globs:
+    globals = json.load(globs)
+
 # change path to where json files are
 os.chdir("BachelorThesis\datasets")
 json_files = os.getcwd() + "\*.json"
@@ -24,7 +27,10 @@ def toChange(file):
         
         keys.remove(f_vl["encoding"]["x"]["field"])
         keys.remove(f_vl["encoding"]["color"]["field"])
-        keys.remove("_ID_")
+        try:
+            keys.remove("_ID_")
+        except ValueError:
+            pass
         return keys
     
 def statistics(data):
@@ -114,7 +120,7 @@ def randomize(json_file: str, p: float):
 
                     new_data.append(modified_point)
 
-    with open(f"datasets_altered/{modified}", 'w') as f:
+    with open(f"datasets_altered/{modified}", "w") as f:
         json.dump(new_data, f, indent=2)                    
 
     proportion = round(100*summary['changed']/(summary['unchanged']+summary['changed']), 2)
@@ -126,15 +132,18 @@ def randomize(json_file: str, p: float):
 # TEST WITH IDs
 # __________________________________________________________________________________________________________________________
 
-id_sets = ["cars", "iris"]
-
+id_sets = globals["ID_datasets"]
 print(toChange("id_datasets/[id]_" + id_sets[0] + "_source.json"))
 
 with open("id_datasets/[id]_" + id_sets[0] + ".json", "r") as f:
     data = json.load(f)
     print(statistics(data))
 
+print(randomize("id_datasets/[id]_" + id_sets[0] + ".json", 0.68))
+
 # __________________________________________________________________________________________________________________________
+
+
 # # randomize all files from 5% to 20% (in steps of 5)
 # if __name__ == "__main__":
 #     resume = {"5%": [], "10%": [], "15%": [], "20%": []}
