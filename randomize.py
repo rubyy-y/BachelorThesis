@@ -12,21 +12,19 @@ json_files = os.getcwd() + "\*.json"
 # scan for all .json files in this folder
 files = [os.path.split(file)[-1] for file in glob.glob(json_files)]
 
-
-# _______________________________________
-def getNotXColor(file):
+# ________________________________________________________________________________
+def toChange(file):
     """
     file: json source file
-    This function returns a list of the values that are NOT encoded
-    in the x or y field of the vega lite spec.
+    returns a list of the encoding fields that are NOT x or color of the spec.
     """
     with open("../vis-dif/public/data/" + file) as f:
         f_vl = json.load(f)
         keys = list(f_vl["datasets"][list(f_vl["datasets"].keys())[0]][0].keys())
         
         keys.remove(f_vl["encoding"]["x"]["field"])
-        # keys.remove(f_vl["encoding"]["y"]["field"])
         keys.remove(f_vl["encoding"]["color"]["field"])
+        keys.remove("_ID_")
         return keys
     
 def statistics(data):
@@ -37,7 +35,7 @@ def statistics(data):
     values = {}
     for dp in data:
         for key in dp:
-            if isinstance(dp[key], (int, float)) and dp[key] is not None:
+            if isinstance(dp[key], (int, float)) and key != "_ID_":
                 if key+"_min" not in values:
                     values[key+"_min"] = dp[key]
                 elif key+"_max" not in values:
@@ -46,7 +44,7 @@ def statistics(data):
                     values[key+"_min"] = min(values[key+"_min"], dp[key])
                     values[key+"_max"] = max(values[key+"_max"], dp[key])
                     
-            elif isinstance(dp[key], str) and dp[key] is not None:
+            elif isinstance(dp[key], str):
                 try:
                     values[key].append(dp[key])
                 except:
@@ -87,8 +85,8 @@ def randomize(json_file: str, p: float):
                 if action < 1/3:                # - skew
                     summary["skewed"] += 1
                     for key in point.keys():
-                        # multiply ind and float values with random number between 0.5 and 1.5
-                        change = getNotXColor(json_file[:-5]+"_source.json")
+                        # multiply int and float values with random number between 0.5 and 1.5
+                        change = toChange(json_file[:-5]+"_source.json")
                         if type(point[key]) == int and key in change:
                             point[key] = int(point[key]*random.randint(5,15)/10)
                         
@@ -105,7 +103,7 @@ def randomize(json_file: str, p: float):
                     modified_point = {}
 
                     for k in data[0]:
-                        if isinstance(point[k], int):
+                        if isinstance(point[k], int) and k != "_ID_":
                             modified_point[k] = int(random.uniform(stats[k+"_max"], stats[k+"_min"]))
                         
                         elif isinstance(point[k], float):
@@ -124,30 +122,43 @@ def randomize(json_file: str, p: float):
 
     return summary
 
-# randomize all files from 5% to 20% (in steps of 5)
-if __name__ == "__main__":
-    resume = {"5%": [], "10%": [], "15%": [], "20%": []}
-    for i in range(5, 21, 5):
-        print(f"{i}%:")
-        for file in files: 
-            summary = randomize(file, i/100)
+
+# TEST WITH IDs
+# __________________________________________________________________________________________________________________________
+
+id_sets = ["cars", "iris"]
+
+print(toChange("id_datasets/[id]_" + id_sets[0] + "_source.json"))
+
+with open("id_datasets/[id]_" + id_sets[0] + ".json", "r") as f:
+    data = json.load(f)
+    print(statistics(data))
+
+# __________________________________________________________________________________________________________________________
+# # randomize all files from 5% to 20% (in steps of 5)
+# if __name__ == "__main__":
+#     resume = {"5%": [], "10%": [], "15%": [], "20%": []}
+#     for i in range(5, 21, 5):
+#         print(f"{i}%:")
+#         for file in files: 
+#             summary = randomize(file, i/100)
             
-            # keep randomizing if nothing changed or values are too far off
-            pos = summary["amountOfChange"].index('.')
-            aoc = int(summary["amountOfChange"][:pos]) # amount of change as int
+#             # keep randomizing if nothing changed or values are too far off
+#             pos = summary["amountOfChange"].index('.')
+#             aoc = int(summary["amountOfChange"][:pos]) # amount of change as int
 
-            while summary["changed"] == 0:
-                print("no change")
-                summary = randomize(file, i/100)
+#             while summary["changed"] == 0:
+#                 print("no change")
+#                 summary = randomize(file, i/100)
 
-            while aoc not in range(i-4, i+4):
-                print("too far off")
-                summary = randomize(file, i/100)
-                pos = summary["amountOfChange"].index('.')
-                aoc = int(summary["amountOfChange"][:pos])
+#             while aoc not in range(i-4, i+4):
+#                 print("too far off")
+#                 summary = randomize(file, i/100)
+#                 pos = summary["amountOfChange"].index('.')
+#                 aoc = int(summary["amountOfChange"][:pos])
 
-            resume[f"{i}%"].append(summary["amountOfChange"])
-            print(f"'{file}' has been altered and saved as '{file[:-5]}{i}.json'.")
-            print(f"Summary of change: {summary}\n")
+#             resume[f"{i}%"].append(summary["amountOfChange"])
+#             print(f"'{file}' has been altered and saved as '{file[:-5]}{i}.json'.")
+#             print(f"Summary of change: {summary}\n")
     
-    print(json.dumps(resume, indent=2))
+#     print(json.dumps(resume, indent=2))
