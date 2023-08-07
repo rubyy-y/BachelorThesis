@@ -5,11 +5,11 @@ import json
 import random
 random.seed(10)
 
-with open("BachelorThesis/globals.json") as globs:
+with open("globals.json") as globs:
     globals = json.load(globs)
 
 # change path to where json files are
-os.chdir("BachelorThesis\datasets")
+os.chdir("datasets")
 json_files = os.getcwd() + "\*.json"
 
 # scan for all .json files in this folder
@@ -75,10 +75,15 @@ def randomize(json_file: str, p: float):
     # new data list
     new_data = []
 
-    # with open(f"datasets_altered\{modified}", 'w') as f:
     with open(json_file, 'r') as original:
         data = json.load(original)
         stats = statistics(data)
+
+        # get last id of datapoint
+        try:
+            add_ID = data[-1]["_ID_"] + 1
+        except KeyError:
+            pass
 
         for point in data:
             if random.random() < 1-p:       # copy datapoint
@@ -110,7 +115,8 @@ def randomize(json_file: str, p: float):
 
                     for k in data[0]:
                         if k == "_ID_":
-                            modified_point[k] = -1
+                            modified_point[k] = add_ID
+                            add_ID += 1
                         
                         elif isinstance(point[k], int) and k != "_ID_":
                             modified_point[k] = int(random.uniform(stats[k+"_max"], stats[k+"_min"]))
@@ -132,45 +138,31 @@ def randomize(json_file: str, p: float):
     return summary
 
 
-# TEST WITH IDs
-# __________________________________________________________________________________________________________________________
-
-id_sets = globals["ID_datasets"]
-print(toChange("id_datasets/[id]_" + id_sets[0] + "_source.json"))
-
-with open("id_datasets/[id]_" + id_sets[0] + ".json", "r") as f:
-    data = json.load(f)
-    print(statistics(data))
-
-print(randomize("id_datasets/[id]_" + id_sets[0] + ".json", 0.68))
-
-# __________________________________________________________________________________________________________________________
-
-
-# # randomize all files from 5% to 20% (in steps of 5)
-# if __name__ == "__main__":
-#     resume = {"5%": [], "10%": [], "15%": [], "20%": []}
-#     for i in range(5, 21, 5):
-#         print(f"{i}%:")
-#         for file in files: 
-#             summary = randomize(file, i/100)
+# randomize all files from 5% to 20% (in steps of 5)
+if __name__ == "__main__":
+    resume = {"5%": [], "10%": [], "15%": [], "20%": []}
+    id_sets = globals["ID_datasets"]
+    for i in range(5, 21, 5):
+        print(f"{i}%:")
+        for file in files: 
+            summary = randomize(file, i/100)
             
-#             # keep randomizing if nothing changed or values are too far off
-#             pos = summary["amountOfChange"].index('.')
-#             aoc = int(summary["amountOfChange"][:pos]) # amount of change as int
+            # keep randomizing if nothing changed or values are too far off
+            pos = summary["amountOfChange"].index('.')
+            aoc = int(summary["amountOfChange"][:pos]) # amount of change as int
 
-#             while summary["changed"] == 0:
-#                 print("no change")
-#                 summary = randomize(file, i/100)
+            while summary["changed"] == 0:
+                print("no change")
+                summary = randomize(file, i/100)
 
-#             while aoc not in range(i-4, i+4):
-#                 print("too far off")
-#                 summary = randomize(file, i/100)
-#                 pos = summary["amountOfChange"].index('.')
-#                 aoc = int(summary["amountOfChange"][:pos])
+            while aoc not in range(i-4, i+4):
+                print("too far off")
+                summary = randomize(file, i/100)
+                pos = summary["amountOfChange"].index('.')
+                aoc = int(summary["amountOfChange"][:pos])
 
-#             resume[f"{i}%"].append(summary["amountOfChange"])
-#             print(f"'{file}' has been altered and saved as '{file[:-5]}{i}.json'.")
-#             print(f"Summary of change: {summary}\n")
+            resume[f"{i}%"].append(summary["amountOfChange"])
+            print(f"'{file}' has been altered and saved as '{file[:-5]}{i}.json'.")
+            print(f"Summary of change: {summary}\n")
     
-#     print(json.dumps(resume, indent=2))
+    print(json.dumps(resume, indent=2))

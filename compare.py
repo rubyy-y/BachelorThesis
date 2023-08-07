@@ -1,10 +1,11 @@
 import os
 import json
 
-with open("BachelorThesis/globals.json") as globs:
+with open("globals.json") as globs:
     globals = json.load(globs)
 
 id_sets = globals["ID_datasets"]
+props = globals["VL"]
 
 def compare(a_json, b_json):
     with open(a_json) as a, open(b_json) as b:
@@ -88,26 +89,12 @@ def compare(a_json, b_json):
         mark = a_vl["mark"]
         encoding = a_vl["encoding"]
 
-        output_vl = {
-            "width": "container",
-            "height": "container",
-            "background": None,
-            "config": {
-                "legend": {"labelColor": "#3a393f", "titleColor": "black"},
-                "axis": {"gridColor": "black"},
-                "axisX": {"labelColor": "#3a393f", "titleColor": "black"},
-                "axisY": {"labelColor": "#3a393f", "titleColor": "black"}
-            },
-            "data": {
-                "name": hash_
-            },
-            "mark": mark,
-            "encoding": encoding,
-            "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
-            "datasets": {
-                hash_: diffs
-            }
-        }
+        output_vl = props.copy()
+        output_vl["data"] = { "name": hash_ }
+        output_vl["mark"] = mark
+        output_vl["encoding"] = encoding
+        output_vl["$schema"] = "https://vega.github.io/schema/vega-lite/v4.17.0.json"
+        output_vl["datasets"] = { hash_: diffs }
 
         # if mark == "bar":
         #     ranges = [dif[a_y] for dif in diffs]
@@ -121,6 +108,7 @@ def compare(a_json, b_json):
         output_file = f"{a_json[:-fe]}_COMP_{b_json[:-fe]}.json"
         with open("comparisons/" + output_file, 'w') as out:
             json.dump(output_vl, out, indent=2)
+
     return None  
 
 
@@ -136,7 +124,18 @@ def id_compare(a_json, b_json):
         data_a = a_vl["datasets"][list(a_vl["datasets"].keys())[0]]
         data_b = b_vl["datasets"][list(b_vl["datasets"].keys())[0]]
 
-        return None
+        for dp_a in data_a:
+            _id_ = dp_a["_ID_"]
+            exists = False
+
+            for dp_b in data_b:
+                if dp_b["_ID_"] == _id_:
+                    exists = True
+                if exists:
+                    print(dp_a, "\n", dp_b)
+                    break
+
+    return None
 
 
 # __________U__P__D__A__T__E_____S__P__E__C__S__________
@@ -150,33 +149,33 @@ def update_json_file(file_path, props):
         file.truncate()
 
 # compare all the files in the data folder of our app-directory
-os.chdir("BachelorThesis/vis-dif/public/data")
+os.chdir("vis-dif/public/data")
 
 percent = globals["percent"]
 datasets = globals["datasets"]
 
-# Reformat specs
-props = globals["VL"]
+
+id_compare("cars_source.json", "cars20_source.json")
 
 
-if __name__ == "__main__":
-    for dataset in datasets:
-        original = f"{dataset}_source.json"
-        update_json_file(original, props)
-        for p in percent:
-            alternation = f"{dataset}{p}_source.json"
-            update_json_file(alternation, props)    # reformat alternation vis
-            new_file = f"{dataset}_COMP_{dataset}{p}.json"
+# if __name__ == "__main__":
+#     for dataset in datasets:
+#         original = f"{dataset}_source.json"
+#         update_json_file(original, props)
+#         for p in percent:
+#             alternation = f"{dataset}{p}_source.json"
+#             update_json_file(alternation, props)    # reformat alternation vis
+#             new_file = f"{dataset}_COMP_{dataset}{p}.json"
 
-            print(f"\nComparing {original} and {alternation}: ")
-            try:
-                if dataset in id_sets:
-                    print("This is a dataset with ID values.")
-                    id_compare(original, alternation)
-                else:
-                    compare(original, alternation)
-                    update_json_file("comparisons/" + new_file, props)
-                    print(f"new file {new_file} has been reformatted.")
+#             print(f"\nComparing {original} and {alternation}: ")
+#             try:
+#                 if dataset in id_sets:
+#                     print("This is a dataset with ID values.")
+#                     id_compare(original, alternation)
+#                 else:
+#                     compare(original, alternation)
+#                     update_json_file("comparisons/" + new_file, props)
+#                     print(f"new file {new_file} has been reformatted.")
 
-            except:
-                print("!! error")
+#             except:
+#                 raise Warning

@@ -95,9 +95,9 @@ function App() {
           <select value={select} onChange={handleChange}>
             <option value="barley">barley.json</option>
             <option value="burtin">burtin.json</option>
-            <option value="cars">cars.json</option>
+            <option value="cars">[id] cars.json</option>
             <option value="crimea">crimea.json</option>
-            <option value="driving">driving.json</option>
+            <option value="driving">[id] driving.json</option>
             <option value="iris">iris.json</option>
             <option value="wheat">wheat.json</option>
           </select>

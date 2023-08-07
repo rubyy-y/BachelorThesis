@@ -4,10 +4,9 @@ Afterwards, the dataset needs to be randomized.
 """
 
 import os
-os.chdir("BachelorThesis/datasets")
+os.chdir("datasets")
 
 import json
-# dataset = "iris.json"
 dataset = input("input dataset name: ") + ".json"
 id_data = []
 
@@ -21,6 +20,6 @@ with open(dataset) as f:
 
         id_data.append(dp)
 
-# os.chdir("../vis-dif/public/data/id_datasets")
-with open("id_datasets/[id]_" + dataset, "x") as n:
+
+with open("[id]_" + dataset, "x") as n:
     json.dump(id_data, n, indent=2)
