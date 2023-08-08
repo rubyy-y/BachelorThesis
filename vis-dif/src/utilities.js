@@ -1,7 +1,9 @@
 // translation of python compare function to javascript
-const props = require('../globals.json');
 
 export function compare(a_json, b_json) {
+    const config = require("./globals.json");
+    const props = config.VL;
+
     // x and y values
     const a_x = a_json.encoding.x.field;
     const a_y = a_json.encoding.y.field;
@@ -61,33 +63,21 @@ export function compare(a_json, b_json) {
         encoding.tooltip = [{ "field": "_type_" }];
     }
 
-    const output_vl = {
-        width: "container",
-        height: "container",
-        background: null,
-        config: {
-            legend: {labelColor: '#3a393f', titleColor: "black"},
-            axis: { gridColor: "black" },
-            axisX: { labelColor: '#3a393f', titleColor: "black" },
-            axisY: { labelColor: '#3a393f', titleColor: "black" },
-        },
-        data: {values: diffs},
-        mark: mark,
-        encoding: encoding,
-        $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json"
-    };
+    const spec = JSON.parse(JSON.stringify(props));
+    spec.data = {values: diffs};
+    spec.mark = mark;
+    spec.encoding = encoding;
+    spec.$schema = "https://vega.github.io/schema/vega-lite/v4.17.0.json";
 
-    // specs - optional
-    try {
-        const selection = a_json.selection;
-        output_vl.selection = selection;
-    } catch (err) {}
-    return output_vl;
+    return spec;
     }
 
 
 // translation of formatSpecs.py as function
 export function formatSpecs(file) {
+    const config = require("./globals.json");
+    const props = config.VL;
+
     var data = null;
     try {
         data = file.datasets[file.data.name];
@@ -96,20 +86,12 @@ export function formatSpecs(file) {
     }
     const mark = file.mark;
     const encoding = file.encoding;
-    const formatted = {
-        width: "container",
-        height: "container",
-        background: null,
-        config: {
-            legend: {labelColor: '#3a393f', titleColor: "black"},
-            axis: { gridColor: "black" },
-            axisX: { labelColor: '#3a393f', titleColor: "black" },
-            axisY: { labelColor: '#3a393f', titleColor: "black" },
-        },
-        data: {values: data},
-        mark: mark,
-        encoding: encoding,
-        $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json"
-    };
-    return formatted;
+
+    const spec = JSON.parse(JSON.stringify(props));
+    spec.data = {values: data};
+    spec.mark = mark;
+    spec.encoding = encoding;
+    spec.$schema = "https://vega.github.io/schema/vega-lite/v4.17.0.json";
+
+    return spec;
 }

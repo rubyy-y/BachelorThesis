@@ -13,11 +13,13 @@ function App() {
 
   useEffect(() => {
     if (file1Content && file2Content) {
+      console.log("Two files were uploaded.")
       const file1Formatted = formatSpecs(file1Content);
       const file2Formatted = formatSpecs(file2Content);
       vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
       vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
 
+      console.log("Comparing the files.")
       const spec = compare(file1Content, file2Content);
       if (spec.data.values.length === 0) {
         document.getElementById("dif").innerHTML = "The two visualizations are visually identical.";
@@ -27,15 +29,18 @@ function App() {
     } else if (file1Content || file2Content) {
       document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
       if (file1Content) {
+        console.log("First file was uploaded.")
         document.getElementById("vis2").innerHTML = "Upload second file.";
         const file1Formatted = formatSpecs(file1Content);
         vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
       } else {
+        console.log("Second file was uploaded.")
         document.getElementById("vis1").innerHTML = "Upload another file.";
         const file2Formatted = formatSpecs(file2Content);
         vegaEmbed('#vis1', file2Formatted, {"actions": false, "theme": theme});
       }
     } else {
+      console.log("No file uploaded.")
       var original = "data/" + select + "_source.json";
       var altered = "data/" + select + percent + '_source.json';
       var comp = "data/comparisons/" + select + "_COMP_" + select + percent + ".json";

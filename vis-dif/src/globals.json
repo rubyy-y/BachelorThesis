@@ -1,0 +1,21 @@
+{
+    "percent": [5, 10, 15, 20],
+    "datasets": ["barley", "burtin", 
+                "cars", "crimea", "driving", 
+                "iris", "wheat"],
+
+    "ID_datasets": ["cars", "driving"],
+
+    "VL": {
+        "width": "container",
+        "height": "container",
+        "background": null,
+        "config": {
+            "legend": {"labelColor": "#3a393f", "titleColor": "black"},
+            "axis": {"gridColor": "black"},
+            "axisX": {"labelColor": "#3a393f", "titleColor": "black"},
+            "axisY": {"labelColor": "#3a393f", "titleColor": "black"}
+        }
+    }
+}
+  
