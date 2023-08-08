@@ -30,15 +30,15 @@
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
       },
       {
         "field": "yield",
         "type": "quantitative"
       },
       {
-        "field": "site",
-        "type": "nominal"
+        "field": "year",
+        "type": "quantitative"
       }
     ],
     "x": {
@@ -58,42 +58,42 @@
         "variety": "Trebi",
         "year": 1931,
         "site": "Morris",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 33.06666,
         "variety": "No. 475",
         "year": 1931,
         "site": "Duluth",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 26.43334,
         "variety": "No. 457",
         "year": 1932,
         "site": "University Farm",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 19.46667,
         "variety": "No. 457",
         "year": 1932,
         "site": "Grand Rapids",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 35.808,
         "variety": "No. 462",
         "year": 1931,
         "site": "Crookston",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "yield": 18.904,
         "variety": "Velvet",
         "year": 1931,
         "site": "Duluth",
-        "from file": "alternation"
+        "_type_": "added"
       }
     ]
   }

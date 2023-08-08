@@ -30,7 +30,7 @@
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
       },
       {
         "field": "wages",
@@ -57,37 +57,37 @@
         "year": 1580,
         "wheat": 49,
         "wages": 5.12,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1650,
         "wheat": 42,
         "wages": 6.5,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1815,
         "wheat": 78,
         "wages": null,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1820,
         "wheat": 54,
         "wages": null,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": "1815",
         "wheat": 78,
         "wages": 30.3,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1820",
         "wheat": 54,
         "wages": 30.6,
-        "from file": "alternation"
+        "_type_": "added"
       }
     ]
   }

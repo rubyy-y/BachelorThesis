@@ -48,7 +48,7 @@
     }
   },
   "selection": {
-    "selector010": {
+    "selector003": {
       "type": "interval",
       "bind": "scales",
       "encodings": [

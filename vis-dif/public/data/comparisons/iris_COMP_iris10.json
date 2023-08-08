@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-7e8a016689e06fc33833e7c50829bc9f"
+    "name": "data-a264acbd6e539a8b3afc0cb5f240fb57"
   },
   "mark": "point",
   "encoding": {
@@ -30,7 +30,7 @@
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
       },
       {
         "field": "sepalLength",
@@ -52,14 +52,14 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-7e8a016689e06fc33833e7c50829bc9f": [
+    "data-a264acbd6e539a8b3afc0cb5f240fb57": [
       {
         "sepalLength": 4.9,
         "sepalWidth": 3,
         "petalLength": 1.4,
         "petalWidth": 0.2,
         "species": "setosa",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 4.6,
@@ -67,7 +67,7 @@
         "petalLength": 1,
         "petalWidth": 0.2,
         "species": "setosa",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 5.3,
@@ -75,7 +75,7 @@
         "petalLength": 1.5,
         "petalWidth": 0.2,
         "species": "setosa",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 6.5,
@@ -83,7 +83,7 @@
         "petalLength": 4.6,
         "petalWidth": 1.5,
         "species": "versicolor",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 4.9,
@@ -91,7 +91,7 @@
         "petalLength": 3.3,
         "petalWidth": 1,
         "species": "versicolor",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 5,
@@ -99,7 +99,7 @@
         "petalLength": 3.5,
         "petalWidth": 1,
         "species": "versicolor",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 5.9,
@@ -107,7 +107,7 @@
         "petalLength": 4.8,
         "petalWidth": 1.8,
         "species": "versicolor",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 6.8,
@@ -115,7 +115,7 @@
         "petalLength": 4.8,
         "petalWidth": 1.4,
         "species": "versicolor",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 5.4,
@@ -123,7 +123,7 @@
         "petalLength": 4.5,
         "petalWidth": 1.5,
         "species": "versicolor",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 5,
@@ -131,7 +131,7 @@
         "petalLength": 3.3,
         "petalWidth": 1,
         "species": "versicolor",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 6.4,
@@ -139,7 +139,7 @@
         "petalLength": 5.3,
         "petalWidth": 1.9,
         "species": "virginica",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 7.7,
@@ -147,7 +147,7 @@
         "petalLength": 6.9,
         "petalWidth": 2.3,
         "species": "virginica",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 6.3,
@@ -155,7 +155,7 @@
         "petalLength": 5.1,
         "petalWidth": 1.5,
         "species": "virginica",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 6.468,
@@ -163,7 +163,7 @@
         "petalLength": 3.947,
         "petalWidth": 1.472,
         "species": "setosa",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 5.4,
@@ -171,7 +171,7 @@
         "petalLength": 1.7,
         "petalWidth": 0.52,
         "species": "setosa",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 5.968,
@@ -179,7 +179,7 @@
         "petalLength": 2.138,
         "petalWidth": 0.243,
         "species": "setosa",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 7.887,
@@ -187,7 +187,7 @@
         "petalLength": 6.193,
         "petalWidth": 1.16,
         "species": "versicolor",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 7.69,
@@ -195,7 +195,7 @@
         "petalLength": 4.214,
         "petalWidth": 2.045,
         "species": "versicolor",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 5.9,
@@ -203,7 +203,7 @@
         "petalLength": 2.88,
         "petalWidth": 1.98,
         "species": "versicolor",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 7.896,
@@ -211,7 +211,7 @@
         "petalLength": 2.079,
         "petalWidth": 1.135,
         "species": "setosa",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 6.4,
@@ -219,7 +219,7 @@
         "petalLength": 6.36,
         "petalWidth": 2.28,
         "species": "virginica",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 6.109,
@@ -227,7 +227,7 @@
         "petalLength": 3.329,
         "petalWidth": 0.74,
         "species": "setosa",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 6.851,
@@ -235,7 +235,7 @@
         "petalLength": 3.234,
         "petalWidth": 2.146,
         "species": "virginica",
-        "from file": "alternation"
+        "_type_": "added"
       }
     ]
   }

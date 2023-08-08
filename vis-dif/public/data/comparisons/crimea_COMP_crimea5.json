@@ -25,12 +25,16 @@
   "mark": "bar",
   "encoding": {
     "color": {
-      "field": "other",
-      "type": "ordinal"
+      "field": "wounds",
+      "type": "quantitative"
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
+      },
+      {
+        "field": "wounds",
+        "type": "quantitative"
       },
       {
         "field": "disease",
@@ -123,8 +127,7 @@
         "date": "1855-03-01",
         "wounds": 155,
         "other": 350,
-        "disease": -280,
-        "from file": "added to alternation"
+        "disease": 0
       },
       {
         "date": "1855-04-01",

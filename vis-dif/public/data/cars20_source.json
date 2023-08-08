@@ -1,22 +1,60 @@
 {
-  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
-  "data": {"name": "data-e493d902be46612f7f44ac19f4725f8a"},
+  "width": "container",
+  "height": "container",
+  "background": null,
+  "config": {
+    "legend": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axis": {
+      "gridColor": "black"
+    },
+    "axisX": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axisY": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    }
+  },
+  "data": {
+    "name": "data-e493d902be46612f7f44ac19f4725f8a"
+  },
   "mark": "point",
   "encoding": {
-    "color": {"field": "Origin", "type": "nominal"},
+    "color": {
+      "field": "Origin",
+      "type": "nominal"
+    },
     "tooltip": [
-      {"field": "Horsepower", "type": "quantitative"},
-      {"field": "Miles_per_Gallon", "type": "quantitative"},
-      {"field": "_ID_", "type": "quantitative"}
+      {
+        "field": "Name",
+        "type": "nominal"
+      },
+      {
+        "field": "_ID_",
+        "type": "quantitative"
+      }
     ],
-    "x": {"field": "Horsepower", "type": "quantitative"},
-    "y": {"field": "Miles_per_Gallon", "type": "quantitative"}
+    "x": {
+      "field": "Horsepower",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Miles_per_Gallon",
+      "type": "quantitative"
+    }
   },
   "selection": {
     "selector005": {
       "type": "interval",
       "bind": "scales",
-      "encodings": ["x", "y"]
+      "encodings": [
+        "x",
+        "y"
+      ]
     }
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",

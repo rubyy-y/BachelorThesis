@@ -1,4 +1,6 @@
 // translation of python compare function to javascript
+const props = require('../globals.json');
+
 export function compare(a_json, b_json) {
     // x and y values
     const a_x = a_json.encoding.x.field;
@@ -30,7 +32,7 @@ export function compare(a_json, b_json) {
         }
         }
         if (!identical) {
-            dp_a.from_file = 1;
+            dp_a._type_ = "removed";
             diffs.push(dp_a);
         }
     }
@@ -44,7 +46,7 @@ export function compare(a_json, b_json) {
         }
         }
         if (!identical) {
-            dp_b.from_file = 2;
+            dp_b._type_ = "added";
             diffs.push(dp_b);
         }
     }
@@ -54,9 +56,9 @@ export function compare(a_json, b_json) {
 
     // add tooltip
     if (encoding.tooltip) {
-        encoding.tooltip.unshift({ "field": "from_file" });
+        encoding.tooltip.unshift({ "field": "_type_" });
     } else { 
-        encoding.tooltip = [{ "field": "from_file" }];
+        encoding.tooltip = [{ "field": "_type_" }];
     }
 
     const output_vl = {
@@ -74,6 +76,7 @@ export function compare(a_json, b_json) {
         encoding: encoding,
         $schema: "https://vega.github.io/schema/vega-lite/v4.17.0.json"
     };
+
     // specs - optional
     try {
         const selection = a_json.selection;

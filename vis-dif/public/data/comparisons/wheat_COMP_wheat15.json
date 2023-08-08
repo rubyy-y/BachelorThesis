@@ -30,7 +30,7 @@
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
       },
       {
         "field": "wages",
@@ -57,103 +57,103 @@
         "year": 1600,
         "wheat": 27,
         "wages": 5.61,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1620,
         "wheat": 35,
         "wages": 6.01,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1685,
         "wheat": 27,
         "wages": 7.6,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1700,
         "wheat": 30,
         "wages": 9,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1705,
         "wheat": 32,
         "wages": 10,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1740,
         "wheat": 27,
         "wages": 14,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1750,
         "wheat": 31,
         "wages": 15,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1815,
         "wheat": 78,
         "wages": null,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": 1820,
         "wheat": 54,
         "wages": null,
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "year": "1600",
         "wheat": 37,
         "wages": 5.61,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1810",
         "wheat": 86,
         "wages": 21.547,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1685",
         "wheat": 16,
         "wages": 7.6,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1680",
         "wheat": 81,
         "wages": 7,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1570",
         "wheat": 84,
         "wages": 10,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1610",
         "wheat": 33,
         "wages": 20,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1815",
         "wheat": 78,
         "wages": 30.3,
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "year": "1820",
         "wheat": 54,
         "wages": 30.6,
-        "from file": "alternation"
+        "_type_": "added"
       }
     ]
   }

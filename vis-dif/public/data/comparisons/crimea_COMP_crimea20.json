@@ -25,12 +25,16 @@
   "mark": "bar",
   "encoding": {
     "color": {
-      "field": "other",
-      "type": "ordinal"
+      "field": "wounds",
+      "type": "quantitative"
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
+      },
+      {
+        "field": "wounds",
+        "type": "quantitative"
       },
       {
         "field": "disease",
@@ -63,8 +67,7 @@
         "date": "1854-05-01",
         "wounds": 0,
         "other": 95,
-        "disease": -105,
-        "from file": "original"
+        "disease": 0
       },
       {
         "date": "1854-06-01",
@@ -142,8 +145,7 @@
         "date": "1855-06-01",
         "wounds": 330,
         "other": 130,
-        "disease": -650,
-        "from file": "original"
+        "disease": 0
       },
       {
         "date": "1855-07-01",
@@ -161,15 +163,13 @@
         "date": "1855-09-01",
         "wounds": 355,
         "other": 100,
-        "disease": 29,
-        "from file": "removed from original"
+        "disease": 0
       },
       {
         "date": "1855-10-01",
         "wounds": 135,
         "other": 95,
-        "disease": -122,
-        "from file": "added to alternation"
+        "disease": 0
       },
       {
         "date": "1855-11-01",
@@ -193,8 +193,7 @@
         "date": "1856-02-01",
         "wounds": 0,
         "other": 100,
-        "disease": -100,
-        "from file": "original"
+        "disease": 0
       },
       {
         "date": "1856-03-01",

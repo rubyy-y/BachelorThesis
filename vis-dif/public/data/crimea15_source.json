@@ -20,15 +20,19 @@
     }
   },
   "data": {
-    "name": "data-4d2554a41ba2d38986622edc00018b7b"
+    "name": "data-706bd1db8fd7b92d0ae2bc27b8274c2e"
   },
   "mark": "bar",
   "encoding": {
     "color": {
-      "field": "other",
-      "type": "ordinal"
+      "field": "wounds",
+      "type": "quantitative"
     },
     "tooltip": [
+      {
+        "field": "wounds",
+        "type": "quantitative"
+      },
       {
         "field": "disease",
         "type": "quantitative"
@@ -49,7 +53,13 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-4d2554a41ba2d38986622edc00018b7b": [
+    "data-706bd1db8fd7b92d0ae2bc27b8274c2e": [
+      {
+        "date": "1854-04-01",
+        "wounds": 0,
+        "other": 110,
+        "disease": 110
+      },
       {
         "date": "1854-05-01",
         "wounds": 0,
@@ -112,9 +122,9 @@
       },
       {
         "date": "1855-03-01",
-        "wounds": 108,
+        "wounds": 155,
         "other": 350,
-        "disease": 467
+        "disease": 935
       },
       {
         "date": "1855-04-01",
@@ -166,7 +176,7 @@
       },
       {
         "date": "1855-12-01",
-        "wounds": 56,
+        "wounds": 40,
         "other": 120,
         "disease": 215
       },
@@ -183,10 +193,10 @@
         "disease": 100
       },
       {
-        "date": "1855-08-01",
-        "wounds": 6,
-        "other": 512,
-        "disease": 849
+        "date": "1856-03-01",
+        "wounds": 0,
+        "other": 125,
+        "disease": 90
       }
     ]
   }

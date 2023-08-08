@@ -30,15 +30,15 @@
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
       },
       {
         "field": "yield",
         "type": "quantitative"
       },
       {
-        "field": "site",
-        "type": "nominal"
+        "field": "year",
+        "type": "quantitative"
       }
     ],
     "x": {
@@ -58,70 +58,70 @@
         "variety": "Trebi",
         "year": 1931,
         "site": "University Farm",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 33.93333,
         "variety": "Trebi",
         "year": 1931,
         "site": "Duluth",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 58.1,
         "variety": "No. 457",
         "year": 1931,
         "site": "Waseca",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 22.6,
         "variety": "No. 475",
         "year": 1931,
         "site": "Morris",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 33.46667,
         "variety": "Manchuria",
         "year": 1932,
         "site": "Waseca",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 22.56667,
         "variety": "Manchuria",
         "year": 1932,
         "site": "Duluth",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 20.63333,
         "variety": "Svansota",
         "year": 1932,
         "site": "Crookston",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 43.2,
         "variety": "Peatland",
         "year": 1932,
         "site": "Morris",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 52.152,
         "variety": "Trebi",
         "year": 1931,
         "site": "Grand Rapids",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "yield": 30.63,
         "variety": "Svansota",
         "year": 1931,
         "site": "Grand Rapids",
-        "from file": "alternation"
+        "_type_": "added"
       }
     ]
   }

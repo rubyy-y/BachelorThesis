@@ -30,15 +30,15 @@
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
       },
       {
         "field": "yield",
         "type": "quantitative"
       },
       {
-        "field": "site",
-        "type": "nominal"
+        "field": "year",
+        "type": "quantitative"
       }
     ],
     "x": {
@@ -58,49 +58,49 @@
         "variety": "Glabron",
         "year": 1931,
         "site": "Duluth",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 26.13333,
         "variety": "Velvet",
         "year": 1931,
         "site": "Morris",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 42.2,
         "variety": "No. 457",
         "year": 1932,
         "site": "Waseca",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 30.53333,
         "variety": "No. 462",
         "year": 1932,
         "site": "Crookston",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 29.33333,
         "variety": "Wisconsin No. 38",
         "year": 1932,
         "site": "Duluth",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "yield": 63.479,
         "variety": "No. 475",
         "year": 1931,
         "site": "Grand Rapids",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "yield": 34.283,
         "variety": "Glabron",
         "year": 1931,
         "site": "Waseca",
-        "from file": "alternation"
+        "_type_": "added"
       }
     ]
   }

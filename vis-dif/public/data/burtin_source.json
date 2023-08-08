@@ -1,19 +1,55 @@
 {
-  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
-  "data": {"name": "data-8833440f737304311e72aeeffd7b9881"},
+  "width": "container",
+  "height": "container",
+  "background": null,
+  "config": {
+    "legend": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axis": {
+      "gridColor": "black"
+    },
+    "axisX": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axisY": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    }
+  },
+  "data": {
+    "name": "data-8833440f737304311e72aeeffd7b9881"
+  },
   "mark": "bar",
   "encoding": {
-    "color": {"field": "Gram_Staining", "type": "nominal"},
+    "color": {
+      "field": "Gram_Staining",
+      "type": "nominal"
+    },
     "tooltip": [
-      {"field": "Penicillin", "type": "quantitative"},
-      {"field": "Gram_Staining", "type": "nominal"}
+      {
+        "field": "Penicillin",
+        "type": "quantitative"
+      },
+      {
+        "field": "Gram_Staining",
+        "type": "nominal"
+      }
     ],
     "x": {
-      "field": "Penicillin",
-      "scale": {"exponent": 0.25, "type": "pow"},
-      "type": "quantitative"
+      "field": "Bacteria",
+      "type": "nominal"
     },
-    "y": {"field": "Bacteria", "type": "nominal"}
+    "y": {
+      "field": "Penicillin",
+      "scale": {
+        "exponent": 0.25,
+        "type": "pow"
+      },
+      "type": "quantitative"
+    }
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {

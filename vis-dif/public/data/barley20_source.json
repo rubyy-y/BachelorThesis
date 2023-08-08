@@ -34,8 +34,8 @@
         "type": "quantitative"
       },
       {
-        "field": "site",
-        "type": "nominal"
+        "field": "year",
+        "type": "quantitative"
       }
     ],
     "x": {

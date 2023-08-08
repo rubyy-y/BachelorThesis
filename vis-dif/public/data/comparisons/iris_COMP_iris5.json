@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-7e8a016689e06fc33833e7c50829bc9f"
+    "name": "data-a264acbd6e539a8b3afc0cb5f240fb57"
   },
   "mark": "point",
   "encoding": {
@@ -30,7 +30,7 @@
     },
     "tooltip": [
       {
-        "field": "from file"
+        "field": "_type_"
       },
       {
         "field": "sepalLength",
@@ -52,14 +52,14 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-7e8a016689e06fc33833e7c50829bc9f": [
+    "data-a264acbd6e539a8b3afc0cb5f240fb57": [
       {
         "sepalLength": 7.7,
         "sepalWidth": 3,
         "petalLength": 6.1,
         "petalWidth": 2.3,
         "species": "virginica",
-        "from file": "original"
+        "_type_": "removed"
       },
       {
         "sepalLength": 7.46,
@@ -67,7 +67,7 @@
         "petalLength": 4.885,
         "petalWidth": 1.36,
         "species": "virginica",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 5.1,
@@ -75,7 +75,7 @@
         "petalLength": 1.26,
         "petalWidth": 0.15,
         "species": "setosa",
-        "from file": "alternation"
+        "_type_": "added"
       },
       {
         "sepalLength": 6.44,
@@ -83,7 +83,7 @@
         "petalLength": 3.37,
         "petalWidth": 1.338,
         "species": "versicolor",
-        "from file": "alternation"
+        "_type_": "added"
       }
     ]
   }

@@ -25,17 +25,17 @@
   "mark": "bar",
   "encoding": {
     "color": {
-      "field": "Penicillin",
+      "field": "Gram_Staining",
       "type": "nominal"
     },
     "tooltip": [
       {
-        "field": "Bacteria",
-        "type": "nominal"
-      },
-      {
         "field": "Penicillin",
         "type": "quantitative"
+      },
+      {
+        "field": "Gram_Staining",
+        "type": "nominal"
       }
     ],
     "x": {
@@ -43,7 +43,11 @@
       "type": "nominal"
     },
     "y": {
-      "field": "Streptomycin",
+      "field": "Penicillin",
+      "scale": {
+        "exponent": 0.25,
+        "type": "pow"
+      },
       "type": "quantitative"
     }
   },
