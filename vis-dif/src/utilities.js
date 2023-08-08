@@ -9,6 +9,8 @@ export function compare(a_json, b_json) {
     const a_y = a_json.encoding.y.field;
     const b_x = b_json.encoding.x.field;
     const b_y = b_json.encoding.y.field;
+    const color = a_json.encoding.color.field;
+
     // datapoints
     var data_a = null;
     try {
@@ -22,41 +24,85 @@ export function compare(a_json, b_json) {
     } catch (err) {
         data_b = b_json.data.values;
     }
-    // save differences to list of dictionaries
+
+    // save differences to list
     const diffs = [];
-    // iterate through first file
-    for (const dp_a of data_a) {
-        let identical = false;
-        for (const dp_b of data_b) {
-        if (dp_a[a_x] === dp_b[b_x] && dp_a[a_y] === dp_b[b_y]) {
-            identical = true;
-            break;
+
+    if (a_json.mark === "bar") { // Barplot
+        for (let dp_a of data_a) {
+            let identical = false;
+            for (let dp_b of data_b) {
+                if ([a_x, color].every(key => dp_a[key] === dp_b[key])) {
+                    identical = true;
+        
+                    let difference = dp_a[a_y] - dp_b[b_y];
+                    let dif = { ...dp_a };
+                    dif[a_y] = difference;
+        
+                    if (difference < 0) {
+                        dif["_type_"] = "added";
+                    } else if (difference > 0) {
+                        dif["_type_"] = "removed";
+                    }
+                    diffs.push(dif);
+                    break;
+                }
+            }
+            if (!identical) {
+                dp_a["_type_"] = "removed";
+                dp_a[a_y] *= -1;
+                diffs.push(dp_a);
+            }
         }
+        
+        for (let dp_b of data_b) {
+            let identical = false;
+            for (let dp_a of data_a) {
+                if ([a_x, color].every(key => dp_a[key] === dp_b[key])) {
+                    identical = true;
+                    break;
+                }
+            }
+            if (!identical) {
+                dp_b["_type_"] = "added";
+                diffs.push(dp_b);
+            }
         }
-        if (!identical) {
-            dp_a._type_ = "removed";
-            diffs.push(dp_a);
-        }
-    }
-    // iterate through second file
-    for (const dp_b of data_b) {
-        let identical = false;
+    } else { // Scatterplot
+        // iterate through first file
         for (const dp_a of data_a) {
-        if (dp_a[a_x] === dp_b[b_x] && dp_a[a_y] === dp_b[b_y]) {
-            identical = true;
-            break;
-        }
-        }
-        if (!identical) {
-            dp_b._type_ = "added";
-            diffs.push(dp_b);
-        }
+            let identical = false;
+            for (const dp_b of data_b) {
+                if (dp_a[a_x] === dp_b[b_x] && dp_a[a_y] === dp_b[b_y]) {
+                    identical = true;
+                    break;
+                };
+            };
+            if (!identical) {
+                dp_a._type_ = "removed";
+                diffs.push(dp_a);
+            };
+        };
+        // iterate through second file
+        for (const dp_b of data_b) {
+            let identical = false;
+            for (const dp_a of data_a) {
+                if (dp_a[a_x] === dp_b[b_x] && dp_a[a_y] === dp_b[b_y]) {
+                    identical = true;
+                    break;
+                };
+            };
+            if (!identical) {
+                dp_b._type_ = "added";
+                diffs.push(dp_b);
+            };
+        };
     }
-    // specs - mandatory
+   
+    // Make new specifiation
     const mark = JSON.parse(JSON.stringify(a_json.mark));
     const encoding = JSON.parse(JSON.stringify(a_json.encoding));
 
-    // add tooltip
     if (encoding.tooltip) {
         encoding.tooltip.unshift({ "field": "_type_" });
     } else { 
