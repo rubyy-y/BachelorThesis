@@ -1,0 +1,132 @@
+{
+  "width": "container",
+  "height": "container",
+  "background": null,
+  "config": {
+    "legend": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axis": {
+      "gridColor": "black"
+    },
+    "axisX": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    },
+    "axisY": {
+      "labelColor": "#3a393f",
+      "titleColor": "black"
+    }
+  },
+  "data": {
+    "name": "data-8833440f737304311e72aeeffd7b9881"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "Gram_Staining",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Penicillin",
+        "type": "quantitative"
+      },
+      {
+        "field": "Gram_Staining",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "Bacteria",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Penicillin",
+      "scale": {
+        "exponent": 0.25,
+        "type": "pow"
+      },
+      "type": "quantitative"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-8833440f737304311e72aeeffd7b9881": [
+      {
+        "Bacteria": "Aerobacter aerogenes",
+        "Penicillin": 870,
+        "Streptomycin": 1,
+        "Neomycin": 1.6,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Bacillus anthracis",
+        "Penicillin": 0.01,
+        "Streptomycin": 0.05,
+        "Neomycin": 0.007,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Escherichia coli",
+        "Penicillin": 100,
+        "Streptomycin": 0.4,
+        "Neomycin": 0.1,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      
+      {
+        "Bacteria": "Pseudomonas aeruginosa",
+        "Penicillin": 850,
+        "Streptomycin": 2,
+        "Neomycin": 0.4,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Klebsiella pneumoniae",
+        "Penicillin": 820,
+        "Streptomycin": 1.2,
+        "Neomycin": 1,
+        "Gram_Staining": "negative",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Staphylococcus aureus",
+        "Penicillin": 0.03,
+        "Streptomycin": 0.03,
+        "Neomycin": 0.001,
+        "Gram_Staining": "positive",
+        "Genus": "Staphylococcus"
+      },
+      {
+        "Bacteria": "Proteus vulgaris",
+        "Penicillin": 712,
+        "Streptomycin": 8,
+        "Neomycin": 9.74,
+        "Gram_Staining": "negative",
+        "Genus": "Streptococcus"
+      },
+      {
+        "Bacteria": "Streptococcus hemolyticus",
+        "Penicillin": 0.001,
+        "Streptomycin": 14,
+        "Neomycin": 10,
+        "Gram_Staining": "positive",
+        "Genus": "Streptococcus"
+      },
+      {
+        "Bacteria": "Streptococcus viridans",
+        "Penicillin": 0.005,
+        "Streptomycin": 10,
+        "Neomycin": 40,
+        "Gram_Staining": "positive",
+        "Genus": "Streptococcus"
+      }
+    ]
+  }
+}
