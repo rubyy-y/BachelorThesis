@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-e7b8d99020fc43d4f9eee8204fa075d1"
+    "name": "data-c6959e44dc4ee45f2be77dfe2deb6e78"
   },
   "mark": "bar",
   "encoding": {
@@ -53,20 +53,20 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-e7b8d99020fc43d4f9eee8204fa075d1": [
+    "data-c6959e44dc4ee45f2be77dfe2deb6e78": [
       {
         "Bacteria": "Aerobacter aerogenes",
         "Penicillin": 870,
-        "Streptomycin": 0,
-        "Neomycin": 1.44,
+        "Streptomycin": 1,
+        "Neomycin": 1.6,
         "Gram_Staining": "negative",
         "Genus": "other"
       },
       {
         "Bacteria": "Bacillus anthracis",
         "Penicillin": 0.001,
-        "Streptomycin": 0.006,
-        "Neomycin": 0.008,
+        "Streptomycin": 0.01,
+        "Neomycin": 0.007,
         "Gram_Staining": "positive",
         "Genus": "other"
       },
@@ -121,8 +121,8 @@
       {
         "Bacteria": "Pseudomonas aeruginosa",
         "Penicillin": 850,
-        "Streptomycin": 1,
-        "Neomycin": 0.32,
+        "Streptomycin": 2,
+        "Neomycin": 0.4,
         "Gram_Staining": "negative",
         "Genus": "other"
       },
@@ -135,17 +135,9 @@
         "Genus": "Salmonella"
       },
       {
-        "Bacteria": "Salmonella schottmuelleri",
-        "Penicillin": 10,
-        "Streptomycin": 0.8,
-        "Neomycin": 0.09,
-        "Gram_Staining": "negative",
-        "Genus": "Salmonella"
-      },
-      {
         "Bacteria": "Staphylococcus albus",
-        "Penicillin": 0.007,
-        "Streptomycin": 0.1,
+        "Penicillin": 0.004,
+        "Streptomycin": 0.14,
         "Neomycin": 0.001,
         "Gram_Staining": "positive",
         "Genus": "Staphylococcus"
@@ -169,8 +161,8 @@
       {
         "Bacteria": "Streptococcus hemolyticus",
         "Penicillin": 0.001,
-        "Streptomycin": 14,
-        "Neomycin": 10,
+        "Streptomycin": 16,
+        "Neomycin": 9,
         "Gram_Staining": "positive",
         "Genus": "Streptococcus"
       },

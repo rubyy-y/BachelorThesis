@@ -139,19 +139,21 @@
       },
       {
         "Bacteria": "Salmonella schottmuelleri",
-        "Penicillin": 0,
+        "Penicillin": -10,
         "Streptomycin": 0.8,
         "Neomycin": 0.09,
         "Gram_Staining": "negative",
-        "Genus": "Salmonella"
+        "Genus": "Salmonella",
+        "_type_": "removed"
       },
       {
         "Bacteria": "Staphylococcus albus",
-        "Penicillin": 0.0,
+        "Penicillin": 0.003,
         "Streptomycin": 0.1,
         "Neomycin": 0.001,
         "Gram_Staining": "positive",
-        "Genus": "Staphylococcus"
+        "Genus": "Staphylococcus",
+        "_type_": "removed"
       },
       {
         "Bacteria": "Staphylococcus aureus",

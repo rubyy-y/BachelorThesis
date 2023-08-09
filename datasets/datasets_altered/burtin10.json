@@ -9,9 +9,9 @@
   },
   {
     "Bacteria": "Bacillus anthracis",
-    "Penicillin": 0.001,
-    "Streptomycin": 0.01,
-    "Neomycin": 0.007,
+    "Penicillin": 326.318,
+    "Streptomycin": 0.92,
+    "Neomycin": 39.597,
     "Gram_Staining": "positive",
     "Genus": "other"
   },
@@ -24,11 +24,11 @@
     "Genus": "other"
   },
   {
-    "Bacteria": "Diplococcus pneumoniae",
-    "Penicillin": 0.005,
-    "Streptomycin": 11,
-    "Neomycin": 10,
-    "Gram_Staining": "positive",
+    "Bacteria": "Streptococcus hemolyticus",
+    "Penicillin": 66.465,
+    "Streptomycin": 13,
+    "Neomycin": 19,
+    "Gram_Staining": "negative",
     "Genus": "other"
   },
   {

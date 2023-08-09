@@ -8,11 +8,11 @@
     "Genus": "other"
   },
   {
-    "Bacteria": "Staphylococcus aureus",
-    "Penicillin": 370.398,
-    "Streptomycin": 5.68,
-    "Neomycin": 10.659,
-    "Gram_Staining": "negative",
+    "Bacteria": "Bacillus anthracis",
+    "Penicillin": 0.001,
+    "Streptomycin": 0.01,
+    "Neomycin": 0.007,
+    "Gram_Staining": "positive",
     "Genus": "other"
   },
   {
@@ -41,8 +41,8 @@
   },
   {
     "Bacteria": "Klebsiella pneumoniae",
-    "Penicillin": 850,
-    "Streptomycin": 1.2,
+    "Penicillin": 1105,
+    "Streptomycin": 1.56,
     "Neomycin": 1,
     "Gram_Staining": "negative",
     "Genus": "other"

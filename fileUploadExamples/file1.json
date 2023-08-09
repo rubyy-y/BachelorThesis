@@ -1,33 +1,46 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "values": [
-        {"x": 0.302, "y": 0.118},
-        {"x": 0.698, "y": 0.922},
-        {"x": 0.731, "y": 0.819},
-        {"x": 0.561, "y": 0.229},
-        {"x": 0.314, "y": 0.196},
-        {"x": 0.187, "y": 0.949},
-        {"x": 0.335, "y": 0.712},
-        {"x": 0.52, "y": 0.354},
-        {"x": 0.912, "y": 0.473},
-        {"x": 0.963, "y": 0.148},
-        {"x": 0.604, "y": 0.292},
-        {"x": 0.195, "y": 0.96},
-        {"x": 0.358, "y": 0.146},
-        {"x": 0.308, "y": 0.025},
-        {"x": 0.603, "y": 0.364},
-        {"x": 0.45, "y": 0.084},
-        {"x": 0.482, "y": 0.841},
-        {"x": 0.733, "y": 0.434},
-        {"x": 0.393, "y": 0.786},
-        {"x": 0.545, "y": 0.719}
-      ]
-    },
-    "mark": "point",
-    "encoding": {
-      "x": {"field": "x", "type": "quantitative"},
-      "y": {"field": "y", "type": "quantitative"}
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {"name": "data-fed8b51d9e6940d5dce0ed1990c40e4f"},
+  "mark": "point",
+  "encoding": {
+    "color": {"field": "type", "type": "nominal"},
+    "tooltip": [
+      {"field": "x", "type": "quantitative"},
+      {"field": "y", "type": "quantitative"}
+    ],
+    "x": {"field": "x", "type": "quantitative"},
+    "y": {"field": "y", "type": "quantitative"}
+  },
+  "selection": {
+    "selector019": {
+      "type": "interval",
+      "bind": "scales",
+      "encodings": ["x", "y"]
     }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-fed8b51d9e6940d5dce0ed1990c40e4f": [
+      {"x": 0.302, "y": 0.118, "type": "A"},
+      {"x": 0.698, "y": 0.922, "type": "B"},
+      {"x": 0.731, "y": 0.819, "type": "B"},
+      {"x": 0.561, "y": 0.229, "type": "A"},
+      {"x": 0.314, "y": 0.196, "type": "B"},
+      {"x": 0.187, "y": 0.949, "type": "A"},
+      {"x": 0.335, "y": 0.712, "type": "A"},
+      {"x": 0.52, "y": 0.354, "type": "B"},
+      {"x": 0.912, "y": 0.473, "type": "B"},
+      {"x": 0.963, "y": 0.148, "type": "A"},
+      {"x": 0.604, "y": 0.292, "type": "A"},
+      {"x": 0.195, "y": 0.96, "type": "A"},
+      {"x": 0.358, "y": 0.146, "type": "A"},
+      {"x": 0.308, "y": 0.025, "type": "A"},
+      {"x": 0.603, "y": 0.364, "type": "A"},
+      {"x": 0.45, "y": 0.084, "type": "B"},
+      {"x": 0.482, "y": 0.841, "type": "A"},
+      {"x": 0.733, "y": 0.434, "type": "A"},
+      {"x": 0.393, "y": 0.786, "type": "A"},
+      {"x": 0.545, "y": 0.719, "type": "B"}
+    ]
   }
-  
+}

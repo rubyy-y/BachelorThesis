@@ -35,23 +35,28 @@ export function compare(a_json, b_json) {
                 if ([a_x, color].every(key => dp_a[key] === dp_b[key])) {
                     identical = true;
         
+                    // altered?
+                    let dif = JSON.parse(JSON.stringify(dp_a));
+
                     let difference = dp_a[a_y] - dp_b[b_y];
-                    let dif = { ...dp_a };
                     dif[a_y] = difference;
+                    dif[a_y] *= -1;
         
                     if (difference < 0) {
-                        dif["_type_"] = "added";
+                        dif["_type_"] = "altered; added";
                     } else if (difference > 0) {
-                        dif["_type_"] = "removed";
+                        dif["_type_"] = "altered; removed";
                     }
+
                     diffs.push(dif);
                     break;
                 }
             }
             if (!identical) {
-                dp_a["_type_"] = "removed";
-                dp_a[a_y] *= -1;
-                diffs.push(dp_a);
+                let rem = JSON.parse(JSON.stringify(dp_a));
+                rem["_type_"] = "completely removed";
+                rem[a_y] *= -1;
+                diffs.push(rem);
             }
         }
         
@@ -64,10 +69,12 @@ export function compare(a_json, b_json) {
                 }
             }
             if (!identical) {
-                dp_b["_type_"] = "added";
-                diffs.push(dp_b);
+                let add = JSON.parse(JSON.stringify(dp_b));
+                add["_type_"] = "completely added";
+                diffs.push(add);
             }
-        }
+        };
+
     } else { // Scatterplot
         // iterate through first file
         for (const dp_a of data_a) {
