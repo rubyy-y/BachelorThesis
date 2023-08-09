@@ -39,8 +39,7 @@ export function compare(a_json, b_json) {
                     let dif = JSON.parse(JSON.stringify(dp_a));
 
                     let difference = dp_a[a_y] - dp_b[b_y];
-                    dif[a_y] = difference;
-                    dif[a_y] *= -1;
+                    dif[a_y] = difference * -1;
         
                     if (difference < 0) {
                         dif["_type_"] = "altered; added";

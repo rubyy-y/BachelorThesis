@@ -40,20 +40,21 @@ def compare(a_json, b_json):
 
                         difference = dp_a[a_y] - dp_b[b_y]
                         dif = dp_a.copy()
-                        dif[a_y] = difference
+                        dif[a_y] = difference * -1
 
                         if difference < 0:
-                            dif["_type_"] = "added"
+                            dif["_type_"] = "altered; added"
                         elif difference > 0:
-                            dif["_type_"] = "removed"
+                            dif["_type_"] = "altered; removed"
 
                         diffs.append(dif)
                         break
 
                 if not identical:   # point was removed
-                    dp_a["_type_"] = "removed"
-                    dp_a[a_y] *= -1
-                    diffs.append(dp_a)
+                    rem = dp_a.copy()
+                    rem["_type_"] = "completely removed"
+                    rem[a_y] *= -1
+                    diffs.append(rem)
 
             
             # search dor dp in b not in a
@@ -65,8 +66,9 @@ def compare(a_json, b_json):
                         break
 
                 if not identical:
-                    dp_b["_type_"] = "added"
-                    diffs.append(dp_b)
+                    add = dp_b.copy()
+                    add["_type_"] = "completely added"
+                    diffs.append(add)
 
         # Scatterplot
         else:

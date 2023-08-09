@@ -67,12 +67,12 @@
       },
       {
         "Bacteria": "Bacillus anthracis",
-        "Penicillin": -326.317,
+        "Penicillin": 326.317,
         "Streptomycin": 0.01,
         "Neomycin": 0.007,
         "Gram_Staining": "positive",
         "Genus": "other",
-        "_type_": "added"
+        "_type_": "altered; added"
       },
       {
         "Bacteria": "Brucella abortus",
@@ -89,7 +89,7 @@
         "Neomycin": 10,
         "Gram_Staining": "positive",
         "Genus": "other",
-        "_type_": "removed"
+        "_type_": "completely removed"
       },
       {
         "Bacteria": "Escherichia coli",
@@ -149,7 +149,7 @@
       },
       {
         "Bacteria": "Staphylococcus albus",
-        "Penicillin": 0.0,
+        "Penicillin": -0.0,
         "Streptomycin": 0.1,
         "Neomycin": 0.001,
         "Gram_Staining": "positive",
@@ -157,7 +157,7 @@
       },
       {
         "Bacteria": "Staphylococcus aureus",
-        "Penicillin": 0.0,
+        "Penicillin": -0.0,
         "Streptomycin": 0.03,
         "Neomycin": 0.001,
         "Gram_Staining": "positive",
@@ -173,7 +173,7 @@
       },
       {
         "Bacteria": "Streptococcus hemolyticus",
-        "Penicillin": 0.0,
+        "Penicillin": -0.0,
         "Streptomycin": 14,
         "Neomycin": 10,
         "Gram_Staining": "positive",
@@ -181,7 +181,7 @@
       },
       {
         "Bacteria": "Streptococcus viridans",
-        "Penicillin": 0.0,
+        "Penicillin": -0.0,
         "Streptomycin": 10,
         "Neomycin": 40,
         "Gram_Staining": "positive",
@@ -194,7 +194,7 @@
         "Neomycin": 19,
         "Gram_Staining": "negative",
         "Genus": "other",
-        "_type_": "added"
+        "_type_": "completely added"
       }
     ]
   }

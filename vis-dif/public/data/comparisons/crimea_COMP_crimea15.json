@@ -79,7 +79,8 @@
         "date": "1854-07-01",
         "wounds": 0,
         "other": 140,
-        "disease": 0
+        "disease": -520,
+        "_type_": "completely removed"
       },
       {
         "date": "1854-08-01",
@@ -169,13 +170,15 @@
         "date": "1855-10-01",
         "wounds": 135,
         "other": 95,
-        "disease": 0
+        "disease": 24,
+        "_type_": "altered; added"
       },
       {
         "date": "1855-11-01",
         "wounds": 100,
         "other": 140,
-        "disease": 0
+        "disease": -325,
+        "_type_": "completely removed"
       },
       {
         "date": "1855-12-01",
@@ -193,13 +196,21 @@
         "date": "1856-02-01",
         "wounds": 0,
         "other": 100,
-        "disease": 0
+        "disease": -20,
+        "_type_": "altered; removed"
       },
       {
         "date": "1856-03-01",
         "wounds": 0,
         "other": 125,
         "disease": 0
+      },
+      {
+        "date": "1855-07-01",
+        "wounds": 355,
+        "other": 414,
+        "disease": 414,
+        "_type_": "completely added"
       }
     ]
   }

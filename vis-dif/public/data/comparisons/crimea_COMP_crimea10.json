@@ -127,7 +127,8 @@
         "date": "1855-03-01",
         "wounds": 155,
         "other": 350,
-        "disease": 0
+        "disease": 187,
+        "_type_": "altered; added"
       },
       {
         "date": "1855-04-01",
@@ -145,13 +146,15 @@
         "date": "1855-06-01",
         "wounds": 330,
         "other": 130,
-        "disease": 0
+        "disease": -195,
+        "_type_": "altered; removed"
       },
       {
         "date": "1855-07-01",
         "wounds": 260,
         "other": 130,
-        "disease": 0
+        "disease": -430,
+        "_type_": "completely removed"
       },
       {
         "date": "1855-08-01",
