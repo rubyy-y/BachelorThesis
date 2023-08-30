@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-ec2e52203311acf99a966db37003d294"
+    "name": "data-e33bc2e9dcc450710784d1c1f4d66d01"
   },
   "mark": "bar",
   "encoding": {
@@ -53,7 +53,7 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-ec2e52203311acf99a966db37003d294": [
+    "data-e33bc2e9dcc450710784d1c1f4d66d01": [
       {
         "Bacteria": "Aerobacter aerogenes",
         "Penicillin": 870,
@@ -63,11 +63,11 @@
         "Genus": "other"
       },
       {
-        "Bacteria": "Staphylococcus aureus",
-        "Penicillin": 370.398,
-        "Streptomycin": 5.68,
-        "Neomycin": 10.659,
-        "Gram_Staining": "negative",
+        "Bacteria": "Bacillus anthracis",
+        "Penicillin": 0.001,
+        "Streptomycin": 0.01,
+        "Neomycin": 0.007,
+        "Gram_Staining": "positive",
         "Genus": "other"
       },
       {
@@ -96,8 +96,8 @@
       },
       {
         "Bacteria": "Klebsiella pneumoniae",
-        "Penicillin": 850,
-        "Streptomycin": 1.2,
+        "Penicillin": 1105,
+        "Streptomycin": 1.56,
         "Neomycin": 1,
         "Gram_Staining": "negative",
         "Genus": "other"

@@ -1,5 +1,12 @@
 [
   {
+    "sepalLength": 5.1,
+    "sepalWidth": 3.5,
+    "petalLength": 1.4,
+    "petalWidth": 0.2,
+    "species": "setosa"
+  },
+  {
     "sepalLength": 6.44,
     "sepalWidth": 2.98,
     "petalLength": 3.37,

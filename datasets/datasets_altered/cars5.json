@@ -324,6 +324,18 @@
     "_ID_": 29
   },
   {
+    "Name": "bmw 2002",
+    "Miles_per_Gallon": 26,
+    "Cylinders": 4,
+    "Displacement": 121,
+    "Horsepower": 113,
+    "Weight_in_lbs": 2234,
+    "Acceleration": 12.5,
+    "Year": "1970-01-01",
+    "Origin": "Europe",
+    "_ID_": 30
+  },
+  {
     "Name": "amc matador",
     "Miles_per_Gallon": 13,
     "Cylinders": 7,
@@ -1080,6 +1092,18 @@
     "_ID_": 94
   },
   {
+    "Name": "chevrolet malibu",
+    "Miles_per_Gallon": 13,
+    "Cylinders": 8,
+    "Displacement": 350,
+    "Horsepower": 145,
+    "Weight_in_lbs": 3988,
+    "Acceleration": 13,
+    "Year": "1973-01-01",
+    "Origin": "USA",
+    "_ID_": 95
+  },
+  {
     "Name": "mazda rx-7 gs",
     "Miles_per_Gallon": 43,
     "Cylinders": 6,
@@ -1786,6 +1810,18 @@
     "Year": "1974-01-01",
     "Origin": "Europe",
     "_ID_": 155
+  },
+  {
+    "Name": "fiat 124 tc",
+    "Miles_per_Gallon": 26,
+    "Cylinders": 4,
+    "Displacement": 116,
+    "Horsepower": 75,
+    "Weight_in_lbs": 2246,
+    "Acceleration": 14,
+    "Year": "1974-01-01",
+    "Origin": "Europe",
+    "_ID_": 156
   },
   {
     "Name": "honda Accelerationord cvcc",
@@ -3418,6 +3454,18 @@
     "Year": "1979-01-01",
     "Origin": "USA",
     "_ID_": 293
+  },
+  {
+    "Name": "ford ltd landau",
+    "Miles_per_Gallon": 17.6,
+    "Cylinders": 8,
+    "Displacement": 302,
+    "Horsepower": 129,
+    "Weight_in_lbs": 3725,
+    "Acceleration": 13.4,
+    "Year": "1979-01-01",
+    "Origin": "USA",
+    "_ID_": 294
   },
   {
     "Name": "dodge st. regis",

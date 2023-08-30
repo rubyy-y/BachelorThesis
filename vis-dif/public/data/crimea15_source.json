@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-d41265358382eb926f8067a035dc9007"
+    "name": "data-6b7e3d2173eaf73e3d1d3e2305d0112a"
   },
   "mark": "bar",
   "encoding": {
@@ -53,7 +53,7 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-d41265358382eb926f8067a035dc9007": [
+    "data-6b7e3d2173eaf73e3d1d3e2305d0112a": [
       {
         "date": "1854-04-01",
         "wounds": 0,
@@ -161,6 +161,12 @@
         "wounds": 135,
         "other": 114,
         "disease": 269
+      },
+      {
+        "date": "1855-11-01",
+        "wounds": 100,
+        "other": 140,
+        "disease": 325
       },
       {
         "date": "1855-07-01",

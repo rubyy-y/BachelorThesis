@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-7c8a6e9c58073d4952d6e4a2700c8e85"
+    "name": "data-ecfcb86586e23ef1349e2df68ccc52a9"
   },
   "mark": "bar",
   "encoding": {
@@ -53,7 +53,7 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-7c8a6e9c58073d4952d6e4a2700c8e85": [
+    "data-ecfcb86586e23ef1349e2df68ccc52a9": [
       {
         "Bacteria": "Aerobacter aerogenes",
         "Penicillin": 870,
@@ -74,7 +74,7 @@
         "Bacteria": "Brucella abortus",
         "Penicillin": 1,
         "Streptomycin": 2,
-        "Neomycin": 0.022,
+        "Neomycin": 0.02,
         "Gram_Staining": "negative",
         "Genus": "other"
       },
@@ -84,6 +84,14 @@
         "Streptomycin": 11,
         "Neomycin": 10,
         "Gram_Staining": "positive",
+        "Genus": "other"
+      },
+      {
+        "Bacteria": "Streptococcus fecalis",
+        "Penicillin": 237.718,
+        "Streptomycin": 9,
+        "Neomycin": 38,
+        "Gram_Staining": "negative",
         "Genus": "other"
       },
       {
@@ -119,18 +127,10 @@
         "Genus": "other"
       },
       {
-        "Bacteria": "Pseudomonas aeruginosa",
-        "Penicillin": 850,
-        "Streptomycin": 2,
-        "Neomycin": 0.4,
-        "Gram_Staining": "negative",
-        "Genus": "other"
-      },
-      {
-        "Bacteria": "Salmonella schottmuelleri",
-        "Penicillin": 10,
-        "Streptomycin": 0.8,
-        "Neomycin": 0.09,
+        "Bacteria": "Salmonella (Eberthella) typhosa",
+        "Penicillin": 1,
+        "Streptomycin": 0.4,
+        "Neomycin": 0.008,
         "Gram_Staining": "negative",
         "Genus": "Salmonella"
       },
@@ -151,11 +151,11 @@
         "Genus": "Staphylococcus"
       },
       {
-        "Bacteria": "Proteus vulgaris",
-        "Penicillin": 812,
-        "Streptomycin": 8,
-        "Neomycin": 9.744,
-        "Gram_Staining": "negative",
+        "Bacteria": "Streptococcus fecalis",
+        "Penicillin": 0,
+        "Streptomycin": 0,
+        "Neomycin": 0.09,
+        "Gram_Staining": "positive",
         "Genus": "Streptococcus"
       },
       {

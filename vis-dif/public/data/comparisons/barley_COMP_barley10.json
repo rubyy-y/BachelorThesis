@@ -54,10 +54,24 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 43.76667,
+        "yield": 35.13333,
+        "variety": "Svansota",
+        "year": 1931,
+        "site": "University Farm",
+        "_type_": "removed"
+      },
+      {
+        "yield": 29.76667,
         "variety": "Trebi",
         "year": 1931,
-        "site": "Morris",
+        "site": "Grand Rapids",
+        "_type_": "removed"
+      },
+      {
+        "yield": 19.7,
+        "variety": "No. 475",
+        "year": 1931,
+        "site": "Grand Rapids",
         "_type_": "removed"
       },
       {
@@ -68,31 +82,59 @@
         "_type_": "removed"
       },
       {
-        "yield": 26.43334,
-        "variety": "No. 457",
+        "yield": 33.46667,
+        "variety": "Manchuria",
         "year": 1932,
-        "site": "University Farm",
+        "site": "Waseca",
         "_type_": "removed"
       },
       {
-        "yield": 19.46667,
-        "variety": "No. 457",
+        "yield": 30.6,
+        "variety": "Trebi",
         "year": 1932,
-        "site": "Grand Rapids",
+        "site": "Duluth",
         "_type_": "removed"
       },
       {
-        "yield": 35.808,
-        "variety": "No. 462",
-        "year": 1931,
+        "yield": 22.7,
+        "variety": "No. 457",
+        "year": 1932,
+        "site": "Duluth",
+        "_type_": "removed"
+      },
+      {
+        "yield": 36.03333,
+        "variety": "Peatland",
+        "year": 1932,
+        "site": "Waseca",
+        "_type_": "removed"
+      },
+      {
+        "yield": 25.23333,
+        "variety": "Peatland",
+        "year": 1932,
         "site": "Crookston",
+        "_type_": "removed"
+      },
+      {
+        "yield": 45.221,
+        "variety": "Wisconsin No. 38",
+        "year": 1931,
+        "site": "University Farm",
         "_type_": "added"
       },
       {
-        "yield": 18.904,
-        "variety": "Velvet",
+        "yield": 23.09,
+        "variety": "Svansota",
         "year": 1931,
         "site": "Duluth",
+        "_type_": "added"
+      },
+      {
+        "yield": 43.536,
+        "variety": "Svansota",
+        "year": 1931,
+        "site": "Grand Rapids",
         "_type_": "added"
       }
     ]

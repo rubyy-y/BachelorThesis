@@ -99,6 +99,13 @@
   },
   {
     "side": "bottom",
+    "year": 1971,
+    "miles": 5617,
+    "gas": 1.93,
+    "_ID_": 16
+  },
+  {
+    "side": "bottom",
     "year": 1987,
     "miles": 6658,
     "gas": 1.393,
@@ -180,6 +187,13 @@
     "miles": 6835,
     "gas": 4.38,
     "_ID_": 27
+  },
+  {
+    "side": "right",
+    "year": 1983,
+    "miles": 6943,
+    "gas": 2.66,
+    "_ID_": 28
   },
   {
     "side": "right",
@@ -299,6 +313,13 @@
     "miles": 9687,
     "gas": 1.5,
     "_ID_": 44
+  },
+  {
+    "side": "top",
+    "year": 2000,
+    "miles": 9717,
+    "gas": 1.89,
+    "_ID_": 45
   },
   {
     "side": "left",

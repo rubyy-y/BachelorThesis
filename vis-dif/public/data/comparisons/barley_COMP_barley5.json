@@ -54,20 +54,6 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 29.66667,
-        "variety": "Glabron",
-        "year": 1931,
-        "site": "Duluth",
-        "_type_": "removed"
-      },
-      {
-        "yield": 26.13333,
-        "variety": "Velvet",
-        "year": 1931,
-        "site": "Morris",
-        "_type_": "removed"
-      },
-      {
         "yield": 42.2,
         "variety": "No. 457",
         "year": 1932,

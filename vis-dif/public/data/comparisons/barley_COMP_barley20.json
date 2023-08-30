@@ -54,22 +54,8 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 27.43334,
-        "variety": "Manchuria",
-        "year": 1931,
-        "site": "Morris",
-        "_type_": "removed"
-      },
-      {
-        "yield": 43.06666,
-        "variety": "Glabron",
-        "year": 1931,
-        "site": "University Farm",
-        "_type_": "removed"
-      },
-      {
-        "yield": 55.2,
-        "variety": "Glabron",
+        "yield": 47.33333,
+        "variety": "Svansota",
         "year": 1931,
         "site": "Waseca",
         "_type_": "removed"
@@ -82,37 +68,51 @@
         "_type_": "removed"
       },
       {
-        "yield": 23.03333,
-        "variety": "Velvet",
-        "year": 1931,
-        "site": "Grand Rapids",
-        "_type_": "removed"
-      },
-      {
-        "yield": 26.3,
-        "variety": "Velvet",
-        "year": 1931,
-        "site": "Duluth",
-        "_type_": "removed"
-      },
-      {
-        "yield": 43.26667,
-        "variety": "No. 457",
+        "yield": 36.6,
+        "variety": "No. 462",
         "year": 1931,
         "site": "University Farm",
         "_type_": "removed"
       },
       {
-        "yield": 48.56666,
+        "yield": 24.93334,
+        "variety": "No. 462",
+        "year": 1931,
+        "site": "Grand Rapids",
+        "_type_": "removed"
+      },
+      {
+        "yield": 28.1,
+        "variety": "No. 462",
+        "year": 1931,
+        "site": "Duluth",
+        "_type_": "removed"
+      },
+      {
+        "yield": 29.86667,
         "variety": "Peatland",
+        "year": 1931,
+        "site": "Morris",
+        "_type_": "removed"
+      },
+      {
+        "yield": 41.6,
+        "variety": "Peatland",
+        "year": 1931,
+        "site": "Crookston",
+        "_type_": "removed"
+      },
+      {
+        "yield": 58.8,
+        "variety": "Wisconsin No. 38",
         "year": 1931,
         "site": "Waseca",
         "_type_": "removed"
       },
       {
-        "yield": 46.76667,
-        "variety": "No. 475",
-        "year": 1931,
+        "yield": 37.73333,
+        "variety": "Glabron",
+        "year": 1932,
         "site": "Waseca",
         "_type_": "removed"
       },
@@ -124,17 +124,17 @@
         "_type_": "removed"
       },
       {
-        "yield": 38,
-        "variety": "Wisconsin No. 38",
+        "yield": 28.06667,
+        "variety": "Peatland",
         "year": 1932,
         "site": "University Farm",
         "_type_": "removed"
       },
       {
-        "yield": 58.16667,
-        "variety": "Wisconsin No. 38",
+        "yield": 43.2,
+        "variety": "Peatland",
         "year": 1932,
-        "site": "Waseca",
+        "site": "Morris",
         "_type_": "removed"
       },
       {
@@ -145,45 +145,24 @@
         "_type_": "removed"
       },
       {
-        "yield": 20.66667,
-        "variety": "Wisconsin No. 38",
-        "year": 1932,
-        "site": "Grand Rapids",
-        "_type_": "removed"
-      },
-      {
-        "yield": 29.33333,
-        "variety": "Wisconsin No. 38",
-        "year": 1932,
-        "site": "Duluth",
-        "_type_": "removed"
-      },
-      {
-        "yield": 49.307,
-        "variety": "Peatland",
-        "year": 1931,
-        "site": "University Farm",
-        "_type_": "added"
-      },
-      {
-        "yield": 19.502,
-        "variety": "Wisconsin No. 38",
-        "year": 1931,
-        "site": "Crookston",
-        "_type_": "added"
-      },
-      {
-        "yield": 52.128,
-        "variety": "Trebi",
+        "yield": 16.22,
+        "variety": "Svansota",
         "year": 1931,
         "site": "Duluth",
         "_type_": "added"
       },
       {
-        "yield": 54.756,
+        "yield": 20.277,
         "variety": "No. 462",
         "year": 1931,
-        "site": "Grand Rapids",
+        "site": "Waseca",
+        "_type_": "added"
+      },
+      {
+        "yield": 42.652,
+        "variety": "No. 462",
+        "year": 1931,
+        "site": "Duluth",
         "_type_": "added"
       }
     ]

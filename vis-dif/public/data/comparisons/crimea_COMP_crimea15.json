@@ -177,8 +177,7 @@
         "date": "1855-11-01",
         "wounds": 100,
         "other": 140,
-        "disease": -325,
-        "_type_": "completely removed"
+        "disease": 0
       },
       {
         "date": "1855-12-01",

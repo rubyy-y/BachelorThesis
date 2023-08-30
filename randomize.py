@@ -109,7 +109,10 @@ def randomize(json_file: str, p: float):
                     summary["removed"] += 1
                     continue
 
-                else:                           # - add
+                else:                           # - add also another one
+                    summary["unchanged"] += 1
+                    new_data.append(point)
+
                     summary["added"] += 1
                     modified_point = {}
 
@@ -141,7 +144,6 @@ def randomize(json_file: str, p: float):
 # randomize all files from 5% to 20% (in steps of 5)
 if __name__ == "__main__":
     resume = {"5%": [], "10%": [], "15%": [], "20%": []}
-    id_sets = globals["ID_datasets"]
     for i in range(5, 21, 5):
         print(f"{i}%:")
         for file in files: 

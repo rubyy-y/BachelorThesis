@@ -60,9 +60,15 @@
         "_type_": "removed"
       },
       {
-        "year": 1650,
-        "wheat": 42,
-        "wages": 6.5,
+        "year": 1630,
+        "wheat": 45,
+        "wages": 6.22,
+        "_type_": "removed"
+      },
+      {
+        "year": 1720,
+        "wheat": 29,
+        "wages": 12.5,
         "_type_": "removed"
       },
       {
@@ -76,6 +82,18 @@
         "wheat": 54,
         "wages": null,
         "_type_": "removed"
+      },
+      {
+        "year": "1580",
+        "wheat": 24,
+        "wages": 5.12,
+        "_type_": "added"
+      },
+      {
+        "year": "1675",
+        "wheat": 39,
+        "wages": 20.421,
+        "_type_": "added"
       },
       {
         "year": "1815",

@@ -66,6 +66,12 @@
     "site": "Grand Rapids"
   },
   {
+    "yield": 29.66667,
+    "variety": "Glabron",
+    "year": 1931,
+    "site": "Duluth"
+  },
+  {
     "yield": 63.479,
     "variety": "No. 475",
     "year": 1931,
@@ -118,6 +124,12 @@
     "variety": "Velvet",
     "year": 1931,
     "site": "Waseca"
+  },
+  {
+    "yield": 26.13333,
+    "variety": "Velvet",
+    "year": 1931,
+    "site": "Morris"
   },
   {
     "yield": 34.283,

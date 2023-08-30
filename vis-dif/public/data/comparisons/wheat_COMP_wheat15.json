@@ -54,45 +54,27 @@
   "datasets": {
     "data-76d1ce26ea5761007c35827e1564d86c": [
       {
-        "year": 1600,
-        "wheat": 27,
-        "wages": 5.61,
+        "year": 1605,
+        "wheat": 33,
+        "wages": 5.69,
         "_type_": "removed"
       },
       {
-        "year": 1620,
-        "wheat": 35,
-        "wages": 6.01,
-        "_type_": "removed"
-      },
-      {
-        "year": 1685,
-        "wheat": 27,
-        "wages": 7.6,
-        "_type_": "removed"
-      },
-      {
-        "year": 1700,
-        "wheat": 30,
-        "wages": 9,
-        "_type_": "removed"
-      },
-      {
-        "year": 1705,
+        "year": 1610,
         "wheat": 32,
-        "wages": 10,
+        "wages": 5.78,
         "_type_": "removed"
       },
       {
-        "year": 1740,
-        "wheat": 27,
-        "wages": 14,
+        "year": 1635,
+        "wheat": 33,
+        "wages": 6.3,
         "_type_": "removed"
       },
       {
-        "year": 1750,
-        "wheat": 31,
-        "wages": 15,
+        "year": 1695,
+        "wheat": 50,
+        "wages": 8.5,
         "_type_": "removed"
       },
       {
@@ -108,39 +90,33 @@
         "_type_": "removed"
       },
       {
-        "year": "1600",
-        "wheat": 37,
-        "wages": 5.61,
-        "_type_": "added"
-      },
-      {
-        "year": "1810",
-        "wheat": 86,
-        "wages": 21.547,
-        "_type_": "added"
-      },
-      {
-        "year": "1685",
+        "year": "1605",
         "wheat": 16,
-        "wages": 7.6,
+        "wages": 5.69,
         "_type_": "added"
       },
       {
-        "year": "1680",
-        "wheat": 81,
-        "wages": 7,
+        "year": "1780",
+        "wheat": 60.901,
+        "wages": 16.437,
         "_type_": "added"
       },
       {
-        "year": "1570",
-        "wheat": 84,
-        "wages": 10,
+        "year": "1695",
+        "wheat": 30,
+        "wages": 8.5,
         "_type_": "added"
       },
       {
-        "year": "1610",
-        "wheat": 33,
-        "wages": 20,
+        "year": "1735",
+        "wheat": 63,
+        "wages": 16.889,
+        "_type_": "added"
+      },
+      {
+        "year": "1605",
+        "wheat": 47,
+        "wages": 17,
         "_type_": "added"
       },
       {

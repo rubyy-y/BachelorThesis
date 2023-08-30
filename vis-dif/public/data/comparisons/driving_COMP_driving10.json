@@ -58,68 +58,52 @@
   "datasets": {
     "data-bfe7f5fb4c0c045acac4b3ba50a66509": [
       {
-        "side": "top",
-        "year": 1959,
-        "miles": 3905,
-        "gas": 2.31,
-        "_ID_": 4,
+        "side": "right",
+        "year": 1957,
+        "miles": 3706,
+        "gas": 2.4,
+        "_ID_": 2,
         "_type_": "removed"
       },
       {
-        "side": "right",
-        "year": 1960,
-        "miles": 3935,
-        "gas": 2.27,
-        "_ID_": 5,
+        "side": "bottom",
+        "year": 1964,
+        "miles": 4369,
+        "gas": 2.11,
+        "_ID_": 9,
         "_type_": "altered"
       },
       {
         "side": "right",
-        "year": 1968,
-        "miles": 5038,
-        "gas": 2.13,
-        "_ID_": 13,
+        "year": 1991,
+        "miles": 8535,
+        "gas": 1.78,
+        "_ID_": 36,
         "_type_": "altered"
       },
       {
-        "side": "left",
-        "year": 1980,
-        "miles": 6672,
-        "gas": 3.3,
-        "_ID_": 25,
-        "_type_": "removed"
-      },
-      {
-        "side": "left",
-        "year": 1986,
-        "miles": 7558,
-        "gas": 1.76,
-        "_ID_": 31,
-        "_type_": "removed"
-      },
-      {
         "side": "right",
-        "year": 2003,
-        "miles": 9868,
-        "gas": 1.86,
-        "_ID_": 48,
-        "_type_": "removed"
-      },
-      {
-        "side": "right",
-        "year": 2006,
-        "miles": 5031,
-        "gas": 2.916,
-        "_ID_": 56,
-        "_type_": "added"
-      },
-      {
-        "side": "left",
         "year": 1992,
-        "miles": 4197,
-        "gas": 1.988,
-        "_ID_": 57,
-        "_type_": "added"
+        "miles": 8662,
+        "gas": 1.69,
+        "_ID_": 37,
+        "_type_": "altered"
+      },
+      {
+        "side": "top",
+        "year": 1996,
+        "miles": 9192,
+        "gas": 1.67,
+        "_ID_": 41,
+        "_type_": "removed"
+      },
+      {
+        "side": "bottom",
+        "year": 1998,
+        "miles": 9590,
+        "gas": 1.39,
+        "_ID_": 43,
+        "_type_": "altered"
       }
     ]
   }

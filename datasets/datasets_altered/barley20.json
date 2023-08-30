@@ -372,6 +372,12 @@
     "site": "Grand Rapids"
   },
   {
+    "yield": 25.86667,
+    "variety": "Glabron",
+    "year": 1932,
+    "site": "Duluth"
+  },
+  {
     "yield": 16.22,
     "variety": "Svansota",
     "year": 1931,
@@ -552,6 +558,12 @@
     "site": "Duluth"
   },
   {
+    "yield": 36.03333,
+    "variety": "Peatland",
+    "year": 1932,
+    "site": "Waseca"
+  },
+  {
     "yield": 20.277,
     "variety": "No. 462",
     "year": 1931,
@@ -592,6 +604,12 @@
     "variety": "No. 475",
     "year": 1932,
     "site": "Morris"
+  },
+  {
+    "yield": 32.13333,
+    "variety": "No. 475",
+    "year": 1932,
+    "site": "Crookston"
   },
   {
     "yield": 42.652,

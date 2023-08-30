@@ -108,6 +108,12 @@
     "disease": 269
   },
   {
+    "date": "1855-11-01",
+    "wounds": 100,
+    "other": 140,
+    "disease": 325
+  },
+  {
     "date": "1855-07-01",
     "wounds": 355,
     "other": 414,

@@ -14,36 +14,27 @@ function App() {
   useEffect(() => {
     try {
       if (file1Content && file2Content) {
-        console.log("Two files were uploaded.")
         const file1Formatted = formatSpecs(file1Content);
         const file2Formatted = formatSpecs(file2Content);
-        console.log("both - Embedding file 1");
         vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
-
-        console.log("both - Embedding file 2");
         vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
 
         const spec = compare(file1Content, file2Content);
         if (spec.data.values.length === 0) {
           document.getElementById("dif").innerHTML = "The two visualizations are visually identical.";
         } else {
-          console.log("Embedding comparison");
           vegaEmbed('#dif', spec, {"actions": false, "theme": theme});
         };
 
       } else if (file1Content || file2Content) {
         document.getElementById("dif").innerHTML = "Visualization will appear once a second file was uploaded.";
         if (file1Content) {
-          console.log("First file was uploaded.")
           document.getElementById("vis2").innerHTML = "Upload second file.";
           const file1Formatted = formatSpecs(file1Content);
-          console.log("single - Embedding file 1");
           vegaEmbed('#vis1', file1Formatted, {"actions": false, "theme": theme});
         } else {
-          console.log("Second file was uploaded.")
           document.getElementById("vis1").innerHTML = "Upload another file.";
           const file2Formatted = formatSpecs(file2Content);
-          console.log("single - Embedding file 2");
           vegaEmbed('#vis2', file2Formatted, {"actions": false, "theme": theme});
         };
 
@@ -104,7 +95,7 @@ function App() {
   };
 
   // hide console warnings for vega embed versions because
-  // issue lieds within bundler and not Vega-Embed
+  // issue lies within bundler and not Vega-Embed
   console.warn = () => {};
 
   return (

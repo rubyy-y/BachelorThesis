@@ -4,7 +4,6 @@ import json
 with open("globals.json") as globs:
     globals = json.load(globs)
 
-id_sets = globals["ID_datasets"]
 props = globals["VL"]
 
 def compare(a_json, b_json):
@@ -97,13 +96,6 @@ def compare(a_json, b_json):
         output_vl["encoding"] = encoding
         output_vl["$schema"] = "https://vega.github.io/schema/vega-lite/v4.17.0.json"
         output_vl["datasets"] = { hash_: diffs }
-
-        # if mark == "bar":
-        #     ranges = [dif[a_y] for dif in diffs]
-        #     min_ = min(ranges)-(min(ranges)*0.5)
-        #     max_ = max(ranges)+(max(ranges)*0.5)
-        #     output_vl["encoding"]["y"]["scale"] = {"domain": [-max(ranges), max(ranges)]}
-
         output_vl["encoding"]["tooltip"].insert(0, {'field' : "_type_"})
         
         fe = len('_source.json')    # length of file ending
@@ -182,17 +174,17 @@ def update_json_file(file_path, props):
         json.dump(data, file, indent=2)
         file.truncate()
 
-# compare all the files in the data folder of our app-directory
-os.chdir("vis-dif/public/data")
-
-percent = globals["percent"]
-datasets = globals["datasets"]
-
 
 if __name__ == "__main__":
+    # compare all the files in the data folder of our app-directory
+    os.chdir("vis-dif/public/data")
+    percent = globals["percent"]
+    datasets = globals["datasets"]
+    id_sets = globals["ID_datasets"]
+
     for dataset in datasets:
         original = f"{dataset}_source.json"
-        update_json_file(original, props)
+        update_json_file(original, props)    # reformat original vis
         for p in percent:
             alternation = f"{dataset}{p}_source.json"
             update_json_file(alternation, props)    # reformat alternation vis
@@ -203,10 +195,11 @@ if __name__ == "__main__":
                 if dataset in id_sets:
                     print("This is a dataset with ID values.")
                     id_compare(original, alternation)
+                    # update_json_file("comparisons/" + new_file, props)
                     print(f"new file {new_file} has been reformatted.")
                 else:
                     compare(original, alternation)
-                    update_json_file("comparisons/" + new_file, props)
+                    # update_json_file("comparisons/" + new_file, props)
                     print(f"new file {new_file} has been reformatted.")
 
             except:

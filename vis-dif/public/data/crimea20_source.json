@@ -20,7 +20,7 @@
     }
   },
   "data": {
-    "name": "data-1be6adb1503a70483c9dd7398ea769ee"
+    "name": "data-760f2a47e9c12d7a89330410981a59a7"
   },
   "mark": "bar",
   "encoding": {
@@ -53,12 +53,18 @@
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
-    "data-1be6adb1503a70483c9dd7398ea769ee": [
+    "data-760f2a47e9c12d7a89330410981a59a7": [
       {
         "date": "1854-04-01",
         "wounds": 0,
         "other": 110,
         "disease": 110
+      },
+      {
+        "date": "1854-05-01",
+        "wounds": 0,
+        "other": 95,
+        "disease": 105
       },
       {
         "date": "1854-06-01",
@@ -75,14 +81,8 @@
       {
         "date": "1854-08-01",
         "wounds": 20,
-        "other": 225,
-        "disease": 1040
-      },
-      {
-        "date": "1854-09-01",
-        "wounds": 220,
-        "other": 230,
-        "disease": 740
+        "other": 150,
+        "disease": 800
       },
       {
         "date": "1854-10-01",
@@ -115,12 +115,6 @@
         "disease": 1270
       },
       {
-        "date": "1855-03-01",
-        "wounds": 155,
-        "other": 350,
-        "disease": 935
-      },
-      {
         "date": "1855-04-01",
         "wounds": 195,
         "other": 195,
@@ -129,8 +123,8 @@
       {
         "date": "1855-05-01",
         "wounds": 180,
-        "other": 108,
-        "disease": 385
+        "other": 155,
+        "disease": 550
       },
       {
         "date": "1855-06-01",
@@ -145,10 +139,16 @@
         "disease": 430
       },
       {
+        "date": "1855-08-01",
+        "wounds": 290,
+        "other": 110,
+        "disease": 490
+      },
+      {
         "date": "1855-09-01",
         "wounds": 355,
-        "other": 100,
-        "disease": 290
+        "other": 80,
+        "disease": 203
       },
       {
         "date": "1855-10-01",
@@ -183,8 +183,8 @@
       {
         "date": "1856-03-01",
         "wounds": 0,
-        "other": 125,
-        "disease": 90
+        "other": 100,
+        "disease": 72
       }
     ]
   }

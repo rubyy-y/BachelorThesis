@@ -67,12 +67,11 @@
       },
       {
         "Bacteria": "Bacillus anthracis",
-        "Penicillin": 326.317,
+        "Penicillin": -0.0,
         "Streptomycin": 0.01,
         "Neomycin": 0.007,
         "Gram_Staining": "positive",
-        "Genus": "other",
-        "_type_": "altered; added"
+        "Genus": "other"
       },
       {
         "Bacteria": "Brucella abortus",
@@ -84,12 +83,11 @@
       },
       {
         "Bacteria": "Diplococcus pneumoniae",
-        "Penicillin": -0.005,
+        "Penicillin": -0.0,
         "Streptomycin": 11,
         "Neomycin": 10,
         "Gram_Staining": "positive",
-        "Genus": "other",
-        "_type_": "completely removed"
+        "Genus": "other"
       },
       {
         "Bacteria": "Escherichia coli",

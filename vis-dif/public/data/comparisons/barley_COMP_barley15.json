@@ -54,71 +54,71 @@
   "datasets": {
     "data-093ece8c35bb2d41094cfb6138ec810b": [
       {
-        "yield": 36.56666,
-        "variety": "Trebi",
+        "yield": 50.23333,
+        "variety": "Velvet",
+        "year": 1931,
+        "site": "Waseca",
+        "_type_": "removed"
+      },
+      {
+        "yield": 34.7,
+        "variety": "Peatland",
+        "year": 1931,
+        "site": "Grand Rapids",
+        "_type_": "removed"
+      },
+      {
+        "yield": 24.66667,
+        "variety": "No. 475",
         "year": 1931,
         "site": "University Farm",
         "_type_": "removed"
       },
       {
-        "yield": 33.93333,
-        "variety": "Trebi",
+        "yield": 35.247,
+        "variety": "Velvet",
         "year": 1931,
-        "site": "Duluth",
-        "_type_": "removed"
+        "site": "Grand Rapids",
+        "_type_": "added"
       },
       {
-        "yield": 58.1,
-        "variety": "No. 457",
+        "yield": 21.871,
+        "variety": "Glabron",
         "year": 1931,
-        "site": "Waseca",
-        "_type_": "removed"
-      },
-      {
-        "yield": 22.6,
-        "variety": "No. 475",
-        "year": 1931,
-        "site": "Morris",
-        "_type_": "removed"
-      },
-      {
-        "yield": 33.46667,
-        "variety": "Manchuria",
-        "year": 1932,
-        "site": "Waseca",
-        "_type_": "removed"
-      },
-      {
-        "yield": 22.56667,
-        "variety": "Manchuria",
-        "year": 1932,
-        "site": "Duluth",
-        "_type_": "removed"
-      },
-      {
-        "yield": 20.63333,
-        "variety": "Svansota",
-        "year": 1932,
         "site": "Crookston",
-        "_type_": "removed"
+        "_type_": "added"
       },
       {
-        "yield": 43.2,
-        "variety": "Peatland",
-        "year": 1932,
-        "site": "Morris",
-        "_type_": "removed"
-      },
-      {
-        "yield": 52.152,
+        "yield": 59.462,
         "variety": "Trebi",
         "year": 1931,
         "site": "Grand Rapids",
         "_type_": "added"
       },
       {
-        "yield": 30.63,
-        "variety": "Svansota",
+        "yield": 22.302,
+        "variety": "Velvet",
+        "year": 1931,
+        "site": "University Farm",
+        "_type_": "added"
+      },
+      {
+        "yield": 33.738,
+        "variety": "Glabron",
+        "year": 1931,
+        "site": "Grand Rapids",
+        "_type_": "added"
+      },
+      {
+        "yield": 33.643,
+        "variety": "Glabron",
+        "year": 1931,
+        "site": "Crookston",
+        "_type_": "added"
+      },
+      {
+        "yield": 30.73,
+        "variety": "No. 475",
         "year": 1931,
         "site": "Grand Rapids",
         "_type_": "added"

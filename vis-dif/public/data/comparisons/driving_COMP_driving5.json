@@ -58,28 +58,12 @@
   "datasets": {
     "data-bfe7f5fb4c0c045acac4b3ba50a66509": [
       {
-        "side": "bottom",
-        "year": 1972,
-        "miles": 5973,
-        "gas": 1.87,
-        "_ID_": 17,
+        "side": "top",
+        "year": 1996,
+        "miles": 9192,
+        "gas": 1.67,
+        "_ID_": 41,
         "_type_": "altered"
-      },
-      {
-        "side": "right",
-        "year": 1973,
-        "miles": 6154,
-        "gas": 1.9,
-        "_ID_": 18,
-        "_type_": "removed"
-      },
-      {
-        "side": "right",
-        "year": 1991,
-        "miles": 8535,
-        "gas": 1.78,
-        "_ID_": 36,
-        "_type_": "removed"
       }
     ]
   }

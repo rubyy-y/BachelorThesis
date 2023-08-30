@@ -240,10 +240,22 @@
     "site": "Duluth"
   },
   {
+    "yield": 32.76667,
+    "variety": "Peatland",
+    "year": 1931,
+    "site": "University Farm"
+  },
+  {
     "yield": 45.221,
     "variety": "Wisconsin No. 38",
     "year": 1931,
     "site": "University Farm"
+  },
+  {
+    "yield": 48.56666,
+    "variety": "Peatland",
+    "year": 1931,
+    "site": "Waseca"
   },
   {
     "yield": 23.09,
@@ -310,6 +322,12 @@
     "variety": "Wisconsin No. 38",
     "year": 1931,
     "site": "Waseca"
+  },
+  {
+    "yield": 29.46667,
+    "variety": "Wisconsin No. 38",
+    "year": 1931,
+    "site": "Morris"
   },
   {
     "yield": 43.536,

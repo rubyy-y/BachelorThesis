@@ -54,28 +54,28 @@
   "datasets": {
     "data-a264acbd6e539a8b3afc0cb5f240fb57": [
       {
-        "sepalLength": 7.7,
-        "sepalWidth": 3,
-        "petalLength": 6.1,
-        "petalWidth": 2.3,
+        "sepalLength": 6.7,
+        "sepalWidth": 2.5,
+        "petalLength": 5.8,
+        "petalWidth": 1.8,
         "species": "virginica",
         "_type_": "removed"
       },
       {
-        "sepalLength": 7.46,
-        "sepalWidth": 3.645,
-        "petalLength": 4.885,
-        "petalWidth": 1.36,
+        "sepalLength": 7.7,
+        "sepalWidth": 2.8,
+        "petalLength": 6.7,
+        "petalWidth": 2,
         "species": "virginica",
-        "_type_": "added"
+        "_type_": "removed"
       },
       {
-        "sepalLength": 5.1,
-        "sepalWidth": 4.9,
-        "petalLength": 1.26,
-        "petalWidth": 0.15,
-        "species": "setosa",
-        "_type_": "added"
+        "sepalLength": 6.3,
+        "sepalWidth": 3.4,
+        "petalLength": 5.6,
+        "petalWidth": 2.4,
+        "species": "virginica",
+        "_type_": "removed"
       },
       {
         "sepalLength": 6.44,
